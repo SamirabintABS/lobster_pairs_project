@@ -1,2 +1,2 @@
-# lobster_pairs_project
+# Lobster Pairs Project
 Collaboration Project
