@@ -1,0 +1,28 @@
+// Media queries
+
+$breakpoints: (
+'xxs': 576px,
+'xs': 600px,
+'sm': 768px,
+'md': 992px,
+'lg': 1260px, 
+'xl': 1400px
+);
+
+@mixin mq($break){
+    $value: map-get($breakpoints, $break);
+    $sm: map-get($breakpoints, 'xxs');
+    @if $value == null{
+        @warn "`#{break}` is not a valid breakpoint name"
+    }
+    @else if $value <$sm {
+        @media screen and (max-width: $value){
+            @content;
+        }
+    }
+    @else {
+        @media screen and (min-width: $value){
+            @content;
+        }
+    }
+}
