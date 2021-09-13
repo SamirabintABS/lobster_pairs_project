@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
     "version": 3,
     "mappings": "AEAA,AAAA,iBAAiB,CAAA;EACb,gBAAgB,EDDd,OAAO;ECET,UAAU,EAAE,MAAM;CACrB",
@@ -9,3 +10,6 @@
     "names": [],
     "file": "styles.css"
 }
+=======
+{"version":3,"sources":["../SCSS/content/_footer.scss","../SCSS/_colors.scss","../SCSS/styles.scss"],"names":[],"mappings":"AAAA;EACI,yBCDE;EDEF,kBAAA;AECJ","file":"styles.css"}
+>>>>>>> c5c642c551591ebc66013ac9beba18c603bc06bc
