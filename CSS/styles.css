@@ -1,1 +1,41 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.section_title {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+  margin: 0;
+  font-size: 30px;
+  color: #AF473C;
+}
+
+.section_title a {
+  color: #AF473C;
+  text-decoration: none;
+}
+
+.section_title a:hover {
+  color: #7c332d;
+  text-decoration: none;
+}
+
+.header_underline {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 150px;
+  margin-top: 10px;
+  background-color: black;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,46 @@
+// Global styling for all pages
+
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+//homepage general styles
+.section_title{
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    margin: 0;
+    font-size: 30px;
+    color: $red;
+
+    a{
+        color: $red;
+        text-decoration: none;
+
+        &:hover{
+            color: $red_darken;
+            text-decoration: none;
+        }
+    }
+}
+
+.header_underline{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 150px;
+    margin-top: 10px;
+    background-color: black;
+}
+
+//Services section
+
+
