@@ -1,10 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../SCSS/styles.scss",
-        "../SCSS/_colors.scss"
-    ],
-    "names": [],
-    "file": "styles.css"
-}
+{"version":3,"sources":["../SCSS/content/_footer.scss","../SCSS/_colors.scss","../SCSS/styles.scss"],"names":[],"mappings":"AAAA;EACI,yBCDE;EDEF,kBAAA;AECJ","file":"styles.css"}
