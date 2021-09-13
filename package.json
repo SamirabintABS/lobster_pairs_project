@@ -1,0 +1,30 @@
+{
+  "name": "lobster_pairs_project",
+  "version": "1.0.0",
+  "description": "Pairs Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tahinia/lobster_pairs_project.git"
+  },
+  "author": "KT SB",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tahinia/lobster_pairs_project/issues"
+  },
+  "homepage": "https://github.com/tahinia/lobster_pairs_project#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/register": "^7.15.3",
+    "babel-register": "^6.26.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "sass": "^1.39.2"
+  }
+}
