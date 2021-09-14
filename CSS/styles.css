@@ -63,4 +63,9 @@ html {
 .banner-button {
   border: none;
   background-color: #AF473C;
+}
+
+.hero-contact a {
+  color: white;
+  text-decoration: none;
 }/*# sourceMappingURL=styles.css.map */
