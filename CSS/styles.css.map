@@ -1,10 +1,1 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "../SCSS/styles.scss",
-        "../SCSS/_colors.scss"
-    ],
-    "names": [],
-    "file": "styles.css"
-}
+{"version":3,"sources":["../SCSS/_banner.scss","../SCSS/styles.scss"],"names":[],"mappings":"AAAA;;EAEI,YAAA;ACCJ;;ADEA,mBAAA;AACA;EACI,qIAAA;EACA,2HAAA;EAEA,eAAA;EACA,WAAA;EAEA,qEAAA;EACA,2BAAA;EACA,4BAAA;EACA,sBAAA;EACA,kBAAA;ACDJ;;ADIA,0CAAA;AACA;EACI,iBAAA;EACA,kBAAA;EACA,QAAA;EACA,SAAA;EACA,gCAAA;EACA,YAAA;ACDJ","file":"styles.css"}
