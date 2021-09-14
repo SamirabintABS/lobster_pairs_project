@@ -10,15 +10,15 @@
 
 .footer-container{
     background-color: $red;
-    padding-bottom: 2.5rem;
-    padding-top: 3rem;
+  
+    padding-top: 2rem;
 }
 
 .footer{
     width: 80%;
     height: 30vh;
     background-color: $red;
-    color: white;
+    color: $white-text;
     display: flex;
     justify-content: left;
     flex-wrap: wrap;
@@ -34,14 +34,14 @@
 .footer-heading h2{
     margin-bottom: 1rem;
     text-transform: uppercase;
-    font-size: medium;
+    font-size: small;
 }
 
 .footer-heading a{
-    color: white;
+    color: $white-text;
     text-decoration: none;
-    margin-bottom: 0.4rem;
-    font-size: small;
+    margin-bottom: 0.2rem;
+    font-size: x-small;
 }
 
 .footer-heading a:hover{
@@ -52,58 +52,33 @@
 .footer-copyright h5{
     margin-bottom: 2rem;
     text-align: center;
-    font-size: x-small;
+    font-size: xx-small;
     box-sizing: border-box;
     position: relative;
     margin-top: 10px;
     text-transform: uppercase;
     padding: 10px;
+    padding-top: 1.5rem;
+    padding-left: 3rem;
 
+}
+
+.copyright-container{
+    flex-direction: row ;
+    text-align: center ;
 }
 
 .footer-title-underline{
     content: "";
     display: block;
     height: 1px;
-    width: 80px;
-    background-color: white;
+    width: 65px;
+    background-color: $white-text;
     margin-top: 0;
-    margin: 0 auto 15px;
+    margin: 0 auto 16px;
     margin-left: 0;
+    padding-top: 0;
     
 }
 
-@media screen and (max-width: $breakpoints "lg"){
-    .footer{
-        height: 30vh;
-    }
-    .footer-copyright{
-        margin-top: 4rem;
-    }
-}
 
-@media screen and (max-width: $breakpoints "md") {
-    .footer {
-        padding-top: 2rem;
-    }
-      .footer-copyright {
-          margin-top: 4rem;
-      }
-
-}
-
-@media screen and (max-width: $breakpoints "sm") {
-    .footer-3 {
-        display: none;
-    }
-
-    .footer-copyright {
-        margin-top: 2rem;
-    }
-}
-
-@media screen and (max-width: $breakpoints "xs") {
-    .footer{
-        display: none;
-    }
-}
