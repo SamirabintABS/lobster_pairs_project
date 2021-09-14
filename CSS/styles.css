@@ -1,3 +1,4 @@
+/* Targetting all elements in html */
 * {
   padding: 0;
   margin: 0;
@@ -8,28 +9,32 @@
   font-display: swap;
 }
 
+/* Background color and styling to the top navigation */
 .menu-container {
   background-color: #AF473C;
-  padding-bottom: 2.5rem;
-  padding-top: 3rem;
+  overflow: hidden;
+  padding-right: 25px;
 }
 
-.menu {
-  width: 80%;
-  height: 30vh;
-  background-color: #AF473C;
-  color: white;
-  display: flex;
-  justify-content: left;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
-
-.menu-heading h3 {
-  display: flex;
-  flex-direction: column;
-  margin-right: 4rem;
-  margin-bottom: 1rem;
+/* Styled the links inside the navigation bar */
+.topnav-right a {
+  float: right;
+  color: #fff;
+  text-align: center;
+  padding: 16px 18px;
+  text-decoration: none;
+  font-size: 12px;
   text-transform: uppercase;
-  font-size: medium;
+}
+
+/* Changed the color of links on hover */
+.topnav-right a:hover {
+  background-color: #FFF;
+  color: #3B3B3B;
+}
+
+/* Added a color to the active/current link */
+.topnav-right a.active {
+  background-color: #FFF;
+  color: #3B3B3B;
 }/*# sourceMappingURL=styles.css.map */
