@@ -7,17 +7,17 @@ gulp.task('sass', function(done){
 
     gulp.src('public/sass/**/*.scss')
       .pipe(sass({outputStyle: 'compressed'})) // Using gulp-sass
-      .pipe(gulp.dest('public/stylesheets'))
+      .pipe(gulp.dest('/CSS'))
 
       done();
   });
 
 gulp.task('scripts', function(done){
 
-    gulp.src('public/javascripts/**/*.js')
+    gulp.src('SRC/*.js')
         .pipe(concat('scripts.js'))
         .pipe(uglify())
-        .pipe(gulp.dest('public/javascripts'))
+        .pipe(gulp.dest('JS/DIST'))
 
         done();
 });
