@@ -2,8 +2,14 @@ body,
 html {
     height: 100%;
     margin: 0;
+    padding: 0;
+
 }
 
+// Banner container
+.banner-container{
+position: relative;
+}
 /* The hero image */
 .hero-image {
     /* Used "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -27,11 +33,23 @@ html {
     font-weight: 300;
     font-display: swap;
     text-align: right;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: 10px;
     color: white;
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    margin-right: 20px;
+    margin-top: 10px;
+
+}
+.hero-text h1{
+    margin-top: 35px;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.hero-text p {
+    font-size: 20px;
+    margin-top: 40px;
+    text-align: right;
 }
 
 .hero-title-underline{
@@ -41,5 +59,11 @@ html {
     width: 100px;
     background-color: $white-text;
     margin: 0 auto 16px;
+    float: right;
 
+}
+
+.banner-button{
+    border:none;
+    background-color: $red;
 }
