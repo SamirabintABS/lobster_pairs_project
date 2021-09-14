@@ -1,6 +1,7 @@
 body,
 html {
     height: 100%;
+    margin: 0;
 }
 
 /* The hero image */
@@ -9,7 +10,7 @@ html {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../IMG/Homepage_images/lobsterbanner.jpeg");
 
     /* Set height */
-    height: 50%;
+    height: 50vh;
 
     /* Positioned and centered the image to scale nicely on all screens */
     background-position: center;
@@ -20,6 +21,7 @@ html {
 
 /* Place text in the middle of the image */
 .hero-text {
+    font-family: 'Roboto';
     text-align: right;
     position: absolute;
     top: 50%;
