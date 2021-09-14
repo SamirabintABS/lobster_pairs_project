@@ -45,7 +45,7 @@ html {
 }
 
 .hero-text p {
-  font-size: 20px;
+  font-size: 15px;
   margin-top: 40px;
   text-align: right;
 }
@@ -61,11 +61,39 @@ html {
 }
 
 .banner-button {
-  border: none;
   background-color: #AF473C;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
 }
 
 .hero-contact a {
   color: white;
   text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.logo-text1 {
+  font-family: "la belle aurore";
+  color: #AF473C;
+  padding-top: 5px;
+  padding-left: 40px;
+  font-size: 20px;
+  text-shadow: #3C3C3C;
+  padding-bottom: -50px;
+}
+
+.logo-text2 {
+  font-family: "Roboto";
+  text-transform: uppercase;
+  color: whitesmoke;
+  padding-top: -100px;
+  padding-left: 40px;
+  font-size: 15px;
 }/*# sourceMappingURL=styles.css.map */
