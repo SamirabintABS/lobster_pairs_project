@@ -29,3 +29,15 @@ html {
     transform: translate(-50%, -50%);
     color: white;
 }
+
+.hero-title-underline{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 65px;
+    background-color: $white-text;
+    margin-top: 0;
+    margin: 0 auto 16px;
+    margin-left: 0;
+    padding-top: 0;
+}
