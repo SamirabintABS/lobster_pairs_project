@@ -1,6 +1,4 @@
-body,
-html {
-  height: 100%;
+* {
   margin: 0;
   padding: 0;
 }
@@ -58,6 +56,7 @@ html {
   background-color: whitesmoke;
   margin: 0 auto 16px;
   float: right;
+  margin-top: 20px;
 }
 
 .banner-button {
@@ -79,21 +78,21 @@ html {
   font-size: 12px;
 }
 
-.logo-text1 {
+.logo-text h2 {
   font-family: "la belle aurore";
   color: #AF473C;
-  padding-top: 5px;
+  padding-top: 40px;
   padding-left: 40px;
-  font-size: 20px;
+  font-size: 25px;
   text-shadow: #3C3C3C;
-  padding-bottom: -50px;
 }
 
-.logo-text2 {
+.logo-text h3 {
   font-family: "Roboto";
+  padding-left: 40px;
+  font-size: 20px;
   text-transform: uppercase;
   color: whitesmoke;
-  padding-top: -100px;
   padding-left: 40px;
-  font-size: 15px;
+  margin-top: -16px;
 }/*# sourceMappingURL=styles.css.map */
