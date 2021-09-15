@@ -26,7 +26,7 @@ position: relative;
 /* Place text in the middle of the image */
 .hero-text {
     float: right;
-    font-family: 'Roboto';
+    font-family: 'Montserrat',sans-serif;
     font-style: normal;
     font-weight: 300;
     font-display: swap;
@@ -40,7 +40,7 @@ position: relative;
 
 }
 .hero-text h1{
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 33px;
     text-transform: uppercase;
 }
@@ -115,11 +115,11 @@ position: relative;
 }
 
 .logo-text h3 {
-    font-family: "Roboto";
+    font-family: 'Montserrat', sans-serif;
     padding-left: 40px;
-    font-size: 20px;
+    font-size: 22px;
     text-transform: uppercase;
     color: $white-text;
     padding-left: 40px;
-    margin-top: -16px;
+    margin-top: -8px;
 }
