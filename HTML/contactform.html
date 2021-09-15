@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/CSS/styles.css" <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8e1f5cb673.js" crossorigin="anonymous"></script>
+
+    <!-- leaflet -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
+
+
+
+
+    <!-- reCaptcha -->
+
+    <script src="https://www.google.com/recaptcha/api.js"></script>
+
+    <title>Terracotta</title>
+</head>
+
+<body>
+    <header></header>
+
+
+    <section class="contact-section">
+        <div class="flex-contact">
+            <div class="split1">
+                <div>
+                <h1 class="section_title">Contact us</h1>
+                <span class="header_underline"></span>
+                
+                <p>16 Zobel Close <br>
+                    Norwich <br>
+                    Norfolk <br>
+                    NR3 2BY <br>
+                    <br> <br>
+                    01235-852-894 <br>
+                    info@terracotta.com
+                </p>
+            </div>
+            </div>
+            <div class="split2">
+                <div>
+                <h1 class="section_title">Enquire</h1>
+                <span class="header_underline"></span> 
+                </div>
+                <form action="POST">
+                    <ul class="flex-outer">
+                        <li><label for="first_name">First name</label> <br>
+                            <input type="text" name="first_name" id="first_name">
+                        </li>
+                        <li><label for="last_name">Last name</label> <br>
+                            <input type="text" name="last_name" id="last_name"> 
+                        </li>
+                        <li><label for="telephone">Telephone</label> <br>
+                            <input type="number" name="telephone" id="telephone"> 
+                        </li>
+                        <li><label for="email">Email</label> <br>
+                            <input type="email" name="email" id="email"> 
+                        </li>
+                        <li>
+                            <label for="message">Message</label> <br>
+                            <input type="text" name="message" id="message-contact"> 
+                        </li>
+                        <li>
+                            <input type="checkbox" name="gdpr"> <label for="gdpr">I agree to my information being used for
+                                GDPR
+                                regulations</label> 
+                        </li>
+                        <li>
+                            <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+                            <br />
+                        </li>
+                       <li>
+                            
+                        <input type="submit" value="Submit" id="submit_button">
+                       </li>
+
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <div id="mapid"></div>
+
+    <footer></footer>
+
+    <script src="../JS/DIST/contact.js"></script>
+
+</body>
