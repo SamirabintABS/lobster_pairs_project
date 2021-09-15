@@ -72,11 +72,22 @@
   margin-top: 20px;
 }
 
-.hero-contact a {
+.hero-contact-email a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 12px;
+  text-align: center;
+  float: left;
+}
+
+.hero-contact-phone a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  text-align: center;
+  float: right;
 }
 
 .logo-text h2 {
