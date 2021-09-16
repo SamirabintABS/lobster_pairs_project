@@ -64,26 +64,28 @@
                 <h1 class="section_title">Enquire</h1>
                 <span class="header_underline"></span> 
                 </div>
-                <form action="POST">
+                <form name="contactus" id="contactform" action="">
                     <ul class="flex-outer">
-                        <li><label for="first_name">First name</label> <br>
+                        <li><label id="firstLabel" for="first_name">First name</label> <br>
                             <input type="text" name="first_name" id="first_name">
                         </li>
-                        <li><label for="last_name">Last name</label> <br>
+                        <li><label id="lastLabel"for="last_name">Last name</label> <br>
                             <input type="text" name="last_name" id="last_name"> 
                         </li>
-                        <li><label for="telephone">Telephone</label> <br>
-                            <input type="number" name="telephone" id="telephone"> 
+                        <li><label id="phone-label" for="telephone">Telephone</label> <br>
+                            <input type="text" name="telephone" id="telephone">
+                            <span id="phone-message">Please enter a valid phone number.</span> 
                         </li>
-                        <li><label for="email">Email</label> <br>
-                            <input type="email" name="email" id="email"> 
+                        <li><label id=email-label for="email">Email</label> <br>
+                            <input type="email" name="email" id="email">
+                            <span id="email-message">Please enter a valid email address.</span>
                         </li>
                         <li>
                             <label for="message">Message</label> <br>
-                            <input type="text" name="message" id="message-contact"> 
+                            <textarea  name="message" id="message-contact" autocomplete="off"></textarea>
                         </li>
                         <li>
-                            <input type="checkbox" name="gdpr"> <label for="gdpr">I agree to my information being used for
+                            <input id="gdpr" type="checkbox" name="gdpr"> <label for="gdpr">I agree to my information being used for
                                 GDPR
                                 regulations</label> 
                         </li>
@@ -93,7 +95,8 @@
                         </li>
                        <li>
                             
-                        <input type="submit" value="Submit" id="submit_button">
+                        <input type="button" value="Submit" id="submit_button">
+                        <span id="button-message">Please fill out the fields.</span>
                        </li>
 
                     </ul>
