@@ -1,9 +1,6 @@
 $('.testimonials_slick').slick({ 
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
+    autoplaySpeed: 4000,
+    arrows: false,
     dots: true,
-    autoplaySpeed: 3000,
-    prevArrow: false,
-    nextArrow: false,
-})
+});

@@ -125,6 +125,90 @@ html,body {
     }
 }
 
+//testimonials
+.testimonials{
+    margin: 50px 0;
+    .testimonials_slick{
+        padding: 0 10px;
+        overflow: initial;
+
+        div{
+            display: inline-block;
+            width: 100%;
+
+            .quote_container{
+                display: flex;
+                color: white;
+                width: 100%;
+                padding: 25px 25px 0;
+                
+                i{
+                    display: inline-block;
+                    font-size: 20px;
+                    width: auto;
+                    margin: 0;
+                }
+                .quote_left{
+                    padding-top: 40px;
+                }
+                .quote_right{
+                    padding-top: 125px;
+                }
+                .quote_content{
+                    text-align: center;
+
+                    .quote{
+                        display: inline-block;
+                        text-align: center;
+                        width: auto;
+                        height: auto;
+                        padding: 30px 25px 0;
+                        margin: 0;
+                        font-size: 16px;
+                    }
+
+                    .quote_underline{
+                        content: "";
+                        display: inline-block;
+                        height: 1px;
+                        width: 33%;
+                        margin-top: 30px;
+                        background-color: white;
+                    }
+                    .quote_author{
+                        margin-top: 20px;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//carousel images
+
+.background_image2{
+    background: linear-gradient(rgba(0,0,0,.07), rgba(0,0,0,.7)), url(../IMG/Homepage_images/quotebackground2.jpg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.background_image{
+    background: linear-gradient(rgba(0,0,0,.07), rgba(0,0,0,.7)), url(../IMG/Homepage_images/quotebackground.jpg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 
 
 // Media queries for homepage
@@ -184,6 +268,26 @@ html,body {
         }
     }
 }
+
+.testimonials{
+    .testimonials_slick{
+        width: 725px;
+        margin-left: auto;
+        margin-right: auto;
+
+        div .quote_container .quote_content{
+            .quote{
+                font-size: 18px;
+                padding: 30px 50px 0;
+            }
+            .quote_author{
+                font-size: 16px;
+            }
+
+        }
+    }
+}
+
 }
 
 @include mq('md'){
@@ -212,6 +316,20 @@ html,body {
         }
     }
 }
+
+.testimonials{
+    .testimonials_slick{
+        width: 950px;
+        div .quote_container .quote_content {
+            .quote {
+                font-size: 20px;
+            }
+            .quote_author {                        
+                font-size: 18px;
+            }     
+        }
+    }
+}
 }
 
 @include mq('lg'){
@@ -236,4 +354,15 @@ html,body {
         }
     }
 }
+.testimonials{
+    .testimonials_slick{
+        width: 1235px;
+        div .quote_container .quote_content {
+            .quote {
+                font-size: 22px;
+            }  
+        }
+    }
+}
+
 }

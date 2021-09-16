@@ -123,6 +123,90 @@ html, body {
   text-align: center;
 }
 
+.testimonials {
+  margin: 50px 0;
+}
+
+.testimonials .testimonials_slick {
+  padding: 0 10px;
+  overflow: initial;
+}
+
+.testimonials .testimonials_slick div {
+  display: inline-block;
+  width: 100%;
+}
+
+.testimonials .testimonials_slick div .quote_container {
+  display: flex;
+  color: white;
+  width: 100%;
+  padding: 25px 25px 0;
+}
+
+.testimonials .testimonials_slick div .quote_container i {
+  display: inline-block;
+  font-size: 20px;
+  width: auto;
+  margin: 0;
+}
+
+.testimonials .testimonials_slick div .quote_container .quote_left {
+  padding-top: 40px;
+}
+
+.testimonials .testimonials_slick div .quote_container .quote_right {
+  padding-top: 125px;
+}
+
+.testimonials .testimonials_slick div .quote_container .quote_content {
+  text-align: center;
+}
+
+.testimonials .testimonials_slick div .quote_container .quote_content .quote {
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 30px 25px 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.testimonials .testimonials_slick div .quote_container .quote_content .quote_underline {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 33%;
+  margin-top: 30px;
+  background-color: white;
+}
+
+.testimonials .testimonials_slick div .quote_container .quote_content .quote_author {
+  margin-top: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.background_image2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.7)), url(../IMG/Homepage_images/quotebackground2.jpg);
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.background_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.7)), url(../IMG/Homepage_images/quotebackground.jpg);
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media screen and (min-width: 750px) {
   .section_title {
     font-size: 36px;
@@ -168,6 +252,18 @@ html, body {
   .services .services_width .service_card_container .card:last-of-type {
     margin-top: 25px;
   }
+  .testimonials .testimonials_slick {
+    width: 725px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .testimonials .testimonials_slick div .quote_container .quote_content .quote {
+    font-size: 18px;
+    padding: 30px 50px 0;
+  }
+  .testimonials .testimonials_slick div .quote_container .quote_content .quote_author {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 975px) {
@@ -190,6 +286,15 @@ html, body {
   .services .services_width .service_card_container .card:last-of-type {
     margin-top: 0px;
   }
+  .testimonials .testimonials_slick {
+    width: 950px;
+  }
+  .testimonials .testimonials_slick div .quote_container .quote_content .quote {
+    font-size: 20px;
+  }
+  .testimonials .testimonials_slick div .quote_container .quote_content .quote_author {
+    font-size: 18px;
+  }
 }
 
 @media screen and (min-width: 1260px) {
@@ -205,6 +310,12 @@ html, body {
   .services .services_width .service_card_container .card .card_image {
     height: 225px;
     width: 390px;
+  }
+  .testimonials .testimonials_slick {
+    width: 1235px;
+  }
+  .testimonials .testimonials_slick div .quote_container .quote_content .quote {
+    font-size: 22px;
   }
 }
 
