@@ -1,0 +1,239 @@
+#mapid {
+    height: 170px;
+    width: 80%;
+    margin: 0px auto;
+}
+
+#first_name.error {
+    border: 1px solid  red;
+}
+
+#firstLabel.error{
+    color: red;
+    font-size: 1rem;
+}
+
+#lastLabel.error{
+    color: red;
+    font-size: 1rem;
+}
+#last_name.error {
+    border: 1px solid  red;
+}
+
+#message-contact.error{
+    border: 1px solid  red;
+}
+
+#gdpr{
+    accent-color: #AF473C;
+
+}
+
+#email.error{
+    border: 1px solid  red;
+}
+
+#email-label.error{
+    color: red;
+    font-size: 1rem;
+}
+
+#email-message {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color:  red;
+    margin-top: 5px;
+    display: none;
+    transition: .3s ease all;
+}
+
+#email-message.shown {
+    display: block;
+}
+
+#telephone.error{
+    border: 1px solid  red;
+}
+
+#phone-label.error{
+    color: red;
+    font-size: 1rem;
+}
+
+#phone-message {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color:  red;
+    margin-top: 5px;
+    display: none;
+    transition: .3s ease all;
+}
+
+#phone-message.shown {
+    display: block;
+}
+
+#button-message {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    color:  red;
+    margin-top: 5px;
+    display: none;
+    transition: .3s ease all;
+}
+
+#button-message.shown {
+    display: block;
+}
+
+.contact-section .flex-contact {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin: 15px;
+
+    .split1{
+        span{
+            width: 125px;
+        }
+    }
+    .split2{
+        span{
+            width: 85px;
+        }
+    }
+
+    .flex-outer {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        
+        &> li{
+            flex-basis: 100%;
+        }
+       
+
+        &>li:not(:nth-child(6)) {
+            margin-bottom: 20px;
+        }
+
+        &>li>label {
+            flex: 1 0 120px;
+        }
+    }
+
+    input[type=text],
+    input[type=email],
+    input[type=number] {
+        border: 1px solid #9c9191;
+        border-radius: 4px;
+        width: 90%;
+        height: 28px;
+    }
+
+    #message-contact {
+        height: 200px;
+        width: 95%;
+        resize:none;
+    }
+
+    input[type=button] {
+        width: 100%;
+        height: 42px;
+        background: #AF473C;
+        border: 1px solid #9C9191;
+        border-radius: 4px;
+        font-size: 13px;
+        line-height: 15px;
+        font-weight: bold;
+        letter-spacing: -0.02em;
+        color: #fff;
+        text-transform: uppercase;
+        transition: .15s ease background-color, .3s transform;
+
+        &:hover {
+            transform: scale(0.95);
+        box-shadow: 0 0 3px grey;
+        background-color: darken($red, 4%);
+        }
+
+    }
+}
+
+
+
+
+@include mq('sm') {
+
+    .contact-section {
+        .flex-contact{
+
+            .split1{
+                span{
+                    width:230px ;
+                }
+            }
+
+            .split2{
+                span{
+                    width: 160px;
+                }
+            }
+        .flex-outer {
+
+            &> li:nth-child(-n+5) {
+                flex-direction: row;
+                justify-content: space-between;
+                flex-basis: 50%;
+            }
+            &> li:nth-child(5){
+                flex-basis: 100%;
+                width:100%;
+                input{
+                    width: 95%;
+                }
+            }
+            &> li:nth-child(n+6){
+                flex-basis: 50%;
+            }
+            
+
+
+        }
+    }
+    }
+}
+
+@include mq('lg'){
+    .contact-section{
+
+        .flex-contact{
+        flex-direction: row;
+        justify-content: center;
+
+        .split1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .section_title{
+                width: auto;
+            }
+            span{
+               width: 230px; 
+            }
+        }
+
+        
+
+        .split1, .split2{
+            flex-basis: 50%;
+        }
+        }
+    }
+
+}

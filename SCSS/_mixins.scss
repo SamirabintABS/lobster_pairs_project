@@ -3,15 +3,15 @@
 $breakpoints: (
 'xxs': 576px,
 'xs': 600px,
-'sm': 768px,
-'md': 992px,
+'sm': 750px,
+'md': 975px,
 'lg': 1260px, 
 'xl': 1400px
 );
 
 @mixin mq($break){
     $value: map-get($breakpoints, $break);
-    $sm: map-get($breakpoints, 'xxs');
+    $sm: map-get($breakpoints, 'xs');
     @if $value == null{
         @warn "`#{break}` is not a valid breakpoint name"
     }
