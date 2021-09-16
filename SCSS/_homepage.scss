@@ -2,7 +2,7 @@
 
 *{
     box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 html,body {
@@ -41,6 +41,27 @@ html,body {
     width: 150px;
     margin-top: 10px;
     background-color: black;
+}
+
+//About us
+
+.aboutus{
+    margin-top: 75px;
+
+    .aboutus_width{
+        width:auto;
+        height: auto;
+        padding: 0 10px;
+
+        .aboutus_text{
+            margin: 25px 0;
+            font-size: 16px;
+        }
+        .aboutus_text:last-of-type{
+            display: none;
+            margin-bottom: 0;
+        }
+    }
 }
 
 //Services section
@@ -118,6 +139,21 @@ html,body {
         width: 185px;
     }
     
+    .aboutus{
+        margin-top: 50px;
+
+        .aboutus_width{
+            width: 725px;
+            padding: 0 10px;
+            margin-left: auto;
+            margin-right: auto;
+
+            .aboutus_text:last-of-type{
+                display: block;
+            }
+        }
+    }
+
     .services{
     .services_width{
         width: 800px;
@@ -151,6 +187,13 @@ html,body {
 }
 
 @include mq('md'){
+
+    .aboutus{   
+        .aboutus_width{
+            width: 950px;
+        }
+    }
+
    .services{
     .services_width {
         width: 950px;
@@ -172,6 +215,13 @@ html,body {
 }
 
 @include mq('lg'){
+
+    .aboutus{   
+        .aboutus_width{
+            width: 1235px;
+        }
+    }
+
     .services{
     .services_width {
         width: 1235px;
