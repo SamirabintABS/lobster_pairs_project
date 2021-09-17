@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 html, body {
@@ -19,12 +19,10 @@ html, body {
   font-size: 18px;
   color: #AF473C;
 }
-
 .section_title a {
   color: #AF473C;
   text-decoration: none;
 }
-
 .section_title a:hover {
   color: #7c332d;
   text-decoration: none;
@@ -42,18 +40,15 @@ html, body {
 .aboutus {
   margin-top: 75px;
 }
-
 .aboutus .aboutus_width {
   width: auto;
   height: auto;
   padding: 0 10px;
 }
-
 .aboutus .aboutus_width .aboutus_text {
   margin: 25px 0;
   font-size: 16px;
 }
-
 .aboutus .aboutus_width .aboutus_text:last-of-type {
   display: none;
   margin-bottom: 0;
@@ -62,12 +57,10 @@ html, body {
 .services {
   margin-top: 50px;
 }
-
 .services .services_width {
   width: 100%;
   padding: 0 25px;
 }
-
 .services .services_width .service_card_container {
   width: 100%;
   display: flex;
@@ -75,13 +68,11 @@ html, body {
   justify-content: center;
   margin-top: 25px;
 }
-
 .services .services_width .service_card_container .card {
   display: block;
   width: auto;
   margin-top: 25px;
 }
-
 .services .services_width .service_card_container .card .card_image {
   background-size: cover;
   background-repeat: no-repeat;
@@ -89,26 +80,21 @@ html, body {
   height: 250px;
   width: auto;
 }
-
 .services .services_width .service_card_container .card .card_corporate {
   background-image: url(../IMG/Homepage_images/corporate.jpg);
 }
-
 .services .services_width .service_card_container .card .card_weddings {
   background-image: url(../IMG/Homepage_images/Wedding.jpg);
 }
-
 .services .services_width .service_card_container .card .card_events {
   background-image: url(../IMG/Homepage_images/events.jpg);
 }
-
 .services .services_width .service_card_container .card .card_title {
   text-align: center;
   text-transform: uppercase;
   color: #AF473C;
   font-size: 24px;
 }
-
 .services .services_width .service_card_container .card .card_title_underline {
   content: "";
   display: block;
@@ -118,7 +104,6 @@ html, body {
   background-color: black;
   margin: 0 auto 10px;
 }
-
 .services .services_width .service_card_container .card .card_text {
   text-align: center;
 }
@@ -127,9 +112,11 @@ html, body {
   .section_title {
     font-size: 36px;
   }
+
   .header_underline {
     width: 185px;
   }
+
   .aboutus {
     margin-top: 50px;
   }
@@ -142,6 +129,7 @@ html, body {
   .aboutus .aboutus_width .aboutus_text:last-of-type {
     display: block;
   }
+
   .services .services_width {
     width: 800px;
     margin-left: auto;
@@ -169,11 +157,11 @@ html, body {
     margin-top: 25px;
   }
 }
-
 @media screen and (min-width: 975px) {
   .aboutus .aboutus_width {
     width: 950px;
   }
+
   .services .services_width {
     width: 950px;
   }
@@ -191,11 +179,11 @@ html, body {
     margin-top: 0px;
   }
 }
-
 @media screen and (min-width: 1260px) {
   .aboutus .aboutus_width {
     width: 1235px;
   }
+
   .services .services_width {
     width: 1235px;
   }
@@ -207,7 +195,6 @@ html, body {
     width: 390px;
   }
 }
-
 #mapid {
   height: 170px;
   width: 80%;
@@ -215,7 +202,7 @@ html, body {
 }
 
 #first_name.error {
-  border: 1px solid  red;
+  border: 1px solid red;
 }
 
 #firstLabel.error {
@@ -229,11 +216,11 @@ html, body {
 }
 
 #last_name.error {
-  border: 1px solid  red;
+  border: 1px solid red;
 }
 
 #message-contact.error {
-  border: 1px solid  red;
+  border: 1px solid red;
 }
 
 #gdpr {
@@ -241,7 +228,7 @@ html, body {
 }
 
 #email.error {
-  border: 1px solid  red;
+  border: 1px solid red;
 }
 
 #email-label.error {
@@ -250,12 +237,12 @@ html, body {
 }
 
 #email-message {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   color: red;
   margin-top: 5px;
   display: none;
-  transition: .3s ease all;
+  transition: 0.3s ease all;
 }
 
 #email-message.shown {
@@ -263,7 +250,7 @@ html, body {
 }
 
 #telephone.error {
-  border: 1px solid  red;
+  border: 1px solid red;
 }
 
 #phone-label.error {
@@ -272,12 +259,12 @@ html, body {
 }
 
 #phone-message {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   color: red;
   margin-top: 5px;
   display: none;
-  transition: .3s ease all;
+  transition: 0.3s ease all;
 }
 
 #phone-message.shown {
@@ -285,12 +272,12 @@ html, body {
 }
 
 #button-message {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   color: red;
   margin-top: 5px;
   display: none;
-  transition: .3s ease all;
+  transition: 0.3s ease all;
 }
 
 #button-message.shown {
@@ -303,34 +290,27 @@ html, body {
   flex-direction: column;
   margin: 15px;
 }
-
 .contact-section .flex-contact .split1 span {
   width: 125px;
 }
-
 .contact-section .flex-contact .split2 span {
   width: 85px;
 }
-
 .contact-section .flex-contact .flex-outer {
   list-style: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
-
 .contact-section .flex-contact .flex-outer > li {
   flex-basis: 100%;
 }
-
 .contact-section .flex-contact .flex-outer > li:not(:nth-child(6)) {
   margin-bottom: 20px;
 }
-
 .contact-section .flex-contact .flex-outer > li > label {
   flex: 1 0 120px;
 }
-
 .contact-section .flex-contact input[type=text],
 .contact-section .flex-contact input[type=email],
 .contact-section .flex-contact input[type=number] {
@@ -339,13 +319,11 @@ html, body {
   width: 90%;
   height: 28px;
 }
-
 .contact-section .flex-contact #message-contact {
   height: 200px;
   width: 95%;
   resize: none;
 }
-
 .contact-section .flex-contact input[type=button] {
   width: 100%;
   height: 42px;
@@ -358,9 +336,8 @@ html, body {
   letter-spacing: -0.02em;
   color: #fff;
   text-transform: uppercase;
-  transition: .15s ease background-color, .3s transform;
+  transition: 0.15s ease background-color, 0.3s transform;
 }
-
 .contact-section .flex-contact input[type=button]:hover {
   transform: scale(0.95);
   box-shadow: 0 0 3px grey;
@@ -390,7 +367,6 @@ html, body {
     flex-basis: 50%;
   }
 }
-
 @media screen and (min-width: 1260px) {
   .contact-section .flex-contact {
     flex-direction: row;
@@ -411,4 +387,123 @@ html, body {
     flex-basis: 50%;
   }
 }
-/*# sourceMappingURL=styles.css.map */
+.services {
+  margin-top: 50px;
+}
+.services .services_width {
+  width: 100%;
+  padding: 0 25px;
+}
+.services .services_width .service_card_container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
+}
+.services .services_width .service_card_container .card {
+  display: block;
+  width: auto;
+  margin-top: 25px;
+}
+.services .services_width .service_card_container .card .card_image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  width: auto;
+}
+.services .services_width .service_card_container .card .card_corporate {
+  background-image: url(../IMG/Homepage_images/partner-quarr.png);
+}
+.services .services_width .service_card_container .card .card_weddings {
+  background-image: url(../IMG/Homepage_images/partner-pabulum.jpeg);
+}
+.services .services_width .service_card_container .card .card_events {
+  background-image: url(../IMG/Homepage_images/partner-mountjoy.jpeg);
+}
+.services .services_width .service_card_container .card .card_title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #AF473C;
+  font-size: 24px;
+}
+.services .services_width .service_card_container .card .card_title_underline {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100px;
+  margin-top: 0;
+  background-color: black;
+  margin: 0 auto 10px;
+}
+.services .services_width .service_card_container .card .card_text {
+  text-align: center;
+}
+
+@media screen and (min-width: 750px) {
+  .section_title {
+    font-size: 36px;
+  }
+
+  .header_underline {
+    width: 185px;
+  }
+
+  .services .services_width {
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+  }
+  .services .services_width .service_card_container {
+    justify-content: space-evenly;
+    padding: 0;
+  }
+  .services .services_width .service_card_container .card {
+    display: block;
+    width: 360px;
+    padding: 0 0;
+    margin-top: 0px;
+  }
+  .services .services_width .service_card_container .card .card_image {
+    height: 202px;
+    width: 360px;
+  }
+  .services .services_width .service_card_container .card .card_title {
+    font-size: 24px;
+  }
+  .services .services_width .service_card_container .card:last-of-type {
+    margin-top: 25px;
+  }
+}
+@media screen and (min-width: 975px) {
+  .services .services_width {
+    width: 950px;
+  }
+  .services .services_width .service_card_container {
+    justify-content: space-between;
+  }
+  .services .services_width .service_card_container .card {
+    width: 310px;
+  }
+  .services .services_width .service_card_container .card .card_image {
+    height: 174px;
+    width: 310px;
+  }
+  .services .services_width .service_card_container .card:last-of-type {
+    margin-top: 0px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .services .services_width {
+    width: 1235px;
+  }
+  .services .services_width .service_card_container .card {
+    width: 390px;
+  }
+  .services .services_width .service_card_container .card .card_image {
+    height: 225px;
+    width: 390px;
+  }
+}/*# sourceMappingURL=styles.css.map */

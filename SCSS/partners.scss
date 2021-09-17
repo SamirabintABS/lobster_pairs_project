@@ -1,24 +1,24 @@
-.services {
+.partners {
     margin-top: 50px;
 
 
-    .services_width {
+    .partners_width {
         width: 100%;
         padding: 0 25px;
 
-        .service_card_container {
+        .partners_card_container {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 25px;
 
-            .card {
+            .partners-card {
                 display: block;
                 width: auto;
                 margin-top: 25px;
 
-                .card_image {
+                .partners-card_image {
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -26,16 +26,16 @@
                     width: auto;
                 }
 
-                .card_corporate {
-                    background-image: url(../IMG/Homepage_images/corporate.jpg);
+                .card_quarr {
+                    background-image: url(../IMG/Homepage_images/partner-quarr.png);
                 }
 
-                .card_weddings {
-                    background-image: url(../IMG/Homepage_images/Wedding.jpg);
+                .card_pabulum {
+                    background-image: url(../IMG/Homepage_images/partner-pabulum.jpeg);
                 }
 
-                .card_events {
-                    background-image: url(../IMG/Homepage_images/events.jpg);
+                .card_mountjoy {
+                    background-image: url(../IMG/Homepage_images/partner-mountjoy.jpeg);
                 }
 
                 .card_title {
