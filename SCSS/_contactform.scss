@@ -1,6 +1,6 @@
 #mapid {
     height: 170px;
-    width: 80%;
+    width: 90%;
     margin: 0px auto;
 }
 
@@ -117,7 +117,7 @@
         }
        
 
-        &>li:not(:nth-child(6)) {
+        &>li:not(:last-child) {
             margin-bottom: 20px;
         }
 
@@ -170,6 +170,10 @@
 @include mq('sm') {
 
     .contact-section {
+
+        width: 725px;
+        margin: 0 auto;
+
         .flex-contact{
 
             .split1{
@@ -208,9 +212,17 @@
     }
 }
 
+@include mq( 'md'){
+
+    .contact-section{
+        width: 950px;
+    }
+}
+
+
 @include mq('lg'){
     .contact-section{
-
+        width: 1235px;
         .flex-contact{
         flex-direction: row;
         justify-content: center;
@@ -236,4 +248,12 @@
         }
     }
 
+}
+
+@include mq('xl'){
+
+    .contact-section{
+
+        width: 1375px;
+    }
 }

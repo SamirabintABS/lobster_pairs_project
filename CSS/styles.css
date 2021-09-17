@@ -1,14 +1,16 @@
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
 html,
 body {
   width: 100%;
   height: 100%;
-  margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .section_title {
@@ -402,7 +404,7 @@ body {
 
 #mapid {
   height: 170px;
-  width: 80%;
+  width: 90%;
   margin: 0px auto;
 }
 
@@ -515,7 +517,7 @@ body {
   flex-basis: 100%;
 }
 
-.contact-section .flex-contact .flex-outer > li:not(:nth-child(6)) {
+.contact-section .flex-contact .flex-outer > li:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -560,6 +562,10 @@ body {
 }
 
 @media screen and (min-width: 750px) {
+  .contact-section {
+    width: 725px;
+    margin: 0 auto;
+  }
   .contact-section .flex-contact .split1 span {
     width: 230px;
   }
@@ -583,7 +589,16 @@ body {
   }
 }
 
+@media screen and (min-width: 975px) {
+  .contact-section {
+    width: 950px;
+  }
+}
+
 @media screen and (min-width: 1260px) {
+  .contact-section {
+    width: 1235px;
+  }
   .contact-section .flex-contact {
     flex-direction: row;
     justify-content: center;
@@ -601,6 +616,12 @@ body {
   }
   .contact-section .flex-contact .split1, .contact-section .flex-contact .split2 {
     flex-basis: 50%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .contact-section {
+    width: 1375px;
   }
 }
 /*# sourceMappingURL=styles.css.map */
