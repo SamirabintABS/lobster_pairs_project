@@ -1,157 +1,37 @@
-.partners {
-    margin-top: 50px;
 
 
-    .partners_width {
-        width: 100%;
-        padding: 0 25px;
+.partners-container{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
 
-        .partners_card_container {
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 25px;
-
-            .partners-card {
-                display: block;
-                width: auto;
-                margin-top: 25px;
-
-                .partners-card_image {
-                    background-size: cover;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    height: 250px;
-                    width: 250px;
-                }
-
-                .card_quarr {
-                    background-image: url(../IMG/Homepage_images/partner-quarr.png);
-                }
-
-                .card_pabulum {
-                    background-image: url(../IMG/Homepage_images/partner-pabulum.jpeg);
-                }
-
-                .card_mountjoy {
-                    background-image: url(../IMG/Homepage_images/partner-mountjoy.jpeg);
-                }
-
-                .card_title {
-                    text-align: center;
-                    text-transform: uppercase;
-                    color: $red;
-                    font-size: 24px;
-                }
-
-                .card_title_underline {
-                    content: "";
-                    display: block;
-                    height: 1px;
-                    width: 100px;
-                    margin-top: 0;
-                    background-color: black;
-                    margin: 0 auto 10px;
-                }
-
-                .card_text {
-                    text-align: center;
-                }
-            }
-        }
+    img{
+        width: 80%;
+        position: absolute;
+        
     }
+    
+}
+
+.partners-cards img{
+    flex: 33.33%;
+    padding: 5px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+
+    transition: filter 600ms ease;
+    -webkit-transition: -webkit-filter 600ms ease;
+}
+
+.partners-cards img:hover{
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    
 }
 
 
 
-// Media queries for homepage
 
-@include mq('sm') {
 
-    .section_title {
-        font-size: 36px;
-    }
-
-    .header_underline {
-        width: 185px;
-    }
-
-    .partners {
-        .partners_width {
-            width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-            padding: 0 10px;
-
-            .partners_card_container {
-                justify-content: space-evenly;
-                padding: 0;
-
-                .partners-card {
-                    display: block;
-                    width: 360px;
-                    padding: 0 0;
-                    margin-top: 0px;
-
-                    .partners-card_image {
-                        height: 202px;
-                        width: 360px;
-                    }
-
-                    .card_title {
-                        font-size: 24px;
-                    }
-                }
-
-                .card:last-of-type {
-                    margin-top: 25px;
-                }
-            }
-        }
-    }
-}
-
-@include mq('md') {
-    .partners {
-        .partners_width {
-            width: 950px;
-
-            .partners_card_container {
-                justify-content: space-between;
-
-                .partners-card {
-                    width: 310px;
-
-                    .partners-card_image {
-                        height: 174px;
-                        width: 310px;
-                    }
-                }
-
-                .card:last-of-type {
-                    margin-top: 0px;
-                }
-            }
-        }
-    }
-}
-
-@include mq('lg') {
-    .partners {
-        .partners_width {
-            width: 1235px;
-
-            .partners_card_container {
-                .partners-card {
-                    width: 390px;
-
-                    .partners-card_image {
-                        height: 225px;
-                        width: 390px;
-                    }
-                }
-            }
-        }
-    }
-}
