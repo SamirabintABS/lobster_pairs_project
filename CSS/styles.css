@@ -152,4 +152,49 @@
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
+}
+@media screen and (min-width: 992px) {
+  .nav-container {
+    position: relative;
+    float: right;
+  }
+
+  .nav-menu {
+    display: flex;
+    grid-template-columns: auto;
+    background-color: #AF473C;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #3C3C3C;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links {
+    text-align: center;
+    line-height: 60px;
+    width: 100%;
+    display: flex;
+    float: right;
+    margin-left: 50px;
+  }
+
+  .nav-links:hover {
+    background-color: #FFF;
+    color: #AF473C;
+    transition: all 0.4s ease-out;
+  }
+
+  .navbar {
+    width: 100%;
+  }
 }/*# sourceMappingURL=styles.css.map */

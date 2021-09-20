@@ -156,5 +156,50 @@
     }
 }
 
-//menu bar greater than 768px
-@media screen and
+//menu bar at 992px
+@media screen and(min-width: 992px) {
+    .nav-container {
+        position: relative;
+        float: right;
+    }
+
+    .nav-menu {
+        display: flex;
+        grid-template-columns: auto;
+        background-color: $red;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        opacity: 0;
+        transition: all 0.5s ease;
+    }
+
+    .nav-menu.active {
+        background: $grey;
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+    }
+
+    .nav-links {
+        text-align: center;
+        line-height: 60px;
+        width: 100%;
+        display: flex;
+        float: right;
+        margin-left: 50px;
+    }
+
+    .nav-links:hover {
+        background-color: $whitebackground;
+        color: $red;
+        transition: all 0.4s ease-out;
+
+    }
+
+    .navbar {
+        width: 100%;
+    }
+}
