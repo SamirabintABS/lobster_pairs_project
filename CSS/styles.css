@@ -10,14 +10,28 @@
 }
 
 /* Background color and styling to the top navigation */
-.menu-container {
+.nav-container {
+  width: 100%;
   background-color: #AF473C;
-  overflow: hidden;
-  padding-right: 25px;
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: 0.2fr auto 1fr;
+  align-items: center;
+  height: 90%;
+  max-width: 1720px;
+  margin: 0 auto;
+}
+
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  list-style: none;
 }
 
 /* Styled the links inside the navigation bar */
-.topnav-right a {
+.navbar a {
   float: right;
   color: whitesmoke;
   text-align: center;
@@ -28,13 +42,13 @@
 }
 
 /* Changed the color of links on hover */
-.topnav-right a:hover {
+.navbar a:hover {
   background-color: #FFF;
   color: #3B3B3B;
 }
 
 /* Added a color to the active/current link */
-.topnav-right a.active {
+.navbar a.active {
   background-color: #FFF;
   color: #3B3B3B;
 }/*# sourceMappingURL=styles.css.map */
