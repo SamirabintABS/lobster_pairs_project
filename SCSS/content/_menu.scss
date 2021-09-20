@@ -16,10 +16,12 @@
 }
 
 .navbar{
+    padding: 0;
+    margin: 0;
     display: grid;
     grid-template-columns: 0.2fr auto 1fr;
     align-items: center;
-    height: 70px;
+    height: 60px;
     width: 90%;
     max-width: 1720px;
     margin: 0 auto;
@@ -43,7 +45,14 @@
     list-style: none;
     text-align: center;
     width: 80%;
-    justify-self: end;
+    float: right;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 200px;
+    margin-left: 170px;
+
 }
 
 /* Styled the links inside the navigation bar */
@@ -58,21 +67,16 @@
     background-color: $whitebackground;
     transition: all 0.2s ease-out;
     color: $text-grey;
+    width: 100%;
 }
 
 /* Added a color to the active/current link */
 .navbar a.active {
     background-color: $whitebackground;
     color: $text-grey;
+    width: 100%;
 }
 
-.menu-toggle .bar{
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    transition: all 0.3s ease-in-out;
-    background: $whitebackground;
-}
 
 // mobile menu 
 @media screen and(max-width: 768px){
@@ -81,8 +85,8 @@
     }
 
     .nav-menu{
-       display: grid;
-       grid-template-columns: auto; 
+        display: grid;
+        grid-template-columns: auto;
        background-color: $grey;
        margin: 0;
        width: 100%;
@@ -107,6 +111,7 @@
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
+        width: 100%;
     }
 
     .nav-links{
@@ -117,6 +122,7 @@
     }
 
     .nav-links:hover{
+        width: 100%;
         background-color: $whitebackground;
         color: $red;
         transition: all 0.4s ease-out;
@@ -137,6 +143,11 @@
     .menu-toggle .bar{
         display: block;
         cursor: pointer;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: $whitebackground;
     }
 
     .menu-toggle:hover{
@@ -160,36 +171,75 @@
 @media screen and(min-width: 992px) {
     .nav-container {
         position: relative;
-        float: right;
+        background-color: $red;
+
     }
 
     .nav-menu {
-        display: flex;
-        grid-template-columns: auto;
         background-color: $red;
         margin: 0;
         width: 100%;
         position: absolute;
-        top: 80px;
-        left: -100%;
-        opacity: 0;
-        transition: all 0.5s ease;
-    }
-
-    .nav-menu.active {
-        background: $grey;
-        left: 0;
-        opacity: 1;
-        transition: all 0.5s ease;
+        float: right;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding-left: 90px;
+       
     }
 
     .nav-links {
         text-align: center;
         line-height: 60px;
         width: 100%;
-        display: flex;
+    }
+
+    .nav-links:hover {
+        background-color: $whitebackground;
+        color: $red;
+        transition: all 0.4s ease-out;
+
+    }
+
+    .navbar {
+        width: 100%;
+    }
+}
+
+
+// menu at 1260px (lg screen)
+@media screen and(min-width: 1260px) {
+    .nav-container {
+        position: relative;
+        background-color: $red;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .nav-menu {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        background-color: $red;
+        width: 100%;
+        position: absolute;
+        color: #fff;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-left: 400px;
+        padding-right: 420px;
+
+        padding-top: 5px;
+    }
+
+    .nav-links {
         float: right;
-        margin-left: 50px;
+        text-align: center;
+        line-height: 50px;
+        width: 100%;
     }
 
     .nav-links:hover {
