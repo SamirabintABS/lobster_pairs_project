@@ -1,14 +1,20 @@
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+
   text-decoration: none;
+
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+
 }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%;
-  margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 .section_title {
@@ -138,6 +144,131 @@ html, body {
   text-align: center;
 }
 
+.testimonials {
+  margin: 50px 0;
+}
+
+.testimonials .testimonials_slick {
+  padding: 0 10px;
+  overflow: initial;
+}
+
+.testimonials .testimonials_slick div {
+  display: inline-block;
+  width: 100%;
+}
+
+.testimonials .testimonials_slick div .quote_container {
+  display: flex;
+  color: white;
+  width: 100%;
+  padding: 25px 25px 0;
+}
+
+.testimonials .testimonials_slick div .quote_container i {
+  display: inline-block;
+  font-size: 20px;
+  width: auto;
+  margin: 0;
+}
+
+.testimonials .testimonials_slick div .quote_container .quote_left {
+  padding-top: 40px;
+}
+
+.testimonials .testimonials_slick div .quote_container .quote_right {
+  padding-top: 125px;
+}
+
+.testimonials .testimonials_slick div .quote_container .quote_content {
+  text-align: center;
+}
+
+.testimonials .testimonials_slick div .quote_container .quote_content .quote {
+  display: inline-block;
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 30px 25px 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.testimonials .testimonials_slick div .quote_container .quote_content .quote_underline {
+  content: "";
+  display: inline-block;
+  height: 1px;
+  width: 33%;
+  margin-top: 30px;
+  background-color: white;
+}
+
+.testimonials .testimonials_slick div .quote_container .quote_content .quote_author {
+  margin-top: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.background_image2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.7)), url(../IMG/Homepage_images/quotebackground2.jpg);
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.background_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.7)), url(../IMG/Homepage_images/quotebackground.jpg);
+  width: 100%;
+  height: 450px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bookbox {
+  display: block;
+  width: auto;
+  height: auto;
+  padding: 0 25px;
+  background-color: #3c3c3c;
+}
+
+.bookbox .book_now {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+}
+
+.bookbox .book_now .book_text {
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.bookbox .book_now .book_button {
+  display: block;
+  width: 40%;
+  padding: 20px;
+  margin: 0 auto 20px;
+  font-size: 20px;
+  color: #AF473C;
+  background-color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: .2s ease all;
+}
+
+.bookbox .book_now .book_button:hover {
+  background-color: #AF473C;
+  color: white;
+  text-decoration: none;
+}
+
 @media screen and (min-width: 750px) {
   .section_title {
     font-size: 36px;
@@ -183,6 +314,36 @@ html, body {
   .services .services_width .service_card_container .card:last-of-type {
     margin-top: 25px;
   }
+  .testimonials .testimonials_slick {
+    width: 725px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .testimonials .testimonials_slick div .quote_container .quote_content .quote {
+    font-size: 18px;
+    padding: 30px 50px 0;
+  }
+  .testimonials .testimonials_slick div .quote_container .quote_content .quote_author {
+    font-size: 16px;
+  }
+  .bookbox {
+    width: 725px;
+    margin: 0 auto;
+  }
+  .bookbox .book_now {
+    align-self: center;
+    flex-direction: row;
+    padding: 20px 0;
+  }
+  .bookbox .book_now .book_text {
+    text-align: left;
+    padding-right: 25px;
+  }
+  .bookbox .book_now .book_button {
+    width: 30%;
+    padding: 10px 10px;
+    margin: auto 0;
+  }
 }
 
 @media screen and (min-width: 975px) {
@@ -205,6 +366,26 @@ html, body {
   .services .services_width .service_card_container .card:last-of-type {
     margin-top: 0px;
   }
+  .testimonials .testimonials_slick {
+    width: 950px;
+  }
+  .testimonials .testimonials_slick div .quote_container .quote_content .quote {
+    font-size: 20px;
+  }
+  .testimonials .testimonials_slick div .quote_container .quote_content .quote_author {
+    font-size: 18px;
+  }
+  .bookbox {
+    width: 950px;
+  }
+  .bookbox .book_now .book_text {
+    width: 680px;
+    padding-right: 50px;
+    font-size: 20px;
+  }
+  .bookbox .book_now .book_button {
+    width: 275px;
+  }
 }
 
 @media screen and (min-width: 1260px) {
@@ -221,11 +402,27 @@ html, body {
     height: 225px;
     width: 390px;
   }
+  .testimonials .testimonials_slick {
+    width: 1235px;
+  }
+  .testimonials .testimonials_slick div .quote_container .quote_content .quote {
+    font-size: 22px;
+  }
+  .bookbox {
+    width: 1235px;
+  }
+  .bookbox .book_now .book_text {
+    width: auto;
+    font-size: 25px;
+  }
+  .bookbox .book_now .book_button {
+    width: 250px;
+  }
 }
 
 #mapid {
   height: 170px;
-  width: 80%;
+  width: 90%;
   margin: 0px auto;
 }
 
@@ -338,7 +535,7 @@ html, body {
   flex-basis: 100%;
 }
 
-.contact-section .flex-contact .flex-outer > li:not(:nth-child(6)) {
+.contact-section .flex-contact .flex-outer > li:not(:last-child) {
   margin-bottom: 20px;
 }
 
@@ -383,6 +580,10 @@ html, body {
 }
 
 @media screen and (min-width: 750px) {
+  .contact-section {
+    width: 725px;
+    margin: 0 auto;
+  }
   .contact-section .flex-contact .split1 span {
     width: 230px;
   }
@@ -406,7 +607,16 @@ html, body {
   }
 }
 
+@media screen and (min-width: 975px) {
+  .contact-section {
+    width: 950px;
+  }
+}
+
 @media screen and (min-width: 1260px) {
+  .contact-section {
+    width: 1235px;
+  }
   .contact-section .flex-contact {
     flex-direction: row;
     justify-content: center;
@@ -426,6 +636,7 @@ html, body {
     flex-basis: 50%;
   }
 }
+
 
 p {
   margin: 0px;
@@ -480,6 +691,11 @@ p {
   }
   .services .description-section .birthday_parties {
     align-self: flex-end;
+
+@media screen and (min-width: 1400px) {
+  .contact-section {
+    width: 1375px;
+
   }
 }
 /*# sourceMappingURL=styles.css.map */

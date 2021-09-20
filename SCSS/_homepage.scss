@@ -1,19 +1,26 @@
 // Global styling for all pages
 
-*{
+* {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-    text-decoration: none;
+
+    //Removes margins added from browsers
+    margin: 0;
+    // Fix for fonts appearing at the wrong weight in Chrome.
+    -webkit-font-smoothing: antialiased;
+
 }
 
-html,body {
+html,
+body {
     width: 100%;
     height: 100%;
-    margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
+
 //homepage general styles
-.section_title{
+.section_title {
     display: block;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -22,20 +29,20 @@ html,body {
     font-size: 18px;
     color: $red;
 
-    a{
+    a {
         color: $red;
         text-decoration: none;
 
-        &:hover{
+        &:hover {
             color: $red_darken;
             text-decoration: none;
         }
     }
 
-   
+
 }
 
-.header_underline{
+.header_underline {
     content: "";
     display: block;
     height: 1px;
@@ -60,19 +67,20 @@ html,body {
 
 //About us
 
-.aboutus{
+.aboutus {
     margin-top: 75px;
 
-    .aboutus_width{
-        width:auto;
+    .aboutus_width {
+        width: auto;
         height: auto;
         padding: 0 15px;
 
-        .aboutus_text{
+        .aboutus_text {
             margin: 25px 0;
             font-size: 16px;
         }
-        .aboutus_text:last-of-type{
+
+        .aboutus_text:last-of-type {
             display: none;
             margin-bottom: 0;
         }
@@ -82,48 +90,54 @@ html,body {
 //Services section
 
 
-.services{
+.services {
     margin-top: 50px;
-    
-    
-    .services_width{
+
+
+    .services_width {
         width: 100%;
         padding: 0 15px;
 
-        .service_card_container{
+        .service_card_container {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 25px;
 
-            .card{
+            .card {
                 display: block;
                 width: auto;
                 margin-top: 25px;
-                .card_image{
+
+                .card_image {
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
                     height: 250px;
-                    width: auto;    
+                    width: auto;
                 }
-                .card_corporate{
+
+                .card_corporate {
                     background-image: url(../IMG/Homepage_images/corporate.jpg);
                 }
-                .card_weddings{
+
+                .card_weddings {
                     background-image: url(../IMG/Homepage_images/Wedding.jpg);
                 }
-                .card_events{
+
+                .card_events {
                     background-image: url(../IMG/Homepage_images/events.jpg);
                 }
-                .card_title{
+
+                .card_title {
                     text-align: center;
                     text-transform: uppercase;
                     color: $red;
                     font-size: 24px;
                 }
-                .card_title_underline{
+
+                .card_title_underline {
                     content: "";
                     display: block;
                     height: 1px;
@@ -132,7 +146,8 @@ html,body {
                     background-color: black;
                     margin: 0 auto 10px;
                 }
-                .card_text{
+
+                .card_text {
                     text-align: center;
                 }
             }
@@ -140,115 +155,362 @@ html,body {
     }
 }
 
+//testimonials
+.testimonials {
+    margin: 50px 0;
+
+    .testimonials_slick {
+        padding: 0 10px;
+        overflow: initial;
+
+        div {
+            display: inline-block;
+            width: 100%;
+
+            .quote_container {
+                display: flex;
+                color: white;
+                width: 100%;
+                padding: 25px 25px 0;
+
+                i {
+                    display: inline-block;
+                    font-size: 20px;
+                    width: auto;
+                    margin: 0;
+                }
+
+                .quote_left {
+                    padding-top: 40px;
+                }
+
+                .quote_right {
+                    padding-top: 125px;
+                }
+
+                .quote_content {
+                    text-align: center;
+
+                    .quote {
+                        display: inline-block;
+                        text-align: center;
+                        width: auto;
+                        height: auto;
+                        padding: 30px 25px 0;
+                        margin: 0;
+                        font-size: 16px;
+                    }
+
+                    .quote_underline {
+                        content: "";
+                        display: inline-block;
+                        height: 1px;
+                        width: 33%;
+                        margin-top: 30px;
+                        background-color: white;
+                    }
+
+                    .quote_author {
+                        margin-top: 20px;
+                        font-size: 14px;
+                        text-transform: uppercase;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//carousel images
+
+.background_image2 {
+    background: linear-gradient(rgba(0, 0, 0, .07), rgba(0, 0, 0, .7)), url(../IMG/Homepage_images/quotebackground2.jpg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.background_image {
+    background: linear-gradient(rgba(0, 0, 0, .07), rgba(0, 0, 0, .7)), url(../IMG/Homepage_images/quotebackground.jpg);
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+//Book now section
+
+.bookbox {
+    display: block;
+    width: auto;
+    height: auto;
+    padding: 0 25px;
+    background-color: #3c3c3c;
+
+    .book_now {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        text-align: center;
+
+        .book_text {
+            display: block;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .book_button {
+            display: block;
+            width: 40%;
+            padding: 20px;
+            margin: 0 auto 20px;
+            font-size: 20px;
+            color: $red;
+            background-color: white;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: .2s ease all;
+
+            &:hover {
+                background-color: $red;
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+}
 
 
 // Media queries for homepage
 
-@include mq('sm'){
+@include mq('sm') {
 
-    .section_title{
+    .section_title {
         font-size: 36px;
     }
 
-    .header_underline{
+    .header_underline {
         width: 185px;
     }
-    
-    .aboutus{
+
+    .aboutus {
         margin-top: 50px;
 
-        .aboutus_width{
+        .aboutus_width {
             width: 725px;
             padding: 0 10px;
             margin-left: auto;
             margin-right: auto;
 
-            .aboutus_text:last-of-type{
+            .aboutus_text:last-of-type {
                 display: block;
             }
         }
     }
 
-    .services{
-    .services_width{
-        width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 0 10px;
-        .service_card_container{
-            justify-content: space-evenly;
-            padding: 0;
-            
-            .card{
-                display: block;
-                width: 360px;
-                padding: 0 0;
-                margin-top: 0px;
+    .services {
+        .services_width {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 0 10px;
 
-                .card_image{
-                    height: 202px;
+            .service_card_container {
+                justify-content: space-evenly;
+                padding: 0;
+
+                .card {
+                    display: block;
                     width: 360px;
+                    padding: 0 0;
+                    margin-top: 0px;
+
+                    .card_image {
+                        height: 202px;
+                        width: 360px;
+                    }
+
+                    .card_title {
+                        font-size: 24px;
+                    }
                 }
-                .card_title{
-                    font-size: 24px;
+
+                .card:last-of-type {
+                    margin-top: 25px;
                 }
-            }
-            .card:last-of-type{
-                margin-top: 25px;
             }
         }
     }
-}
+
+    .testimonials {
+        .testimonials_slick {
+            width: 725px;
+            margin-left: auto;
+            margin-right: auto;
+
+            div .quote_container .quote_content {
+                .quote {
+                    font-size: 18px;
+                    padding: 30px 50px 0;
+                }
+
+                .quote_author {
+                    font-size: 16px;
+                }
+
+            }
+        }
+    }
+
+    .bookbox {
+        width: 725px;
+        margin: 0 auto;
+
+        .book_now {
+            align-self: center;
+            flex-direction: row;
+            padding: 20px 0;
+
+            .book_text {
+                text-align: left;
+                padding-right: 25px;
+            }
+
+            .book_button {
+                width: 30%;
+                padding: 10px 10px;
+                margin: auto 0;
+            }
+        }
+    }
+
 }
 
-@include mq('md'){
+@include mq('md') {
 
-    .aboutus{   
-        .aboutus_width{
+    .aboutus {
+        .aboutus_width {
             width: 950px;
         }
     }
 
-   .services{
-    .services_width {
-        width: 950px;
-        .service_card_container {
-            justify-content: space-between;
-            .card {
-                width: 310px;
-                .card_image {
-                    height: 174px;
+    .services {
+        .services_width {
+            width: 950px;
+
+            .service_card_container {
+                justify-content: space-between;
+
+                .card {
                     width: 310px;
+
+                    .card_image {
+                        height: 174px;
+                        width: 310px;
+                    }
                 }
-            }
-            .card:last-of-type {
-                margin-top: 0px;
+
+                .card:last-of-type {
+                    margin-top: 0px;
+                }
             }
         }
     }
-}
+
+    .testimonials {
+        .testimonials_slick {
+            width: 950px;
+
+            div .quote_container .quote_content {
+                .quote {
+                    font-size: 20px;
+                }
+
+                .quote_author {
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .bookbox {
+        width: 950px;
+
+        .book_now {
+
+            .book_text {
+                width: 680px;
+                padding-right: 50px;
+                font-size: 20px;
+            }
+
+            .book_button {
+                width: 275px;
+            }
+        }
+    }
+
 }
 
-@include mq('lg'){
+@include mq('lg') {
 
-    .aboutus{   
-        .aboutus_width{
+    .aboutus {
+        .aboutus_width {
             width: 1235px;
         }
     }
 
-    .services{
-    .services_width {
-        width: 1235px;
-        .service_card_container {
-            .card {
-                width: 390px;
-                .card_image {
-                    height: 225px;
+    .services {
+        .services_width {
+            width: 1235px;
+
+            .service_card_container {
+                .card {
                     width: 390px;
+
+                    .card_image {
+                        height: 225px;
+                        width: 390px;
+                    }
                 }
             }
         }
     }
-}
+
+    .testimonials {
+        .testimonials_slick {
+            width: 1235px;
+
+            div .quote_container .quote_content {
+                .quote {
+                    font-size: 22px;
+                }
+            }
+        }
+    }
+
+    .bookbox {
+        width: 1235px;
+
+        .book_now {
+
+            .book_text {
+                width: auto;
+                font-size: 25px;
+            }
+
+            .book_button {
+                width: 250px;
+            }
+        }
+    }
+
 }
