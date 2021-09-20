@@ -3,10 +3,12 @@
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+
     //Removes margins added from browsers
     margin: 0;
     // Fix for fonts appearing at the wrong weight in Chrome.
     -webkit-font-smoothing: antialiased;
+
 }
 
 html,
@@ -49,6 +51,20 @@ body {
     background-color: black;
 }
 
+.wrap{
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 15px;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+    flex-direction: column;
+}
+
 //About us
 
 .aboutus {
@@ -57,7 +73,7 @@ body {
     .aboutus_width {
         width: auto;
         height: auto;
-        padding: 0 10px;
+        padding: 0 15px;
 
         .aboutus_text {
             margin: 25px 0;
@@ -80,7 +96,7 @@ body {
 
     .services_width {
         width: 100%;
-        padding: 0 25px;
+        padding: 0 15px;
 
         .service_card_container {
             width: 100%;
