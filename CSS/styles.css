@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+  text-decoration: none;
 }
 
 html, body {
@@ -39,6 +40,20 @@ html, body {
   background-color: black;
 }
 
+.wrap {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 15px 0;
+  flex-direction: column;
+}
+
 .aboutus {
   margin-top: 75px;
 }
@@ -46,7 +61,7 @@ html, body {
 .aboutus .aboutus_width {
   width: auto;
   height: auto;
-  padding: 0 10px;
+  padding: 0 15px;
 }
 
 .aboutus .aboutus_width .aboutus_text {
@@ -65,7 +80,7 @@ html, body {
 
 .services .services_width {
   width: 100%;
-  padding: 0 25px;
+  padding: 0 15px;
 }
 
 .services .services_width .service_card_container {
@@ -409,6 +424,62 @@ html, body {
   }
   .contact-section .flex-contact .split1, .contact-section .flex-contact .split2 {
     flex-basis: 50%;
+  }
+}
+
+p {
+  margin: 0px;
+  line-height: 19px;
+  margin-bottom: 15px;
+}
+
+.description-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.description {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.extra-text {
+  display: none;
+}
+
+.btn-book {
+  background-color: #AF473C;
+  color: white;
+  width: 100%;
+  padding: 16px 0px;
+  text-align: center;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.btn-book:hover {
+  transform: scale(0.95);
+  box-shadow: 0 0 3px grey;
+  background-color: #a04137;
+}
+
+@media screen and (min-width: 750px) {
+  .services {
+    width: 700px;
+  }
+  .services .description-section {
+    align-items: flex-start;
+  }
+  .services .description-section .container {
+    width: 40%;
+  }
+  .services .description-section .birthday_parties {
+    align-self: flex-end;
   }
 }
 /*# sourceMappingURL=styles.css.map */
