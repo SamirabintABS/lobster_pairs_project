@@ -3,7 +3,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif, "La Belle Aurore", cursive;
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -19,31 +19,44 @@
   display: grid;
   grid-template-columns: 0.2fr auto 1fr;
   align-items: center;
-  height: 90%;
+  height: 70px;
+  width: 90%;
   max-width: 1720px;
   margin: 0 auto;
+}
+
+#navbar-logo {
+  display: none;
+  color: whitesmoke;
+  justify-self: start;
+  margin-left: 20px;
+  font-family: "La Belle Aurore", cursive;
+}
+
+#navbar-logo {
+  cursor: pointer;
 }
 
 .nav-menu {
   display: grid;
   grid-template-columns: repeat(4, auto);
   list-style: none;
+  text-align: center;
+  width: 80%;
+  justify-self: end;
 }
 
 /* Styled the links inside the navigation bar */
-.navbar a {
-  float: right;
+.nav-links {
   color: whitesmoke;
-  text-align: center;
-  padding: 16px 18px;
   text-decoration: none;
-  font-size: 12px;
   text-transform: uppercase;
 }
 
 /* Changed the color of links on hover */
-.navbar a:hover {
+.nav-links a:hover {
   background-color: #FFF;
+  transition: all 0.2s ease-out;
   color: #3B3B3B;
 }
 
@@ -51,4 +64,92 @@
 .navbar a.active {
   background-color: #FFF;
   color: #3B3B3B;
+}
+
+.menu-toggle .bar {
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background: #FFF;
+}
+
+@media screen and (max-width: 768px) {
+  .nav-container {
+    position: relative;
+  }
+
+  .nav-menu {
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #3C3C3C;
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: -100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+  }
+
+  #navbar-logo {
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  #navbar-logo:hover {
+    color: #3C3C3C;
+  }
+
+  .nav-menu.active {
+    background: #3C3C3C;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-links {
+    text-align: center;
+    line-height: 60px;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-links:hover {
+    background-color: #FFF;
+    color: #AF473C;
+    transition: all 0.4s ease-out;
+  }
+
+  .navbar {
+    width: 100%;
+  }
+
+  #mobile-menu {
+    position: absolute;
+    top: 20%;
+    right: 5%;
+    transform: translate(5%, 20%);
+  }
+
+  .menu-toggle .bar {
+    display: block;
+    cursor: pointer;
+  }
+
+  .menu-toggle:hover {
+    cursor: pointer;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 }/*# sourceMappingURL=styles.css.map */
