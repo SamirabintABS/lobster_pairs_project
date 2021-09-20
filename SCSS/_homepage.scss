@@ -3,7 +3,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
-
+    text-decoration: none;
     //Removes margins added from browsers
     margin: 0;
     // Fix for fonts appearing at the wrong weight in Chrome.
@@ -52,7 +52,7 @@ body {
 }
 
 .wrap{
-    max-width: 1280px;
+    
     margin-right: auto;
     margin-left: auto;
     padding: 0 15px;
@@ -90,7 +90,7 @@ body {
 //Services section
 
 
-.services {
+.services-section {
     margin-top: 50px;
 
 
@@ -316,7 +316,7 @@ body {
         }
     }
 
-    .services {
+    .services-section {
         .services_width {
             width: 800px;
             margin-left: auto;
@@ -468,7 +468,7 @@ body {
         }
     }
 
-    .services {
+    .services-section {
         .services_width {
             width: 1235px;
 

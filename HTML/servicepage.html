@@ -10,11 +10,11 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Montserrat:wght@300&display=swap"
-        rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Montserrat:wght@300&display=swap" rel="stylesheet">
     <!-- Slick CSS -->
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="../JS/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../CSS/slick-theme.css">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="/CSS/styles.css" <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/8e1f5cb673.js" crossorigin="anonymous"></script>
@@ -24,15 +24,15 @@
 
 <body>
     <div class="services wrap">
-        <h2 class="section_title">Services we provide</h2>
-        <span class="header_underline"></span>
+        <h2 class="section_title main-service-title">Services we provide</h2>
+        <span class="header_underline main_service_underline"></span>
         <div class="service-slides">
             <div> <!-- Slide 1-->
-                <div class="quote_container service_image1">
+                <div class="quote_container service_image">
                     
                     <div class="quote_content">
-                        <h3>Weddings</h3>
-                        <p class="quote">Aliquam erat volutpat. Pellentesque aliquet iaculis erat, vitae dignissim leo lacinia ut. 
+                        <h3 class="service_title">Weddings</h3>
+                        <p class="service_text">Aliquam erat volutpat. Pellentesque aliquet iaculis erat, vitae dignissim leo lacinia ut. 
                             Donec in tellus consequat, vehicula mi ac, vestibulum arcu.
                             
                         </p>
@@ -46,9 +46,11 @@
                 <div class="quote_container service_image2">
                     
                     <div class="quote_content">
-                        <h3>Birthday Parties</h3>
-                        <p class="quote">Aliquam erat volutpat. Pellentesque aliquet iaculis erat, vitae dignissim leo lacinia ut. 
+                        <h3 class="service_title">Events</h3>
+                        <p class="service_text">Aliquam erat volutpat. Pellentesque aliquet iaculis erat, vitae dignissim leo lacinia ut. 
                             Donec in tellus consequat, vehicula mi ac, vestibulum arcu.
+                            
+                        </p>
                         <span class="quote_underline"></span>
                         <a href="contactform.html" class="btn-book">Book now</a>
                     </div>
@@ -59,9 +61,10 @@
                 <div class="quote_container service_image3">
                     
                     <div class="quote_content">
-                        <h3>Corporate</h3>
-                        <p class="quote">Aliquam erat volutpat. Pellentesque aliquet iaculis erat, vitae dignissim leo lacinia ut. 
+                        <h3 class="service_title">Coporate</h3>
+                        <p class="service_text">Aliquam erat volutpat. Pellentesque aliquet iaculis erat, vitae dignissim leo lacinia ut. 
                             Donec in tellus consequat, vehicula mi ac, vestibulum arcu.
+                            
                         </p>
                         <span class="quote_underline"></span>
                         <a href="contactform.html" class="btn-book">Book now</a>
@@ -76,6 +79,8 @@
                     weddings
                 </h2>
                 <span class="header_underline"></span>
+                <div class="service-content">
+                    <img src="../IMG/Services_Images/servicewedding.jpg" alt="wedding table set">
                 <div class="description">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis lacus, bibendum commodo varius
                         fringilla,
@@ -89,17 +94,21 @@
                         placerat et erat. Maecenas faucibus pretium urna ac laoreet. Suspendisse aliquam volutpat tempus.
                         Vivamus scelerisque orci sit amet leo elementum venenatis.
                     </p>
-    
-                    
+                    <a href="contactform.html" class="btn-book">Book now</a>                   
                 </div>
-                <a href="contactform.html" class="btn-book">Book now</a>
+               
+                </div>
+                
             </div>
-            <div class="container birthday_parties">
+            <div class="container events">
                 <h2 class="section_title">
-                    Birthday parties
+                    Events
                 </h2>
                 <span class="header_underline"></span>
-                <div class="description">
+                <div class="service-content alt-row">
+                    
+                    <img src="../IMG/Services_Images/serviceevents.jpg" alt="party event">
+                <div class="description ">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis lacus, bibendum commodo varius
                         fringilla,
                         pulvinar eget ipsum. Maecenas laoreet ligula nec augue posuere varius. Etiam malesuada,
@@ -112,16 +121,19 @@
                         placerat et erat. Maecenas faucibus pretium urna ac laoreet. Suspendisse aliquam volutpat tempus.
                         Vivamus scelerisque orci sit amet leo elementum venenatis.
                     </p>
-    
+                    <a href="contactform.html" class="btn-book alt-row">Book now</a>
+                    </div>
                     
                 </div>
-                <a href="contactform.html" class="btn-book">Book now</a>
+                
             </div>
             <div class="container corporate">
                 <h2 class="section_title">
                     corporate
                 </h2>
                 <span class="header_underline"></span>
+                <div class="service-content">
+                    <img src="../IMG/Services_Images/servicecorporate.jpg" alt="coporate event">
                 <div class="description">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis lacus, bibendum commodo varius
                         fringilla,
@@ -135,9 +147,11 @@
                         placerat et erat. Maecenas faucibus pretium urna ac laoreet. Suspendisse aliquam volutpat tempus.
                         Vivamus scelerisque orci sit amet leo elementum venenatis.
                     </p>
+                    <a href="contactform.html" class="btn-book">Book now</a>
+                    </div>
                     
                 </div>
-                <a href="contactform.html" class="btn-book">Book now</a>
+                
             </div>
         </div>
         

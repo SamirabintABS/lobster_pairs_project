@@ -1,12 +1,9 @@
 * {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-
   text-decoration: none;
-
   margin: 0;
   -webkit-font-smoothing: antialiased;
-
 }
 
 html,
@@ -47,7 +44,6 @@ body {
 }
 
 .wrap {
-  max-width: 1280px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 15px;
@@ -80,16 +76,16 @@ body {
   margin-bottom: 0;
 }
 
-.services {
+.services-section {
   margin-top: 50px;
 }
 
-.services .services_width {
+.services-section .services_width {
   width: 100%;
   padding: 0 15px;
 }
 
-.services .services_width .service_card_container {
+.services-section .services_width .service_card_container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -97,13 +93,13 @@ body {
   margin-top: 25px;
 }
 
-.services .services_width .service_card_container .card {
+.services-section .services_width .service_card_container .card {
   display: block;
   width: auto;
   margin-top: 25px;
 }
 
-.services .services_width .service_card_container .card .card_image {
+.services-section .services_width .service_card_container .card .card_image {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -111,26 +107,26 @@ body {
   width: auto;
 }
 
-.services .services_width .service_card_container .card .card_corporate {
+.services-section .services_width .service_card_container .card .card_corporate {
   background-image: url(../IMG/Homepage_images/corporate.jpg);
 }
 
-.services .services_width .service_card_container .card .card_weddings {
+.services-section .services_width .service_card_container .card .card_weddings {
   background-image: url(../IMG/Homepage_images/Wedding.jpg);
 }
 
-.services .services_width .service_card_container .card .card_events {
+.services-section .services_width .service_card_container .card .card_events {
   background-image: url(../IMG/Homepage_images/events.jpg);
 }
 
-.services .services_width .service_card_container .card .card_title {
+.services-section .services_width .service_card_container .card .card_title {
   text-align: center;
   text-transform: uppercase;
   color: #AF473C;
   font-size: 24px;
 }
 
-.services .services_width .service_card_container .card .card_title_underline {
+.services-section .services_width .service_card_container .card .card_title_underline {
   content: "";
   display: block;
   height: 1px;
@@ -140,7 +136,7 @@ body {
   margin: 0 auto 10px;
 }
 
-.services .services_width .service_card_container .card .card_text {
+.services-section .services_width .service_card_container .card .card_text {
   text-align: center;
 }
 
@@ -288,30 +284,30 @@ body {
   .aboutus .aboutus_width .aboutus_text:last-of-type {
     display: block;
   }
-  .services .services_width {
+  .services-section .services_width {
     width: 800px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 10px;
   }
-  .services .services_width .service_card_container {
+  .services-section .services_width .service_card_container {
     justify-content: space-evenly;
     padding: 0;
   }
-  .services .services_width .service_card_container .card {
+  .services-section .services_width .service_card_container .card {
     display: block;
     width: 360px;
     padding: 0 0;
     margin-top: 0px;
   }
-  .services .services_width .service_card_container .card .card_image {
+  .services-section .services_width .service_card_container .card .card_image {
     height: 202px;
     width: 360px;
   }
-  .services .services_width .service_card_container .card .card_title {
+  .services-section .services_width .service_card_container .card .card_title {
     font-size: 24px;
   }
-  .services .services_width .service_card_container .card:last-of-type {
+  .services-section .services_width .service_card_container .card:last-of-type {
     margin-top: 25px;
   }
   .testimonials .testimonials_slick {
@@ -392,13 +388,13 @@ body {
   .aboutus .aboutus_width {
     width: 1235px;
   }
-  .services .services_width {
+  .services-section .services_width {
     width: 1235px;
   }
-  .services .services_width .service_card_container .card {
+  .services-section .services_width .service_card_container .card {
     width: 390px;
   }
-  .services .services_width .service_card_container .card .card_image {
+  .services-section .services_width .service_card_container .card .card_image {
     height: 225px;
     width: 390px;
   }
@@ -637,6 +633,11 @@ body {
   }
 }
 
+@media screen and (min-width: 1400px) {
+  .contact-section {
+    width: 1375px;
+  }
+}
 
 p {
   margin: 0px;
@@ -644,10 +645,33 @@ p {
   margin-bottom: 15px;
 }
 
+.services .main-service-title, .services .main_service_underline {
+  display: none;
+}
+
+.services .header_underline {
+  margin-bottom: 10px;
+}
+
 .description-section {
   position: relative;
   display: flex;
   flex-direction: column;
+}
+
+.description-section .section_title {
+  font-size: 24px;
+}
+
+.description-section .service-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-content img {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
 }
 
 .description {
@@ -679,23 +703,142 @@ p {
   background-color: #a04137;
 }
 
+.service-slides {
+  display: none;
+  padding: 0;
+  overflow: initial;
+}
+
+.service-slides div {
+  width: 100%;
+}
+
+.service-slides div .quote_container {
+  display: flex;
+  color: white;
+  width: 100%;
+  padding: 25px 25px 0;
+  justify-content: center;
+}
+
+.service-slides div .quote_container .quote_content {
+  text-align: center;
+  flex-direction: column;
+}
+
+.service-slides div .quote_container .quote_content .service_text {
+  text-align: center;
+  width: auto;
+  height: auto;
+  padding: 30px 25px;
+  margin: 0;
+  font-size: 16px;
+}
+
+.service-slides div .quote_container .quote_content .quote_underline {
+  content: "";
+  height: 1px;
+  width: 33%;
+  margin-top: 30px;
+  background-color: white;
+}
+
+.service-slides div .quote_container .quote_content .service_title {
+  margin-top: 20px;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.service_image {
+  background: linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.7)), url(../IMG/Homepage_images/Wedding.jpg);
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service_image2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.7)), url(../IMG/Homepage_images/events.jpg);
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.service_image3 {
+  background: linear-gradient(rgba(0, 0, 0, 0.07), rgba(0, 0, 0, 0.7)), url(../IMG/Homepage_images/corporate.jpg);
+  width: 100%;
+  height: 250px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media screen and (min-width: 750px) {
+  .service-slides {
+    display: block;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .service-slides div .quote_container .quote_content .service_text {
+    font-size: 18px;
+    padding: 30px 50px;
+  }
   .services {
     width: 700px;
+  }
+  .services .main-service-title, .services .main_service_underline {
+    display: block;
   }
   .services .description-section {
     align-items: flex-start;
   }
-  .services .description-section .container {
+  .services .description-section .description {
     width: 40%;
+    margin: 0 20px;
   }
-  .services .description-section .birthday_parties {
+  .services .description-section .service-content {
+    flex-direction: row;
+  }
+  .services .description-section img {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+  }
+  .services .description-section .alt-row {
+    flex-direction: row-reverse;
     align-self: flex-end;
+  }
+}
+
+@media screen and (min-width: 975px) {
+  .services, .service-slides {
+    width: 950px;
+  }
+  .description-section img {
+    width: 30%;
+  }
+  .extra-text {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .services, .service-slides {
+    width: 950px;
+  }
+  .description-section img {
+    width: 25%;
+  }
+}
 
 @media screen and (min-width: 1400px) {
-  .contact-section {
+  .services, .service-slides {
     width: 1375px;
-
   }
 }
 /*# sourceMappingURL=styles.css.map */
