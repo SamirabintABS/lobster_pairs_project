@@ -1,43 +1,93 @@
 * {
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
-.partners-title h2 {
-  font-family: "Montserrat", sans-serif;
+.section_title {
+  display: block;
   text-transform: uppercase;
+  letter-spacing: 2px;
+  width: 100%;
+  margin: 0;
+  font-size: 18px;
   color: #AF473C;
 }
+.section_title a {
+  color: #AF473C;
+  text-decoration: none;
+}
+.section_title a:hover {
+  color: #7c332d;
+  text-decoration: none;
+}
 
-.partners {
+.header_underline {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 150px;
+  margin-top: 10px;
+  background-color: black;
+}
+
+.services {
   margin-top: 50px;
 }
-.partners .partners-img-container {
+.services .services_width {
+  width: 100%;
+  padding: 0 25px;
+}
+.services .services_width .service_card_container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 25px;
 }
-.partners .partners-img-container .logos {
+.services .services_width .service_card_container .card {
   display: block;
   width: auto;
   margin-top: 25px;
 }
-.partners .partners-img-container .logos .logo-image {
+.services .services_width .service_card_container .card .card_image {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 250px;
   width: auto;
 }
-.partners .partners-img-container .logos .logo-quarr {
-  background-image: url(../IMG/Homepage_images/partner-quarr.png);
+.services .services_width .service_card_container .card .card_corporate {
+  background-image: url(../IMG/Homepage_images/corporate.jpg);
 }
-.partners .partners-img-container .logos .logo-pabulum {
-  background-image: url(../IMG/Homepage_images/partner-pabulum.jpeg);
+.services .services_width .service_card_container .card .card_weddings {
+  background-image: url(../IMG/Homepage_images/Wedding.jpg);
 }
-.partners .partners-img-container .logos .logo-mountjoy {
-  background-image: url(../IMG/Homepage_images/partner-mountjoy.jpeg);
+.services .services_width .service_card_container .card .card_events {
+  background-image: url(../IMG/Homepage_images/events.jpg);
+}
+.services .services_width .service_card_container .card .card_title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #AF473C;
+  font-size: 24px;
+}
+.services .services_width .service_card_container .card .card_title_underline {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100px;
+  margin-top: 0;
+  background-color: black;
+  margin: 0 auto 10px;
+}
+.services .services_width .service_card_container .card .card_text {
+  text-align: center;
 }/*# sourceMappingURL=partners.css.map */

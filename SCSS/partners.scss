@@ -1,33 +1,74 @@
+// Global styling for all pages
+
 * {
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
 }
 
-.partners-title h2{
-    font-family: 'Montserrat',sans-serif;
+//homepage general styles
+.section_title {
+    display: block;
     text-transform: uppercase;
+    letter-spacing: 2px;
+    width: 100%;
+    margin: 0;
+    font-size: 18px;
     color: #AF473C;
+
+    a {
+        color: #AF473C;
+        text-decoration: none;
+
+        &:hover {
+            color: #7c332d;
+            text-decoration: none;
+        }
+    }
+
+
 }
 
+.header_underline {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 150px;
+    margin-top: 10px;
+    background-color: black;
+}
+
+//Services section
 
 
-.partners {
+.services {
     margin-top: 50px;
 
-        .partners-img-container {
+
+    .services_width {
+        width: 100%;
+        padding: 0 25px;
+
+        .service_card_container {
             width: 100%;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             margin-top: 25px;
 
-            .logos {
+            .card {
                 display: block;
                 width: auto;
                 margin-top: 25px;
 
-                .logo-image{
+                .card_image {
                     background-size: cover;
                     background-repeat: no-repeat;
                     background-position: center;
@@ -35,20 +76,42 @@
                     width: auto;
                 }
 
-                .logo-quarr{
-                    background-image: url(../IMG/Homepage_images/partner-quarr.png);
+                .card_corporate {
+                    background-image: url(../IMG/Homepage_images/corporate.jpg);
                 }
 
-                .logo-pabulum {
-                    background-image: url(../IMG/Homepage_images/partner-pabulum.jpeg);
+                .card_weddings {
+                    background-image: url(../IMG/Homepage_images/Wedding.jpg);
                 }
 
-                .logo-mountjoy{
-                    background-image: url(../IMG/Homepage_images/partner-mountjoy.jpeg);
+                .card_events {
+                    background-image: url(../IMG/Homepage_images/events.jpg);
+                }
+
+                .card_title {
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: #AF473C;
+                    font-size: 24px;
+                }
+
+                .card_title_underline {
+                    content: "";
+                    display: block;
+                    height: 1px;
+                    width: 100px;
+                    margin-top: 0;
+                    background-color: black;
+                    margin: 0 auto 10px;
+                }
+
+                .card_text {
+                    text-align: center;
                 }
             }
+        }
     }
 }
 
-                          
+
 
