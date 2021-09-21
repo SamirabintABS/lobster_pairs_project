@@ -1,93 +1,40 @@
 * {
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-}
-
-html,
-body {
-  width: 100%;
-  height: 100%;
   margin: 0;
   padding: 0;
 }
 
-.section_title {
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  width: 100%;
-  margin: 0;
-  font-size: 18px;
-  color: #AF473C;
-}
-.section_title a {
-  color: #AF473C;
-  text-decoration: none;
-}
-.section_title a:hover {
-  color: #7c332d;
-  text-decoration: none;
-}
-
-.header_underline {
-  content: "";
-  display: block;
-  height: 1px;
-  width: 150px;
-  margin-top: 10px;
-  background-color: black;
-}
-
-.services {
-  margin-top: 50px;
-}
-.services .services_width {
-  width: 100%;
-  padding: 0 25px;
-}
-.services .services_width .service_card_container {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 25px;
-}
-.services .services_width .service_card_container .card {
-  display: block;
-  width: auto;
-  margin-top: 25px;
-}
-.services .services_width .service_card_container .card .card_image {
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 250px;
-  width: auto;
-}
-.services .services_width .service_card_container .card .card_corporate {
-  background-image: url(../IMG/Homepage_images/corporate.jpg);
-}
-.services .services_width .service_card_container .card .card_weddings {
-  background-image: url(../IMG/Homepage_images/Wedding.jpg);
-}
-.services .services_width .service_card_container .card .card_events {
-  background-image: url(../IMG/Homepage_images/events.jpg);
-}
-.services .services_width .service_card_container .card .card_title {
-  text-align: center;
+.partners-title h2 {
+  font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: #AF473C;
-  font-size: 24px;
 }
-.services .services_width .service_card_container .card .card_title_underline {
+
+.partners-images img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.partners-images img {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: filter 600ms ease;
+  -webkit-transition: -webkit-filter 600ms ease;
+}
+
+.partners-images img:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0);
+}
+
+.partners-column {
+  float: left;
+  padding: 5px;
+  width: 20%;
+}
+
+.partners-row::after {
   content: "";
-  display: block;
-  height: 1px;
-  width: 100px;
-  margin-top: 0;
-  background-color: black;
-  margin: 0 auto 10px;
-}
-.services .services_width .service_card_container .card .card_text {
-  text-align: center;
+  display: table;
+  clear: both;
 }/*# sourceMappingURL=partners.css.map */
