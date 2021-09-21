@@ -21,7 +21,7 @@
   display: grid;
   grid-template-columns: 0.2fr auto 1fr;
   align-items: center;
-  height: 60px;
+  height: 55px;
   width: 90%;
   max-width: 1720px;
   margin: 0 auto;
@@ -44,7 +44,7 @@
   grid-template-columns: repeat(4, auto);
   list-style: none;
   text-align: center;
-  width: 80%;
+  width: 70%;
   float: right;
   color: #fff;
   text-align: center;
@@ -52,6 +52,7 @@
   text-transform: uppercase;
   margin-right: 200px;
   margin-left: 170px;
+  font-size: 11px;
 }
 
 /* Styled the links inside the navigation bar */
@@ -92,6 +93,7 @@
     left: -100%;
     opacity: 0;
     transition: all 0.5s ease;
+    font-size: 10px;
   }
 
   #navbar-logo {
@@ -109,7 +111,7 @@
     opacity: 1;
     transition: all 0.5s ease;
     width: 100%;
-    margin-top: -20px;
+    margin-top: -25px;
   }
 
   .nav-links {
@@ -132,7 +134,7 @@
 
   #mobile-menu {
     position: absolute;
-    top: 20%;
+    top: 12%;
     right: 5%;
     transform: translate(5%, 20%);
   }
@@ -180,13 +182,15 @@
     text-decoration: none;
     font-size: 16px;
     text-transform: uppercase;
-    padding-left: 90px;
+    padding-left: 80px;
+    font-size: 14px;
   }
 
   .nav-links {
     text-align: center;
-    line-height: 60px;
+    line-height: 55px;
     width: 100%;
+    margin-right: -40px;
   }
 
   .nav-links:hover {
@@ -203,14 +207,12 @@
   .nav-container {
     position: relative;
     background-color: #AF473C;
-    padding: 0;
-    margin: 0;
     text-align: center;
   }
 
   .nav-menu {
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(10rem);
     background-color: #AF473C;
     width: 100%;
     position: absolute;
@@ -218,9 +220,9 @@
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    margin-left: 400px;
-    padding-right: 420px;
-    padding-top: 5px;
+    padding-right: 150px;
+    padding-left: 800px;
+    font-size: 12px;
   }
 
   .nav-links {
