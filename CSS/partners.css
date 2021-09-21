@@ -19,6 +19,7 @@
   width: 80px;
 }
 .partners .partners-images img {
+  align-self: center;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   transition: filter 600ms ease;
