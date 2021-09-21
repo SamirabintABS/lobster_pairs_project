@@ -10,37 +10,44 @@
   color: #AF473C;
 }
 
-.partners-images img {
-  max-width: 100%;
-  height: 20px;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  transition: filter 600ms ease;
-  -webkit-transition: -webkit-filter 600ms ease;
+.partners {
+  margin-top: 50px;
 }
-
-.partners-images img:hover {
-  filter: grayscale(0);
-  -webkit-filter: grayscale(0);
+.partners .services_width {
+  width: 100%;
+  padding: 0 25px;
 }
-
-.partners-column {
-  float: left;
-  padding: 5px;
-  width: 20%;
+.partners .services_width .partners-img-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 25px;
 }
-
-.partners-row::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.partners-underline {
-  content: "";
+.partners .services_width .partners-img-container .logos {
   display: block;
-  height: 1px;
-  width: 150px;
-  margin-top: 10px;
-  background-color: black;
+  width: auto;
+  margin-top: 25px;
+}
+.partners .services_width .partners-img-container .logos .logo-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  width: auto;
+}
+.partners .services_width .partners-img-container .logos .logo-quarr {
+  background-image: url(../IMG/Homepage_images/partner-quarr.png);
+}
+.partners .services_width .partners-img-container .logos .logo-pabulum {
+  background-image: url(../IMG/Homepage_images/partner-pabulum.jpeg);
+}
+.partners .services_width .partners-img-container .logos .logo-mountjoy {
+  background-image: url(../IMG/Homepage_images/partner-mountjoy.jpeg);
+}
+.partners .services_width .partners-img-container .logos .card_title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #AF473C;
+  font-size: 24px;
 }/*# sourceMappingURL=partners.css.map */
