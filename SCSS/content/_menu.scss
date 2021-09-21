@@ -87,7 +87,7 @@
     .nav-menu{
         display: grid;
         grid-template-columns: auto;
-       background-color: $grey;
+       background-color: $red;
        margin: 0;
        width: 100%;
        position: absolute;
@@ -107,11 +107,12 @@
     }
 
     .nav-menu.active{
-        background: $grey;
+        background: $red;
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
         width: 100%;
+        margin-top: -20px;
     }
 
     .nav-links{
