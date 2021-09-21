@@ -1,4 +1,4 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -8,77 +8,118 @@
     font-display: swap;
 }
 
-.footer-container{
+.footer-container {
     background-color: $red;
-  
-    padding-top: 2rem;
+    width: auto;
+    height: auto;
+    color: white;
+    padding: 20px;
 }
 
-.footer{
-    width: 80%;
-    height: 30vh;
-    background-color: $red;
-    color: $white-text;
+.footer {
+
     display: flex;
-    justify-content: left;
     flex-wrap: wrap;
-    margin: 0 auto;
+
+    .footer-heading {
+        width: 100%;
+
+        h3 {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 25px;
+        }
+
+        a {
+            display: block;
+            width: 100%;
+            text-transform: capitalize;
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            color: white;
+        }
+
+        i {
+            margin-right: 15px;
+        }
+    }
 }
 
-.footer-heading{
-    display: flex;
-    flex-direction: column;
-    margin-right: 4rem;
-}
 
-.footer-heading h2{
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    font-size: small;
-}
-
-.footer-heading a{
-    color: $white-text;
-    text-decoration: none;
-    margin-bottom: 0.2rem;
-    font-size: x-small;
-}
-
-.footer-heading a:hover{
+.footer-heading a:hover {
     color: $text-grey;
     transition: 0.3s ease-out;
+    text-decoration: underline;
 }
 
-.footer-copyright h5{
-    margin-bottom: 2rem;
-    text-align: center;
-    font-size: xx-small;
-    box-sizing: border-box;
-    position: relative;
-    margin-top: -35px;
+
+.copyright {
+    margin-top: 30px;
     text-transform: uppercase;
-    padding: 10px;
-    padding-left: 3rem;
-    color: $white-text;
-
 }
 
-.copyright-container{
-    flex-direction: row ;
-    text-align: center ;
-}
-
-.footer-title-underline{
+.footer-title-underline {
     content: "";
     display: block;
     height: 1px;
-    width: 65px;
+    width: 40%;
     background-color: $white-text;
-    margin-top: 0;
-    margin: 0 auto 16px;
-    margin-left: 0;
-    padding-top: 0;
-    
+    margin-bottom: 20px;
+
 }
 
 
+// MEDIA QUERIES
+
+@include mq('sm') {
+
+    .footer-container {
+        width: 725px;
+        margin: 0 auto;
+
+        .footer {
+            justify-content: center;
+            margin: 0 auto;
+
+            .footer-heading {
+                width: 33%;
+
+                .footer-title-underline {
+                    width: 50%;
+                }
+            }
+        }
+
+        .copyright {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 0;
+        }
+    }
+
+}
+
+
+@include mq('md'){
+
+    .footer-container{
+        width: 950px;
+       
+    }
+}
+
+@include mq('lg'){
+    .footer-container{
+    width: 1235px;
+    }
+}
+
+@include mq('xl'){
+
+    .footer-container{
+        width: auto;
+    }
+}
