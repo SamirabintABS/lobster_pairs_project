@@ -145,7 +145,6 @@ body {
 }
 
 .testimonials .testimonials_slick {
-  padding: 0 10px;
   overflow: initial;
 }
 
@@ -949,12 +948,6 @@ p {
 @media screen and (min-width: 1260px) {
   .footer-container {
     width: 1235px;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .footer-container {
-    width: auto;
   }
 }
 /*# sourceMappingURL=styles.css.map */
