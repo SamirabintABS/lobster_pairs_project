@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+// Banner container
+.image-hero {
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../IMG/Homepage_images/lobsterbanner.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.banner-container {
+    margin: 0 auto;
+    width: auto;
+    padding: 0 25px;
+    position: relative;
+    color: white;
+    font-family: "montserrat";
+
+    .main-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        text-align: center;
+
+        p {
+            margin: 0;
+        }
+
+        .logo-text {
+            margin-top: 40px;
+            display: block;
+
+            a {
+                text-decoration: none;
+            }
+
+            .logo-terra {
+                text-transform: capitalize;
+                font-family: 'la belle aurore';
+                color: $red;
+                font-size: 50px;
+                height: 50px;
+                line-height: 60px;
+            }
+
+            .logo-catering {
+                color: white;
+                text-transform: uppercase;
+                font-weight: 800;
+                font-size: 30px;
+                letter-spacing: 2px;
+                height: 30px;
+                margin-top: -5px;
+            }
+
+            p {
+                margin: 0;
+            }
+        }
+        .hero-text{
+            .hero-contact{
+                a{
+                    margin-top: 10px;
+                    text-transform: uppercase;
+                    font-weight:600;
+                    text-decoration: none;
+                    color: white;
+                    letter-spacing: 2px;
+                    
+                }
+            }
+            .text-container{
+                display: block;
+                text-align: center;
+            h1{
+
+                font-size: 30px;
+                font-weight: 800;
+                text-transform: uppercase;
+                padding-bottom: 10px;
+            }
+            .hero-title_underline{
+                display: none;
+                width: 150px;
+                height: 1px;
+                background-color: white;
+                content: "";
+                margin-top: 30px;
+                margin-right: 0px;
+                margin-left: auto;
+
+            }
+            .book-now{
+                color: white;
+                text-decoration: none;
+                display: inline-block;
+                text-transform: uppercase;
+                width: auto;
+                background-color: $red;
+                font-size: 20px;
+                font-weight: 600;
+                padding: 15px;
+                margin: 40px 0;
+                transition: .2s ease-in-out;
+
+                &:hover{
+                    background-color: darken($red, 10%);
+                }
+            }
+        }
+
+
+        }
+        
+    }
+}
+
+//media queries
+//750px breakpoint
+@include mq('sm'){
+
+    .banner-container {
+        width: 725px;
+    
+        .main-container {
+            flex-direction: row;  
+            justify-content: space-between;
+            padding-top: 40px;  
+        
+            .logo-text{
+                margin: 0;
+                padding:0;
+            }
+
+            .hero-text{
+                .hero-contact{
+
+                    width: auto;
+                    
+                    a{
+                        margin-top: 0;
+                        display: inline-block;
+                        margin-left: 20px;
+                    }
+                }
+                
+                .text-container{
+                    margin-left: auto;
+                    margin-right: 0px;
+                    text-align: right;
+                    h1{
+                        margin: 0;
+                        margin-top: 20px;
+                    }
+
+                    .hero-title_underline{
+                        display: block;
+                    }
+                    p{
+                        padding-top: 20px;
+                    }
+                }
+                
+        }
+    }
+}
+
+}
+
+//950px breakpoint
+@include mq('md'){
+
+    .banner-container {
+        width: 950px;
+    
+        .main-container {
+           
+            .logo-text{
+                margin: 0;
+                padding:0;
+            }
+
+            .hero-text{
+                .hero-contact{
+
+                    
+                    
+                    a{
+                        margin-top: 0;
+                        display: inline-block;
+                        margin-left: 20px;
+                    }
+                }
+                
+                .text-container{
+                    margin-left: auto;
+                    margin-right: 0px;
+                    text-align: right;
+                    h1{
+                        font-size: 40px;
+                        margin: 0;
+                        margin-top: 20px;
+                    }
+
+                    .hero-title_underline{
+                        display: block;
+                    }
+                    p{
+
+                        padding-top: 20px;
+                    }
+                }
+                
+        }
+    }
+}
+
+}
+
+@include mq('lg'){
+
+    .banner-container {
+        width: 1235px;
+    
+        .main-container {
+           
+            .logo-text{
+                margin: 0;
+                padding:0;
+            }
+
+            .hero-text{
+                .hero-contact{
+
+                    
+                    
+                    a{
+                        margin-top: 0;
+                        display: inline-block;
+                        margin-left: 20px;
+                    }
+                }
+                
+                .text-container{
+                    margin-left: auto;
+                    margin-right: 0px;
+                    text-align: right;
+                    h1{
+                        font-size: 50px;
+                        margin: 0;
+                        margin-top: 20px;
+                    }
+
+                    .hero-title_underline{
+                        display: block;
+                    }
+                    p{
+                        font-size: 30px;
+                        padding-top: 20px;
+                    }
+                }
+                
+        }
+    }
+}
+
+}
