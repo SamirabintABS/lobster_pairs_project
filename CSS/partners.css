@@ -4,37 +4,39 @@
   padding: 0;
 }
 
-.partners-title h2 {
+.partners {
+  background-color: white;
+}
+.partners .partners-title h2 {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
   color: #AF473C;
 }
-
-.partners-images img {
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
+.partners .partners-title h2 .partners_underline {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 80px;
 }
-
-.partners-images img {
+.partners .partners-images img {
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   transition: filter 600ms ease;
   -webkit-transition: -webkit-filter 600ms ease;
+  width: 33.3%;
 }
-
-.partners-images img:hover {
+.partners .partners-images img:hover {
   filter: grayscale(0);
   -webkit-filter: grayscale(0);
 }
-
-.partners-column {
-  float: left;
-  padding: 5px;
+.partners .partners-column {
+  float: center;
   width: 20%;
+  width: 33.3%;
 }
-
-.partners-row::after {
+.partners .partners-row::after {
   content: "";
   display: table;
+  align-items: center;
   clear: both;
 }/*# sourceMappingURL=partners.css.map */
