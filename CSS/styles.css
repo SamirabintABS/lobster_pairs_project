@@ -815,6 +815,13 @@ p {
   }
 }
 
+@media screen and (min-width: 750px) and (-ms-high-contrast: none) {
+  .services .description-section .alt-row {
+    align-self: flex-start;
+    flex-direction: row;
+  }
+}
+
 @media screen and (min-width: 975px) {
   .services, .service-slides {
     width: 950px;

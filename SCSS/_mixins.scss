@@ -26,3 +26,9 @@ $breakpoints: (
         }
     }
 }
+
+@mixin media-ie{
+    @media screen and (-ms-high-contrast: none) {
+        @content;
+    }
+}

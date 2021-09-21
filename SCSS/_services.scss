@@ -196,6 +196,11 @@ p{
             .alt-row{
                 flex-direction: row-reverse;
                 align-self: flex-end;
+
+                @include media-ie{
+                    align-self: flex-start;
+                    flex-direction: row;
+                }
             }
 
             
