@@ -4,13 +4,19 @@
 }
 
 .image-hero {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), transparent), url(../IMG/Homepage_images/banner.jpeg);
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../IMG/Homepage_images/lobsterbanner.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .banner-container {
+  margin: 0 auto;
   width: auto;
   padding: 0 25px;
   position: relative;
+  color: white;
+  font-family: "montserrat";
 }
 
 .banner-container .main-container {
@@ -20,5 +26,192 @@
   flex-wrap: nowrap;
   align-content: center;
   text-align: center;
+}
+
+.banner-container .main-container p {
+  margin: 0;
+}
+
+.banner-container .main-container .logo-text {
+  margin-top: 40px;
+  display: block;
+}
+
+.banner-container .main-container .logo-text a {
+  text-decoration: none;
+}
+
+.banner-container .main-container .logo-text .logo-terra {
+  text-transform: capitalize;
+  font-family: 'la belle aurore';
+  color: #AF473C;
+  font-size: 50px;
+  height: 50px;
+  line-height: 60px;
+}
+
+.banner-container .main-container .logo-text .logo-catering {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: 2px;
+  height: 30px;
+  margin-top: -5px;
+}
+
+.banner-container .main-container .logo-text p {
+  margin: 0;
+}
+
+.banner-container .main-container .hero-text .hero-contact a {
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-weight: 600;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.banner-container .main-container .hero-text .text-container {
+  display: block;
+  text-align: center;
+}
+
+.banner-container .main-container .hero-text .text-container h1 {
+  font-size: 30px;
+  font-weight: 800;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.banner-container .main-container .hero-text .text-container .hero-title_underline {
+  display: none;
+  width: 150px;
+  height: 1px;
+  background-color: white;
+  content: "";
+  margin-top: 30px;
+  margin-right: 0px;
+  margin-left: auto;
+}
+
+.banner-container .main-container .hero-text .text-container .book-now {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  width: auto;
+  background-color: #AF473C;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 15px;
+  margin: 40px 0;
+  transition: .2s ease-in-out;
+}
+
+.banner-container .main-container .hero-text .text-container .book-now:hover {
+  background-color: #89382f;
+}
+
+@media screen and (min-width: 768px) {
+  .banner-container {
+    width: 725px;
+  }
+  .banner-container .main-container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+  .banner-container .main-container .logo-text {
+    margin: 0;
+    padding: 0;
+  }
+  .banner-container .main-container .hero-text .hero-contact {
+    width: auto;
+  }
+  .banner-container .main-container .hero-text .hero-contact a {
+    margin-top: 0;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .banner-container .main-container .hero-text .text-container {
+    margin-left: auto;
+    margin-right: 0px;
+    text-align: right;
+  }
+  .banner-container .main-container .hero-text .text-container h1 {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .banner-container .main-container .hero-text .text-container .hero-title_underline {
+    display: block;
+  }
+  .banner-container .main-container .hero-text .text-container p {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .banner-container {
+    width: 950px;
+  }
+  .banner-container .main-container .logo-text {
+    margin: 0;
+    padding: 0;
+  }
+  .banner-container .main-container .hero-text .hero-contact a {
+    margin-top: 0;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .banner-container .main-container .hero-text .text-container {
+    margin-left: auto;
+    margin-right: 0px;
+    text-align: right;
+  }
+  .banner-container .main-container .hero-text .text-container h1 {
+    font-size: 40px;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .banner-container .main-container .hero-text .text-container .hero-title_underline {
+    display: block;
+  }
+  .banner-container .main-container .hero-text .text-container p {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 1260px) {
+  .banner-container {
+    width: 1235px;
+  }
+  .banner-container .main-container .logo-text {
+    margin: 0;
+    padding: 0;
+  }
+  .banner-container .main-container .hero-text .hero-contact a {
+    margin-top: 0;
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .banner-container .main-container .hero-text .text-container {
+    margin-left: auto;
+    margin-right: 0px;
+    text-align: right;
+  }
+  .banner-container .main-container .hero-text .text-container h1 {
+    font-size: 50px;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .banner-container .main-container .hero-text .text-container .hero-title_underline {
+    display: block;
+  }
+  .banner-container .main-container .hero-text .text-container p {
+    font-size: 30px;
+    padding-top: 20px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
