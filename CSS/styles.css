@@ -346,20 +346,20 @@ body {
   .aboutus .aboutus_width {
     width: 950px;
   }
-  .services .services_width {
+  .services-section .services_width {
     width: 950px;
   }
-  .services .services_width .service_card_container {
+  .services-section .services_width .service_card_container {
     justify-content: space-between;
   }
-  .services .services_width .service_card_container .card {
+  .services-section .services_width .service_card_container .card {
     width: 310px;
   }
-  .services .services_width .service_card_container .card .card_image {
+  .services-section .services_width .service_card_container .card .card_image {
     height: 174px;
     width: 310px;
   }
-  .services .services_width .service_card_container .card:last-of-type {
+  .services-section .services_width .service_card_container .card:last-of-type {
     margin-top: 0px;
   }
   .testimonials .testimonials_slick {
