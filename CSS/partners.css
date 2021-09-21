@@ -13,41 +13,31 @@
 .partners {
   margin-top: 50px;
 }
-.partners .services_width {
-  width: 100%;
-  padding: 0 25px;
-}
-.partners .services_width .partners-img-container {
+.partners .partners-img-container {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 25px;
 }
-.partners .services_width .partners-img-container .logos {
+.partners .partners-img-container .logos {
   display: block;
   width: auto;
   margin-top: 25px;
 }
-.partners .services_width .partners-img-container .logos .logo-image {
+.partners .partners-img-container .logos .logo-image {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 250px;
   width: auto;
 }
-.partners .services_width .partners-img-container .logos .logo-quarr {
+.partners .partners-img-container .logos .logo-quarr {
   background-image: url(../IMG/Homepage_images/partner-quarr.png);
 }
-.partners .services_width .partners-img-container .logos .logo-pabulum {
+.partners .partners-img-container .logos .logo-pabulum {
   background-image: url(../IMG/Homepage_images/partner-pabulum.jpeg);
 }
-.partners .services_width .partners-img-container .logos .logo-mountjoy {
+.partners .partners-img-container .logos .logo-mountjoy {
   background-image: url(../IMG/Homepage_images/partner-mountjoy.jpeg);
-}
-.partners .services_width .partners-img-container .logos .card_title {
-  text-align: center;
-  text-transform: uppercase;
-  color: #AF473C;
-  font-size: 24px;
 }/*# sourceMappingURL=partners.css.map */
