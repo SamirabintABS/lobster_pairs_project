@@ -265,6 +265,9 @@ body {
 }
 
 @media screen and (min-width: 750px) {
+  .wrap {
+    margin-top: 50px;
+  }
   .section_title {
     font-size: 36px;
   }
@@ -640,7 +643,6 @@ body {
 
 p {
   margin: 0px;
-  line-height: 19px;
   margin-bottom: 15px;
 }
 
@@ -835,16 +837,10 @@ p {
 
 @media screen and (min-width: 1260px) {
   .services, .service-slides {
-    width: 950px;
+    width: 1235px;
   }
   .description-section img {
     width: 25%;
-  }
-}
-
-@media screen and (min-width: 1400px) {
-  .services, .service-slides {
-    width: 1375px;
   }
 }
 

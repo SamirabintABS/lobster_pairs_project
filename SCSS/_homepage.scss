@@ -292,6 +292,10 @@ body {
 
 @include mq('sm') {
 
+
+    .wrap{
+        margin-top: 50px;
+    }
     .section_title {
         font-size: 36px;
     }
