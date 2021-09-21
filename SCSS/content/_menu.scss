@@ -170,8 +170,8 @@
     }
 }
 
-//menu bar at 992px
-@media screen and(min-width: 992px) {
+//menu bar at 1260px
+@media screen and(min-width: 1260px) {
     .nav-container {
         position: relative;
         background-color: $red;
@@ -189,15 +189,16 @@
         text-decoration: none;
         font-size: 16px;
         text-transform: uppercase;
-        padding-left: 80px;
+        padding-right: -250px;
+        padding-left: 150px;
         font-size: 14px;
     }
 
     .nav-links {
+        float: right;
         text-align: center;
-        line-height: 55px;
+        line-height: 50px;
         width: 100%;
-        margin-right: -40px;
     }
 
     .nav-links:hover {
@@ -213,8 +214,8 @@
 }
 
 
-// menu at 1260px (lg screen)
-@media screen and(min-width: 1260px) {
+// menu at 1400px (x-lg screen)
+@media screen and(min-width: 1400px) {
     .nav-container {
         position: relative;
         background-color: $red;

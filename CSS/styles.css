@@ -165,7 +165,7 @@
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1260px) {
   .nav-container {
     position: relative;
     background-color: #AF473C;
@@ -182,15 +182,16 @@
     text-decoration: none;
     font-size: 16px;
     text-transform: uppercase;
-    padding-left: 80px;
+    padding-right: -250px;
+    padding-left: 150px;
     font-size: 14px;
   }
 
   .nav-links {
+    float: right;
     text-align: center;
-    line-height: 55px;
+    line-height: 50px;
     width: 100%;
-    margin-right: -40px;
   }
 
   .nav-links:hover {
@@ -203,7 +204,7 @@
     width: 100%;
   }
 }
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: 1400px) {
   .nav-container {
     position: relative;
     background-color: #AF473C;
