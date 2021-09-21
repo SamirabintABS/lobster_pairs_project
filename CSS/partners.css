@@ -11,6 +11,8 @@
 }
 
 .partners-images img {
+  max-width: 100%;
+  height: 20px;
   filter: grayscale(100%);
   -webkit-filter: grayscale(100%);
   transition: filter 600ms ease;
@@ -32,4 +34,13 @@
   content: "";
   display: table;
   clear: both;
+}
+
+.partners-underline {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 150px;
+  margin-top: 10px;
+  background-color: black;
 }/*# sourceMappingURL=partners.css.map */

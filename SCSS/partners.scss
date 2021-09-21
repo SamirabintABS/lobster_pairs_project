@@ -11,12 +11,13 @@
 }
 
 .partners-images img{
+  max-width: 100%;
+  height: 20px;     
  filter: grayscale(100%);
  -webkit-filter: grayscale(100%);
 
  transition: filter 600ms ease;
  -webkit-transition: -webkit-filter 600ms ease;
-
 }
 
 .partners-images img:hover {
@@ -27,7 +28,6 @@
     float: left;
     padding: 5px;
     width: 20%;
-
 }
 
 .partners-row::after {
@@ -36,6 +36,14 @@
     clear: both;
 }
 
+.partners-underline{
+    content: "";
+    display: block;
+    height: 1px;
+    width: 150px;
+    margin-top: 10px;
+    background-color: black;
+}
 
 
 
