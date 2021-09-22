@@ -1,0 +1,42 @@
+
+.partners-img-container{
+    padding: 50px 0;
+
+
+        .partners-box {
+            padding-left: 20px;
+            padding-right: 20px;
+    
+
+        .partners-row {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+
+            img {
+                height: auto;
+                width: 100%;
+                border-style: none;
+
+            }
+
+            .partners-icon img{
+                flex-grow: 1;
+                padding: 0 20px;
+                filter: grayscale(100%);
+                -webkit-filter: grayscale(100%);
+
+                img:hover{
+                    filter: grayscale(0%);
+                    -webkit-filter: grayscale(0%);
+                    
+                }
+            }
+            
+        }
+
+    }   
+}
+
+
+
