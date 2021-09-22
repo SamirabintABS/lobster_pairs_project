@@ -1,34 +1,3 @@
-.partners-img-container {
-  display: none;
-  padding: 50px 0;
-}
-.partners-img-container .partners-box {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-.partners-img-container .partners-row {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-}
-.partners-img-container .partners-row img {
-  height: auto;
-  width: 100%;
-  border-style: none;
-}
-.partners-img-container .partners-row .partners-icon:first-child img {
-  width: 210px;
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.1);
-}
-.partners-img-container .partners-icon {
-  flex-grow: 1;
-  padding: 0 20px;
-  filter: grayscale(100%);
-}
-.partners-img-container .partners-icon:hover {
-  filter: grayscale(0%);
-}
-
 #mapid {
   height: 170px;
   width: 80%;
@@ -36,7 +5,7 @@
 }
 
 #first_name.error {
-  border: 1px solid red;
+  border: 1px solid  red;
 }
 
 #firstLabel.error {
@@ -50,11 +19,11 @@
 }
 
 #last_name.error {
-  border: 1px solid red;
+  border: 1px solid  red;
 }
 
 #message-contact.error {
-  border: 1px solid red;
+  border: 1px solid  red;
 }
 
 #gdpr {
@@ -62,7 +31,7 @@
 }
 
 #email.error {
-  border: 1px solid red;
+  border: 1px solid  red;
 }
 
 #email-label.error {
@@ -71,12 +40,12 @@
 }
 
 #email-message {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: red;
   margin-top: 5px;
   display: none;
-  transition: 0.3s ease all;
+  transition: .3s ease all;
 }
 
 #email-message.shown {
@@ -84,7 +53,7 @@
 }
 
 #telephone.error {
-  border: 1px solid red;
+  border: 1px solid  red;
 }
 
 #phone-label.error {
@@ -93,12 +62,12 @@
 }
 
 #phone-message {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: red;
   margin-top: 5px;
   display: none;
-  transition: 0.3s ease all;
+  transition: .3s ease all;
 }
 
 #phone-message.shown {
@@ -106,12 +75,12 @@
 }
 
 #button-message {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: red;
   margin-top: 5px;
   display: none;
-  transition: 0.3s ease all;
+  transition: .3s ease all;
 }
 
 #button-message.shown {
@@ -124,27 +93,34 @@
   flex-direction: column;
   margin: 15px;
 }
+
 .contact-section .flex-contact .split1 span {
   width: 125px;
 }
+
 .contact-section .flex-contact .split2 span {
   width: 85px;
 }
+
 .contact-section .flex-contact .flex-outer {
   list-style: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
+
 .contact-section .flex-contact .flex-outer > li {
   flex-basis: 100%;
 }
+
 .contact-section .flex-contact .flex-outer > li:not(:nth-child(6)) {
   margin-bottom: 20px;
 }
+
 .contact-section .flex-contact .flex-outer > li > label {
   flex: 1 0 120px;
 }
+
 .contact-section .flex-contact input[type=text],
 .contact-section .flex-contact input[type=email],
 .contact-section .flex-contact input[type=number] {
@@ -153,11 +129,13 @@
   width: 90%;
   height: 28px;
 }
+
 .contact-section .flex-contact #message-contact {
   height: 200px;
   width: 95%;
   resize: none;
 }
+
 .contact-section .flex-contact input[type=button] {
   width: 100%;
   height: 42px;
@@ -170,8 +148,9 @@
   letter-spacing: -0.02em;
   color: #fff;
   text-transform: uppercase;
-  transition: 0.15s ease background-color, 0.3s transform;
+  transition: .15s ease background-color, .3s transform;
 }
+
 .contact-section .flex-contact input[type=button]:hover {
   transform: scale(0.95);
   box-shadow: 0 0 3px grey;
@@ -201,6 +180,7 @@
     flex-basis: 50%;
   }
 }
+
 @media screen and (min-width: 1260px) {
   .contact-section .flex-contact {
     flex-direction: row;
@@ -220,4 +200,38 @@
   .contact-section .flex-contact .split1, .contact-section .flex-contact .split2 {
     flex-basis: 50%;
   }
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.partners-img-container {
+  padding: 50px 0;
+}
+
+.partners-img-container .partners-box {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.partners-img-container .partners-box .partners-row {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.partners-img-container .partners-box .partners-row img {
+  height: auto;
+  width: 100%;
+  border-style: none;
+}
+
+.partners-img-container .partners-box .partners-row .partners-icon img {
+  flex-grow: 1;
+  padding: 0 20px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+.partners-img-container .partners-box .partners-row .partners-icon img img:hover {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+}
+/*# sourceMappingURL=styles.css.map */
