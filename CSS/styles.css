@@ -674,6 +674,15 @@ p {
   overflow: hidden;
 }
 
+@media screen and (-ms-high-contrast: none) {
+  .service-content img {
+    width: 400px;
+    height: auto;
+    align-self: center;
+    overflow: hidden;
+  }
+}
+
 .description {
   width: auto;
   display: flex;
@@ -801,6 +810,15 @@ p {
     width: 40%;
     margin: 0 20px;
   }
+}
+
+@media screen and (min-width: 750px) and (-ms-high-contrast: none) {
+  .services .description-section .description {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 750px) {
   .services .description-section .service-content {
     flex-direction: row;
   }
