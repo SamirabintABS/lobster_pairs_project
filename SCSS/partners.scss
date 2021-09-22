@@ -1,7 +1,5 @@
 
-
 .partners-img-container{
-    display: none;
     padding: 50px 0;
 
 
@@ -22,20 +20,23 @@
 
             }
 
-            partners-icon {
+            .partners-icon img{
                 flex-grow: 1;
                 padding: 0 20px;
                 filter: grayscale(100%);
+                -webkit-filter: grayscale(100%);
 
-                &:hover {
+                img:hover{
                     filter: grayscale(0%);
+                    -webkit-filter: grayscale(0%);
+                    
                 }
             }
             
         }
 
     }   
-
 }
+
 
 
