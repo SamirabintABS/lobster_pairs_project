@@ -7,6 +7,7 @@
             width: 725px;
             margin-right: auto;
             margin-left: auto;
+            padding: 0 10px;
     
 
         .partners-row {
@@ -21,23 +22,35 @@
             .partners-icon {
             display: block;
             width: 200px;
+            height: 100px;
 
+            .coloured{
+                display: none;
+                
+            }
+
+            &:hover{
+
+                .grey{
+                display: none;
+                }
+                .coloured{
+                    display: block;
+                }
+            }
             
             img{
-                object-fit: contain;
-                height: 100px;
-                width: 200px;
+                
+                max-height: 100%;
+                max-width: 100%;
                 overflow: hidden;
                 transition: all 0.2s;
                 -webkit-transition: all 0.2s;
                 -moz-transition: all 0.2s;
-                filter: grayscale(100%);
-                -webkit-filter: grayscale(100%);
-                -moz-filter: grayscale(100%);
+               
                 &:hover{
-                    filter: grayscale(0%);
-                    -webkit-filter: grayscale(0%);
-                    -moz-filter: grayscale(0%);
+                    
+                    
                     transform: scale(1.1);
                     -webkit-transform: scale(1.1);
                     -moz-transform: scale(1.1);
@@ -66,8 +79,20 @@
 @include mq('md') {
 
     .partners-img-container {
-        display: block;
-        padding: 0 20px;
+        .partners-box{
+            width: 950px;
+
+            .partners-row{
+                width: 950px;
+
+                .partners-icon{
+                    width: 300px;
+                    height: 150px;
+
+                    
+                }
+            }
+        }
     }
 
 }
@@ -75,10 +100,21 @@
 //media query for 1200px
 @include mq('lg') {
     .partners-img-container {
-        display: block;
-        padding: 0 -60px;
+        .partners-box{
+            width: 1235px;
 
+            .partners-row{
+                width: 1200px;
+
+                .partners-icon{
+                    width: 350px;
+
+                    
+                }
+            }
+        }
     }
+
 
  
 }

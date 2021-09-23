@@ -1,6 +1,6 @@
 // Leaflet
 
-var mymap = L.map('mapid').setView([52.647327, 1.26459], 17);
+var mymap = L.map('mapid').setView([52.647327, 1.26459], 14);
 
 mymap.scrollWheelZoom.disable();
 

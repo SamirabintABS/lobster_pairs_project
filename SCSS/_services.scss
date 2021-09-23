@@ -47,7 +47,7 @@ p{
     width: auto;
     display: flex;
     flex-direction: column;
-
+   
     
 }
 .extra-text{
@@ -189,7 +189,7 @@ p{
                 width: 40%;
                 margin: 0 20px;
                 @include media-ie{
-                    width: 20%;
+                    width: 10%;
                 }
             }
             
@@ -226,13 +226,30 @@ p{
     .services, .service-slides{
         width: 950px
     }
+
+    .services{
     .description-section{
+        align-items: flex-start;
+        .description{
+            width: 40%;
+            margin: 0 20px;
+            @include media-ie{
+                width: 20%;
+            }
+        }
        
         
         img{
             width: 30%;
+            @include media-ie{
+                width: 400px;
+            }
         }
     }
+}
+    
+
+    
 
     .extra-text{
         display: block;
