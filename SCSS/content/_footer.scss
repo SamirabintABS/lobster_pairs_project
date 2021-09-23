@@ -75,7 +75,7 @@
 @include mq('sm') {
 
     .footer-container {
-        width: 725px;
+        width: 100%;
         margin: 0 auto;
 
         .footer {
@@ -103,17 +103,17 @@
 }
 
 
-@include mq('md'){
+// @include mq('md'){
 
-    .footer-container{
-        width: 950px;
+//     .footer-container{
+//         width: 950px;
        
-    }
-}
+//     }
+// }
 
-@include mq('lg'){
-    .footer-container{
-    width: 1235px;
-    }
-}
+// @include mq('lg'){
+//     .footer-container{
+//     width: 1235px;
+//     }
+// }
 

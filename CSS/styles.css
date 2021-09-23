@@ -313,10 +313,11 @@ body {
     margin-top: 25px;
   }
   .testimonials {
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
   }
   .testimonials .testimonials_slick {
-    width: 725px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -328,7 +329,7 @@ body {
     font-size: 16px;
   }
   .bookbox {
-    width: 725px;
+    width: 100%;
     margin: 0 auto;
   }
   .bookbox .book_now {
@@ -367,17 +368,11 @@ body {
   .services-section .services_width .service_card_container .card:last-of-type {
     margin-top: 0px;
   }
-  .testimonials .testimonials_slick {
-    width: 950px;
-  }
   .testimonials .testimonials_slick div .quote_container .quote_content .quote {
     font-size: 20px;
   }
   .testimonials .testimonials_slick div .quote_container .quote_content .quote_author {
     font-size: 18px;
-  }
-  .bookbox {
-    width: 950px;
   }
   .bookbox .book_now .book_text {
     width: 680px;
@@ -403,14 +398,8 @@ body {
     height: 225px;
     width: 390px;
   }
-  .testimonials .testimonials_slick {
-    width: 1235px;
-  }
   .testimonials .testimonials_slick div .quote_container .quote_content .quote {
     font-size: 22px;
-  }
-  .bookbox {
-    width: 1235px;
   }
   .bookbox .book_now .book_text {
     width: auto;
@@ -959,7 +948,7 @@ p {
 
 @media screen and (min-width: 750px) {
   .footer-container {
-    width: 725px;
+    width: 100%;
     margin: 0 auto;
   }
   .footer-container .footer {
@@ -978,18 +967,6 @@ p {
     text-align: center;
     margin-top: 50px;
     margin-bottom: 0;
-  }
-}
-
-@media screen and (min-width: 975px) {
-  .footer-container {
-    width: 950px;
-  }
-}
-
-@media screen and (min-width: 1260px) {
-  .footer-container {
-    width: 1235px;
   }
 }
 

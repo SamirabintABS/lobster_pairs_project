@@ -354,9 +354,10 @@ body {
     }
 
     .testimonials {
-        margin: 50px;
+        margin-top: 50px;
+        margin-bottom: 50px;
         .testimonials_slick {
-            width: 725px;
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
 
@@ -375,7 +376,7 @@ body {
     }
 
     .bookbox {
-        width: 725px;
+        width: 100%;
         margin: 0 auto;
 
         .book_now {
@@ -431,7 +432,7 @@ body {
 
     .testimonials {
         .testimonials_slick {
-            width: 950px;
+           
 
             div .quote_container .quote_content {
                 .quote {
@@ -446,7 +447,7 @@ body {
     }
 
     .bookbox {
-        width: 950px;
+        
 
         .book_now {
 
@@ -491,7 +492,7 @@ body {
 
     .testimonials {
         .testimonials_slick {
-            width: 1235px;
+            
 
             div .quote_container .quote_content {
                 .quote {
@@ -502,7 +503,7 @@ body {
     }
 
     .bookbox {
-        width: 1235px;
+       
 
         .book_now {
 
