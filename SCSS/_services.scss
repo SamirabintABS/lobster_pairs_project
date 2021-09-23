@@ -28,6 +28,17 @@ p{
         display: flex;
         flex-direction: column;
     }
+
+    .events{
+
+        h2{
+            text-align: end;
+        }
+        .header_underline{
+            margin-left: auto;
+            margin-right: 0px;
+        }
+    }
 }
 .service-content{
     img{

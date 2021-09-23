@@ -661,6 +661,15 @@ p {
   flex-direction: column;
 }
 
+.description-section .events h2 {
+  text-align: end;
+}
+
+.description-section .events .header_underline {
+  margin-left: auto;
+  margin-right: 0px;
+}
+
 .service-content img {
   width: 100%;
   object-fit: cover;
