@@ -359,11 +359,11 @@ body {
     justify-content: space-between;
   }
   .services-section .services_width .service_card_container .card {
-    width: 310px;
+    width: 290px;
   }
   .services-section .services_width .service_card_container .card .card_image {
     height: 174px;
-    width: 310px;
+    width: 290px;
   }
   .services-section .services_width .service_card_container .card:last-of-type {
     margin-top: 0px;
