@@ -140,7 +140,8 @@ body {
 }
 
 .testimonials {
-  margin: 50px 0;
+  margin: 0;
+  margin-top: 50px;
 }
 
 .testimonials .testimonials_slick {
@@ -286,7 +287,7 @@ body {
     display: block;
   }
   .services-section .services_width {
-    width: 800px;
+    width: 750px;
     margin-left: auto;
     margin-right: auto;
     padding: 0 10px;
@@ -310,6 +311,9 @@ body {
   }
   .services-section .services_width .service_card_container .card:last-of-type {
     margin-top: 25px;
+  }
+  .testimonials {
+    margin: 50px;
   }
   .testimonials .testimonials_slick {
     width: 725px;
@@ -1443,6 +1447,7 @@ p {
   width: 725px;
   margin-right: auto;
   margin-left: auto;
+  padding: 0 10px;
 }
 
 .partners-img-container .partners-box .partners-row {
