@@ -814,7 +814,7 @@ p {
 
 @media screen and (min-width: 750px) and (-ms-high-contrast: none) {
   .services .description-section .description {
-    width: 20%;
+    width: 10%;
   }
 }
 
@@ -844,9 +844,34 @@ p {
   .services, .service-slides {
     width: 950px;
   }
-  .description-section img {
+  .services .description-section {
+    align-items: flex-start;
+  }
+  .services .description-section .description {
+    width: 40%;
+    margin: 0 20px;
+  }
+}
+
+@media screen and (min-width: 975px) and (-ms-high-contrast: none) {
+  .services .description-section .description {
+    width: 20%;
+  }
+}
+
+@media screen and (min-width: 975px) {
+  .services .description-section img {
     width: 30%;
   }
+}
+
+@media screen and (min-width: 975px) and (-ms-high-contrast: none) {
+  .services .description-section img {
+    width: 400px;
+  }
+}
+
+@media screen and (min-width: 975px) {
   .extra-text {
     display: block;
   }
