@@ -1448,8 +1448,9 @@ p {
   }
 }
 .testimonial-container-width {
-  width: 100%;
-  padding: 0 15px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .testimonial-container-width .header_underline {
   margin-bottom: 10px;
@@ -1482,12 +1483,43 @@ p {
 }
 
 @media screen and (min-width: 750px) {
-  .testimonialCards {
+  .testimonial-container-width {
+    width: 750px;
+  }
+  .testimonial-container-width .testimonialCards {
+    margin-left: auto;
+    margin-right: auto;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .testimonialCards .testCard {
+  .testimonial-container-width .testimonialCards .testCard {
     max-width: 40%;
+  }
+}
+@media screen and (min-width: 975px) {
+  .testimonial-container-width {
+    width: 950px;
+  }
+  .testimonial-container-width .testimonialCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .testimonial-container-width .testimonialCards .testCard {
+    max-width: 28%;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .testimonial-container-width {
+    width: 1050px;
+  }
+  .testimonial-container-width .testimonialCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .testimonial-container-width .testimonialCards .testCard {
+    max-width: 22%;
   }
 }/*# sourceMappingURL=styles.css.map */

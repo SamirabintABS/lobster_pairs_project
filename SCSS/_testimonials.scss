@@ -1,6 +1,8 @@
 .testimonial-container-width{
-    width: 100%;
-    padding: 0 15px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
 
     .header_underline{
         margin-bottom: 10px;
@@ -41,14 +43,66 @@
 //750px breakpoint 
 
 @include mq('sm'){
-    .testimonialCards{
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
 
-        .testCard{
-            max-width: 40%;
+        .testimonial-container-width{
+            width: 750px;
+    
+        .testimonialCards{
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
         
+
+            .testCard{
+                max-width: 40%;
+            
+            }
+        }
+    }
+}
+
+//980px breakpoint 
+
+@include mq('md') {
+
+    .testimonial-container-width {
+        width: 950px;
+
+        .testimonialCards {
+            
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+
+
+            .testCard {
+                max-width: 28%;
+
+            }
+        }
+    }
+}
+
+//1050px breakpoint 
+
+@include mq('lg') {
+
+    .testimonial-container-width {
+        width: 1050px;
+
+        .testimonialCards {
+            
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+
+            .testCard {
+                max-width: 22%;
+                
+            }
         }
     }
 }
