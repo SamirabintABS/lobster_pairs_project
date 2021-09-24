@@ -1526,4 +1526,79 @@ p {
 
 .card6 h2 {
   margin-top: 80px;
+}
+
+@media screen and (min-width: 750px) {
+  .description-section {
+    align-items: flex-start;
+  }
+  .description-section .description {
+    width: 40%;
+    margin: 0 20px;
+  }
+}
+@media screen and (min-width: 750px) and (-ms-high-contrast: none) {
+  .description-section .description {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .description-section .about-content {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 750px) {
+  .description-section img {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: -40px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .description-section h2 {
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .description-section .header_underline {
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .description-section .alt-row {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+    text-align: right;
+  }
+}
+@media screen and (min-width: 750px) and (-ms-high-contrast: none) {
+  .description-section .alt-row {
+    align-self: flex-start;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 750px) {
+  .description-section .alt-row img {
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .profile-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .profile-container .profCard {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+  }
+  .profile-container .prof-card-img {
+    position: relative;
+    background-repeat: no-repeat;
+  }
 }/*# sourceMappingURL=styles.css.map */

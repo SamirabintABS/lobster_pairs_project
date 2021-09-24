@@ -93,3 +93,77 @@ p {
     margin-top: 80px;
 }
 
+//760px breakpoint 
+
+@include mq('sm'){
+.description-section {
+        align-items: flex-start;
+
+        .description {
+            width: 40%;
+            margin: 0 20px;
+
+            @include media-ie {
+                width: 10%;
+            }
+
+        
+        }
+
+        .about-content {
+            flex-direction: row;
+        }
+
+        img {
+            width: 400px;
+            height: 400px;
+            overflow: hidden;
+            margin-top: -40px;
+        }
+
+        h2{
+            margin-left: 15px;
+        }
+
+        .header_underline{
+            margin-left: 15px;
+        }
+
+        .alt-row {
+            flex-direction: row-reverse;
+            align-self: flex-end;
+            text-align: right;
+
+            @include media-ie {
+                align-self: flex-start;
+                flex-direction: row;
+            }
+
+            img{
+                margin-top: 8px;
+            }
+        }
+    }
+
+    .profile-container{
+       position: relative;
+       display: flex;
+       flex-direction: row;
+       
+       .profCard{
+           display: flex;
+           flex-direction: row;
+            width: auto;
+            height: auto;
+            margin-top: 25px;
+            margin-bottom: 50px;
+       }
+
+       .prof-card-img {
+           position: relative;
+           background-repeat: no-repeat;
+    
+       }
+    }
+}
+
