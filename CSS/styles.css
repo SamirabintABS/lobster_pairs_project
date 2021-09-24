@@ -1504,9 +1504,14 @@ p {
   text-align: center;
 }
 .profile-container .profCard {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: auto;
   margin-top: 25px;
+}
+.profile-container .profCard img {
+  width: 350px;
 }
 .profile-container .profCard .prof-card-img {
   background-size: cover;
@@ -1518,14 +1523,6 @@ p {
 }
 .profile-container .profCard .prof-card-text h2 {
   color: #AF473C;
-}
-
-.card1 h2 {
-  margin-top: -20px;
-}
-
-.card6 h2 {
-  margin-top: 80px;
 }
 
 @media screen and (min-width: 750px) {

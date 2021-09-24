@@ -65,9 +65,16 @@ p {
 
 
 .profCard{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: auto;
     margin-top: 25px;
+
+    img{
+        width: 350px;
+       
+    }
 
     .prof-card-img {
         background-size: cover;
@@ -85,13 +92,6 @@ p {
 }
 }
 
-.card1 h2{
-    margin-top: -20px;
-}
-
-.card6 h2{
-    margin-top: 80px;
-}
 
 //760px breakpoint 
 
