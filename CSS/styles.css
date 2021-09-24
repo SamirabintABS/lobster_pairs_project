@@ -1746,7 +1746,7 @@ p {
     width: 1235px;
   }
   .description-section .description {
-    width: 40%;
+    width: 70%;
     margin: 0 20px;
   }
 }
@@ -1760,6 +1760,9 @@ p {
 @media screen and (min-width: 1260px) {
   .description-section .about-content {
     flex-direction: row;
+  }
+  .description-section .about-content .extra-text {
+    display: block;
   }
   .description-section .profileSection {
     flex-direction: column;

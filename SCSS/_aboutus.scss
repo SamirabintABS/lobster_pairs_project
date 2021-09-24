@@ -272,7 +272,7 @@ p {
                 width: 1235px;
         
                 .description {
-                    width: 40%;
+                    width: 70%;
                     margin: 0 20px;
         
                     @include media-ie {
@@ -284,6 +284,10 @@ p {
         
                 .about-content {
                     flex-direction: row;
+
+                    .extra-text{
+                        display: block;
+                    }
             
                 }
         
