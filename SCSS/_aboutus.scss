@@ -54,39 +54,30 @@ p {
 
 .profile-container{
     position: relative;
-    display: flex;
-    flex-direction: column;
     margin: 15px;
     
 
     .profileCards{
         text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 
 
 .profCard{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: auto;
-    margin-top: 25px;
+    
 
     img{
         width: 350px;
        
     }
 
-    .prof-card-img {
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        height: 250px;
-        width: auto;
-        margin-bottom: 40px;
+    h2{
+        color: $red;
     }
 
-    .prof-card-text h2{
-        color: $red;
+    h3{
+        margin-bottom: 10px;
     }
 
 }
@@ -97,7 +88,8 @@ p {
 
 @include mq('sm'){
 .description-section {
-        align-items: flex-start;
+        align-items: center;
+        width: 750px;
 
         .description {
             width: 40%;
@@ -112,6 +104,11 @@ p {
 
         .about-content {
             flex-direction: row;
+    
+        }
+
+        .profileSection{
+            flex-direction: column;
         }
 
         img {
@@ -147,23 +144,26 @@ p {
 
     .profile-container{
        position: relative;
-       display: flex;
-       flex-direction: row;
-       
-       .profCard{
-           display: flex;
-           flex-direction: row;
-            width: auto;
-            height: auto;
-            margin-top: 25px;
-            margin-bottom: 50px;
+       margin-top: 60px;
+
+       .profileCards{
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
        }
 
-       .prof-card-img {
-           position: relative;
-           background-repeat: no-repeat;
-    
+       .profCard{
+       img{
+           width: 200px;
+           height: auto;
        }
+
+       h3{
+           margin-bottom: 50px;
+       }
+    }
+
     }
 }
 
