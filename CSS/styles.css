@@ -1446,4 +1446,84 @@ p {
   .partners-img-container .partners-box .partners-row .partners-icon {
     width: 350px;
   }
+}
+p {
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+.description-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.description-section .part-title {
+  font-size: 24px;
+  text-transform: uppercase;
+  color: #AF473C;
+}
+.description-section .about-content {
+  display: flex;
+  flex-direction: column;
+}
+.description-section .header_underline {
+  margin-bottom: 10px;
+}
+
+.about-content img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+@media screen and (-ms-high-contrast: none) {
+  .about-content img {
+    width: 400px;
+    height: auto;
+    align-self: center;
+    overflow: hidden;
+  }
+}
+.about-content .description {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+.about-content .extra-text {
+  display: none;
+}
+
+.profile-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+}
+.profile-container .profileCards {
+  text-align: center;
+}
+.profile-container .profCard {
+  display: block;
+  width: auto;
+  margin-top: 25px;
+}
+.profile-container .profCard .prof-card-img {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 250px;
+  width: auto;
+  margin-bottom: 40px;
+}
+.profile-container .profCard .prof-card-text h2 {
+  color: #AF473C;
+}
+
+.card1 h2 {
+  margin-top: -20px;
+}
+
+.card6 h2 {
+  margin-top: 80px;
 }/*# sourceMappingURL=styles.css.map */
