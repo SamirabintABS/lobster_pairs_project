@@ -7,7 +7,7 @@ p {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 15px;
+    margin: 0 auto;
 
     .part-title {
         font-size: 24px;
@@ -167,3 +167,184 @@ p {
     }
 }
 
+
+
+@include mq('md'){
+    .description-section {
+            align-items: center;
+            width: 950px;
+
+            .history{
+                align-items: flex-end;
+                margin-left: auto;
+                margin-right: auto;
+            }
+    
+            .description {
+                width: 100%;
+                margin: 0 20px;
+    
+                @include media-ie {
+                    width: 10%;
+                }
+
+            }
+
+            .team{
+                .about-content{
+                    flex-direction: row;
+
+                    .description{
+                        width: 50%;
+                    }
+                }
+                }
+                
+    
+            .about-content {
+                flex-direction: row;
+        
+            }
+    
+            .profileSection{
+                flex-direction: column;
+            }
+    
+            img {
+                width: 400px;
+                height: 400px;
+                overflow: hidden;
+                margin-top: -40px;
+            }
+    
+            h2{
+                margin-left: 15px;
+            }
+    
+            .header_underline{
+                margin-left: 15px;
+            }
+    
+            .alt-row {
+                flex-direction: row-reverse;
+                align-self: flex-end;
+                text-align: right;
+    
+                @include media-ie {
+                    align-self: flex-start;
+                    flex-direction: row;
+                }
+    
+                img{
+                    margin-top: 8px;
+                }
+            }
+        }
+    
+        .profile-container{
+           position: relative;
+           margin-top: 60px;
+    
+           .profileCards{
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+    
+           }
+    
+           .profCard{
+           img{
+               width: 200px;
+               height: auto;
+           }
+    
+           h3{
+               margin-bottom: 50px;
+           }
+        }
+    
+        }
+    }
+    
+
+    @include mq('lg'){
+        .description-section {
+                justify-content: center;
+                width: 1235px;
+        
+                .description {
+                    width: 40%;
+                    margin: 0 20px;
+        
+                    @include media-ie {
+                        width: 10%;
+                    }
+        
+                
+                }
+        
+                .about-content {
+                    flex-direction: row;
+            
+                }
+        
+                .profileSection{
+                    flex-direction: column;
+                }
+        
+                img {
+                    width: 400px;
+                    height: 400px;
+                    overflow: hidden;
+                    margin-top: -40px;
+                }
+        
+                h2{
+                    margin-left: 15px;
+                }
+        
+                .header_underline{
+                    margin-left: 15px;
+                }
+        
+                .alt-row {
+                    flex-direction: row-reverse;
+                    align-self: flex-end;
+                    text-align: right;
+        
+                    @include media-ie {
+                        align-self: flex-start;
+                        flex-direction: row;
+                    }
+        
+                    img{
+                        margin-top: 8px;
+                    }
+                }
+            }
+        
+            .profile-container{
+               position: relative;
+               margin-top: 60px;
+        
+               .profileCards{
+                flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
+        
+               }
+        
+               .profCard{
+               img{
+                   width: 200px;
+                   height: auto;
+               }
+        
+               h3{
+                   margin-bottom: 50px;
+               }
+            }
+        
+            }
+        }
+        
