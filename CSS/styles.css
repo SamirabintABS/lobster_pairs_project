@@ -1446,4 +1446,48 @@ p {
   .partners-img-container .partners-box .partners-row .partners-icon {
     width: 350px;
   }
+}
+.testimonial-container-width {
+  width: 100%;
+  padding: 0 15px;
+}
+.testimonial-container-width .header_underline {
+  margin-bottom: 10px;
+}
+.testimonial-container-width .testimonialCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.testimonial-container-width .testimonialCards .testCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  align-items: center;
+}
+.testimonial-container-width .testimonialCards .testCard img {
+  width: 270px;
+  height: 200px;
+}
+.testimonial-container-width .testimonialCards .testCard h2 {
+  color: #AF473C;
+  margin-bottom: 10px;
+}
+.testimonial-container-width .testimonialCards .testCard p {
+  font-size: 12px;
+  width: 70%;
+}
+
+@media screen and (min-width: 750px) {
+  .testimonialCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .testimonialCards .testCard {
+    max-width: 40%;
+  }
 }/*# sourceMappingURL=styles.css.map */

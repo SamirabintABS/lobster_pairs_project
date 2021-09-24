@@ -1,0 +1,54 @@
+.testimonial-container-width{
+    width: 100%;
+    padding: 0 15px;
+
+    .header_underline{
+        margin-bottom: 10px;
+    }
+    .testimonialCards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .testCard{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin-left: 15px;
+            margin-right: 15px;
+            align-items: center;
+
+            img{
+                width: 270px;
+                height: 200px;
+            }
+
+            h2{
+                color: $red;
+                margin-bottom: 10px;
+            }
+
+            p{
+                font-size: 12px;
+                width: 70%;
+            }
+        }
+    }
+
+}
+
+//750px breakpoint 
+
+@include mq('sm'){
+    .testimonialCards{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .testCard{
+            max-width: 40%;
+        
+        }
+    }
+}
