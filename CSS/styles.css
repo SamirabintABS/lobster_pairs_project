@@ -1447,79 +1447,322 @@ p {
     width: 350px;
   }
 }
-.testimonial-container-width {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+p {
+  margin: 0px;
+  margin-bottom: 15px;
 }
-.testimonial-container-width .header_underline {
-  margin-bottom: 10px;
-}
-.testimonial-container-width .testimonialCards {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.testimonial-container-width .testimonialCards .testCard {
+
+.description-section {
+  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  margin-left: 15px;
-  margin-right: 15px;
-  align-items: center;
+  margin: 0 auto;
 }
-.testimonial-container-width .testimonialCards .testCard img {
-  width: 270px;
-  height: 200px;
-}
-.testimonial-container-width .testimonialCards .testCard h2 {
+.description-section .part-title {
+  font-size: 24px;
+  text-transform: uppercase;
   color: #AF473C;
+}
+.description-section .about-content {
+  display: flex;
+  flex-direction: column;
+}
+.description-section .header_underline {
   margin-bottom: 10px;
 }
-.testimonial-container-width .testimonialCards .testCard p {
-  font-size: 12px;
-  width: 70%;
+
+.about-content img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+}
+@media screen and (-ms-high-contrast: none) {
+  .about-content img {
+    width: 400px;
+    height: auto;
+    align-self: center;
+    overflow: hidden;
+  }
+}
+.about-content .description {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+}
+.about-content .extra-text {
+  display: none;
+}
+
+.profile-container {
+  position: relative;
+  margin: 15px;
+}
+.profile-container .profileCards {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.profile-container .profCard img {
+  width: 350px;
+}
+.profile-container .profCard h2 {
+  color: #AF473C;
+}
+.profile-container .profCard h3 {
+  margin-bottom: 10px;
 }
 
 @media screen and (min-width: 750px) {
-  .testimonial-container-width {
+  .description-section {
+    align-items: center;
     width: 750px;
   }
-  .testimonial-container-width .testimonialCards {
-    margin-left: auto;
-    margin-right: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  .description-section .description {
+    width: 40%;
+    margin: 0 20px;
   }
-  .testimonial-container-width .testimonialCards .testCard {
-    max-width: 40%;
+}
+@media screen and (min-width: 750px) and (-ms-high-contrast: none) {
+  .description-section .description {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 750px) {
+  .description-section .about-content {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 750px) {
+  .description-section .profileSection {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 750px) {
+  .description-section img {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: -40px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .description-section h2 {
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .description-section .header_underline {
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .description-section .alt-row {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+    text-align: right;
+  }
+}
+@media screen and (min-width: 750px) and (-ms-high-contrast: none) {
+  .description-section .alt-row {
+    align-self: flex-start;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 750px) {
+  .description-section .alt-row img {
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 750px) {
+  .profile-container {
+    position: relative;
+    margin-top: 60px;
+  }
+  .profile-container .profileCards {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .profile-container .profCard img {
+    width: 200px;
+    height: auto;
+  }
+  .profile-container .profCard h3 {
+    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 975px) {
-  .testimonial-container-width {
+  .description-section {
+    align-items: center;
     width: 950px;
   }
-  .testimonial-container-width .testimonialCards {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  .description-section .history {
+    align-items: flex-end;
+    margin-left: auto;
+    margin-right: auto;
   }
-  .testimonial-container-width .testimonialCards .testCard {
-    max-width: 28%;
+  .description-section .description {
+    width: 100%;
+    margin: 0 20px;
+  }
+}
+@media screen and (min-width: 975px) and (-ms-high-contrast: none) {
+  .description-section .description {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 975px) {
+  .description-section .team .about-content {
+    flex-direction: row;
+  }
+  .description-section .team .about-content .description {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 975px) {
+  .description-section .about-content {
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 975px) {
+  .description-section .profileSection {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 975px) {
+  .description-section img {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: -40px;
+  }
+}
+@media screen and (min-width: 975px) {
+  .description-section h2 {
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 975px) {
+  .description-section .header_underline {
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 975px) {
+  .description-section .alt-row {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+    text-align: right;
+  }
+}
+@media screen and (min-width: 975px) and (-ms-high-contrast: none) {
+  .description-section .alt-row {
+    align-self: flex-start;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 975px) {
+  .description-section .alt-row img {
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 975px) {
+  .profile-container {
+    position: relative;
+    margin-top: 60px;
+  }
+  .profile-container .profileCards {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .profile-container .profCard img {
+    width: 200px;
+    height: auto;
+  }
+  .profile-container .profCard h3 {
+    margin-bottom: 50px;
   }
 }
 @media screen and (min-width: 1260px) {
-  .testimonial-container-width {
-    width: 1050px;
+  .description-section {
+    justify-content: center;
+    width: 1235px;
   }
-  .testimonial-container-width .testimonialCards {
+  .description-section .description {
+    width: 70%;
+    margin: 0 20px;
+  }
+}
+@media screen and (min-width: 1260px) and (-ms-high-contrast: none) {
+  .description-section .description {
+    width: 10%;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .description-section .about-content {
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
-  .testimonial-container-width .testimonialCards .testCard {
-    max-width: 22%;
+  .description-section .about-content .extra-text {
+    display: block;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .description-section .profileSection {
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .description-section img {
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    margin-top: -40px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .description-section h2 {
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .description-section .header_underline {
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .description-section .alt-row {
+    flex-direction: row-reverse;
+    align-self: flex-end;
+    text-align: right;
+  }
+}
+@media screen and (min-width: 1260px) and (-ms-high-contrast: none) {
+  .description-section .alt-row {
+    align-self: flex-start;
+    flex-direction: row;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .description-section .alt-row img {
+    margin-top: 8px;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .profile-container {
+    position: relative;
+    margin-top: 60px;
+  }
+  .profile-container .profileCards {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .profile-container .profCard img {
+    width: 200px;
+    height: auto;
+  }
+  .profile-container .profCard h3 {
+    margin-bottom: 50px;
   }
 }/*# sourceMappingURL=styles.css.map */
