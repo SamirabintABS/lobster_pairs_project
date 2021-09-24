@@ -1765,4 +1765,80 @@ p {
   .profile-container .profCard h3 {
     margin-bottom: 50px;
   }
+}
+.testimonial-container-width {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.testimonial-container-width .header_underline {
+  margin-bottom: 10px;
+}
+.testimonial-container-width .testimonialCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.testimonial-container-width .testimonialCards .testCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-left: 15px;
+  margin-right: 15px;
+  align-items: center;
+}
+.testimonial-container-width .testimonialCards .testCard img {
+  width: 270px;
+  height: 200px;
+}
+.testimonial-container-width .testimonialCards .testCard h2 {
+  color: #AF473C;
+  margin-bottom: 10px;
+}
+.testimonial-container-width .testimonialCards .testCard p {
+  font-size: 12px;
+  width: 70%;
+}
+
+@media screen and (min-width: 750px) {
+  .testimonial-container-width {
+    width: 750px;
+  }
+  .testimonial-container-width .testimonialCards {
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .testimonial-container-width .testimonialCards .testCard {
+    max-width: 40%;
+  }
+}
+@media screen and (min-width: 975px) {
+  .testimonial-container-width {
+    width: 950px;
+  }
+  .testimonial-container-width .testimonialCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .testimonial-container-width .testimonialCards .testCard {
+    max-width: 28%;
+  }
+}
+@media screen and (min-width: 1260px) {
+  .testimonial-container-width {
+    width: 1050px;
+  }
+  .testimonial-container-width .testimonialCards {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .testimonial-container-width .testimonialCards .testCard {
+    max-width: 22%;
+  }
 }/*# sourceMappingURL=styles.css.map */
