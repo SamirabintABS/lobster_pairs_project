@@ -111,10 +111,10 @@ p {
         }
 
         img {
-            width: 400px;
-            height: 400px;
+            width: 450px;
+            height: 300px;
             overflow: hidden;
-            margin-top: -40px;
+            
         }
 
         h2{
@@ -143,7 +143,7 @@ p {
 
     .profile-container{
        position: relative;
-       margin-top: 60px;
+       
 
        .profileCards{
         flex-direction: row;
@@ -211,9 +211,9 @@ p {
     
             img {
                 width: 400px;
-                height: 400px;
+                height: 300px;
                 overflow: hidden;
-                margin-top: -40px;
+               
             }
     
             h2{
@@ -242,7 +242,7 @@ p {
     
         .profile-container{
            position: relative;
-           margin-top: 60px;
+           
     
            .profileCards{
             flex-direction: row;
@@ -296,12 +296,7 @@ p {
                     flex-direction: column;
                 }
         
-                img {
-                    width: 400px;
-                    height: 400px;
-                    overflow: hidden;
-                    margin-top: -40px;
-                }
+                
         
                 h2{
                     margin-left: 15px;
@@ -329,7 +324,7 @@ p {
         
             .profile-container{
                position: relative;
-               margin-top: 60px;
+               
         
                .profileCards{
                 flex-direction: row;
@@ -341,7 +336,7 @@ p {
                .profCard{
                img{
                    width: 200px;
-                   height: auto;
+                   height: 130px;
                }
         
                h3{

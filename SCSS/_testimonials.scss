@@ -22,8 +22,9 @@
             align-items: center;
 
             img{
-                width: 270px;
+                width: 240px;
                 height: 200px;
+                border-radius: 50%;
             }
 
             h2{
@@ -52,11 +53,11 @@
             margin-right: auto;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
+            justify-content: space-between;
         
 
             .testCard{
-                max-width: 40%;
+                max-width: 300px;
             
             }
         }
@@ -78,7 +79,7 @@
 
 
             .testCard {
-                max-width: 28%;
+                width: 250px;
 
             }
         }
@@ -100,7 +101,7 @@
 
 
             .testCard {
-                max-width: 22%;
+                max-width: 220px;
                 
             }
         }
