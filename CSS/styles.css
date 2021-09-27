@@ -924,6 +924,7 @@ p {
 }
 
 .footer .footer-heading h3 {
+  margin-top: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 25px;
@@ -958,15 +959,18 @@ p {
 .copyright {
   margin-top: 30px;
   text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 300;
 }
 
 .footer-title-underline {
   content: "";
   display: block;
   height: 1px;
-  width: 40%;
+  width: 140px;
   background-color: whitesmoke;
   margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 @media screen and (min-width: 750px) {
