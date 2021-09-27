@@ -1023,7 +1023,7 @@ p {
   display: none;
   color: whitesmoke;
   justify-self: start;
-  font-family: "La Belle Aurore", cursive;
+  font-family: 'La Belle Aurore', cursive;
 }
 
 #navbar-logo {
@@ -1050,7 +1050,6 @@ p {
 
 /* Styled the links inside the navigation bar */
 .nav-links {
-  padding: 15px 0;
   color: whitesmoke;
   text-decoration: none;
   text-transform: uppercase;
