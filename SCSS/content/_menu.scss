@@ -14,17 +14,21 @@
     width: 100%;
     background-color: $red;
 }
+.hamburger{
+    display: none;
+}
 
 .navbar{
     padding: 0;
     margin: 0;
-    display: grid;
-    grid-template-columns: 0.2fr auto 1fr;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
     height: 55px;
     width: 90%;
     max-width: 1720px;
     margin: 0 auto;
+    z-index: 10;
 }
 
 #navbar-logo {
@@ -40,19 +44,21 @@
 }
 
 .nav-menu{
-    display: grid;
-    grid-template-columns: repeat(4, auto);
+    display: flex;
+    flex-wrap: wrap;
     list-style: none;
     text-align: center;
     width: 70%;
     float: right;
     color: #fff;
+    justify-content: space-between;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     margin-right: 200px;
     margin-left: 170px;
     font-size: 11px;
+    z-index: 10;
 
 }
 
@@ -64,7 +70,7 @@
 }
 
 /* Changed the color of links on hover */
-.nav-links a:hover {
+.nav-links li:hover {
     background-color: $whitebackground;
     transition: all 0.2s ease-out;
     color: $text-grey;
@@ -72,7 +78,7 @@
 }
 
 /* Added a color to the active/current link */
-.navbar a.active {
+.navbar li.active {
     background-color: $whitebackground;
     color: $text-grey;
     width: 100%;
@@ -85,9 +91,12 @@
         position: relative;
     }
 
+    .hamburger{
+        display: block;
+    }
+
     .nav-menu{
-        display: grid;
-        grid-template-columns: auto;
+        flex-direction: column;
        background-color: $red;
        margin: 0;
        width: 100%;
@@ -175,13 +184,18 @@
     .nav-container {
         position: relative;
         background-color: $red;
+        
 
+    }
+
+    .hamburger{
+        display: none;
     }
 
     .nav-menu {
         background-color: $red;
         margin: 0;
-        width: 100%;
+        width: 80%;
         position: absolute;
         float: right;
         color: #fff;
@@ -211,6 +225,14 @@
     .navbar {
         width: 100%;
     }
+
+    @include media-ie{
+        .nav-menu{
+            padding: 0 20px;
+            margin: auto;
+            position: static;
+        }
+    }
 }
 
 
@@ -223,10 +245,9 @@
     }
 
     .nav-menu {
-        display: grid;
-        grid-template-columns: repeat(10rem);
+        
         background-color: $red;
-        width: 100%;
+        width: 95%;
         position: absolute;
         color: #fff;
         text-align: center;
@@ -254,4 +275,17 @@
     .navbar {
         width: 100%;
     }
+    .hamburger{
+        display: none;
+    }
+
+    
+    @include media-ie{
+        .nav-menu{
+            padding: 0 20px;
+            margin: auto;
+            position: static;
+        }
+    }
 }
+
