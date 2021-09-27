@@ -538,6 +538,12 @@ body {
   box-shadow: 0 0 3px grey;
   background-color: #a04137;
 }
+.contact-section .flex-contact .section_title {
+  margin-top: 30px;
+}
+.contact-section .flex-contact .header_underline {
+  margin-bottom: 20px;
+}
 
 @media screen and (min-width: 750px) {
   .contact-section {
@@ -608,7 +614,7 @@ p {
   display: none;
 }
 .services .header_underline {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .description-section {
@@ -1538,7 +1544,7 @@ p {
   flex-direction: column;
 }
 .description-section .header_underline {
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .about-content {
@@ -1688,6 +1694,9 @@ p {
   .description-section .about-content {
     flex-direction: row;
   }
+  .description-section .about-content .extra-text {
+    display: block;
+  }
 }
 @media screen and (min-width: 975px) {
   .description-section .profileSection {
@@ -1825,7 +1834,7 @@ p {
   margin-right: auto;
 }
 .testimonial-container-width .header_underline {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   width: 300px;
 }
 .testimonial-container-width .testimonialCards {
