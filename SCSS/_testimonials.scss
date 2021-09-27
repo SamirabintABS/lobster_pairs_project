@@ -5,7 +5,8 @@
 
 
     .header_underline{
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        width: 300px;
     }
     .testimonialCards{
         display: flex;
@@ -40,6 +41,10 @@
         }
     }
 
+    .section_title{
+        margin-top: 15px;
+    }
+
 }
 
 //750px breakpoint 
@@ -63,6 +68,12 @@
             }
         }
     }
+    .section_title {
+        font-size: 24px;
+    }
+    .header_underline {
+        width: 80%;
+    }
 }
 
 //980px breakpoint 
@@ -85,6 +96,7 @@
             }
         }
     }
+
 }
 
 //1050px breakpoint 
