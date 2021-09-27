@@ -3,11 +3,12 @@ p {
     margin-bottom: 15px;
 }
 
+
 .description-section {
     position: relative;
     display: flex;
     flex-direction: column;
- 
+    padding: 0 10px;
     margin: 0 auto;
     
   
@@ -72,7 +73,7 @@ p {
     
 
     img{
-        width: 350px;
+        width: 300px;
        
     }
 
@@ -92,7 +93,7 @@ p {
 
 @include mq('sm'){
 .description-section {
-        align-items: center;
+        
         width: 750px;
 
         .description {
@@ -104,6 +105,8 @@ p {
             }
         
         }
+
+        
 
         .about-content {
             flex-direction: row;
@@ -136,7 +139,7 @@ p {
             text-align: right;
 
             @include media-ie {
-                align-self: flex-start;
+                align-self: auto;
                 flex-direction: row;
             }
 
@@ -175,21 +178,17 @@ p {
 
 @include mq('md'){
     .description-section {
-            align-items: center;
+            
             width: 950px;
 
-            .history{
-                align-items: flex-end;
-                margin-left: auto;
-                margin-right: auto;
-            }
+            
     
             .description {
                 width: 100%;
                 margin: 0 20px;
     
                 @include media-ie {
-                    width: 10%;
+                    width: 70%;
                 }
 
             }
@@ -235,7 +234,7 @@ p {
                 text-align: right;
     
                 @include media-ie {
-                    align-self: flex-start;
+                    align-self: auto;
                     flex-direction: row;
                 }
     
@@ -253,6 +252,7 @@ p {
             flex-direction: row;
             justify-content: space-between;
             flex-wrap: wrap;
+            width: 700px;
     
            }
     
@@ -273,7 +273,7 @@ p {
 
     @include mq('lg'){
         .description-section {
-                justify-content: center;
+                
                 width: 1235px;
         
                 .description {
@@ -281,11 +281,12 @@ p {
                     margin: 0 20px;
         
                     @include media-ie {
-                        width: 10%;
+                        width: 60%;
                     }
                     
                 
                 }
+               
 
         
                 .about-content {
@@ -318,7 +319,7 @@ p {
                     text-align: right;
         
                     @include media-ie {
-                        align-self: flex-start;
+                        align-self: auto;
                         flex-direction: row;
                     }
         
@@ -336,7 +337,7 @@ p {
                 flex-direction: row;
                 justify-content: space-between;
                 flex-wrap: wrap;
-        
+                
                }
         
                .profCard{
