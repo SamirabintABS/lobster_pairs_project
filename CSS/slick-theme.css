@@ -12,6 +12,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 /* Arrows */
 .slick-prev,
 .slick-next {
@@ -30,6 +31,7 @@
   border: none;
   outline: none;
 }
+
 .slick-prev:hover, .slick-prev:focus,
 .slick-next:hover,
 .slick-next:focus {
@@ -37,15 +39,18 @@
   background: transparent;
   color: transparent;
 }
+
 .slick-prev:hover:before, .slick-prev:focus:before,
 .slick-next:hover:before,
 .slick-next:focus:before {
   opacity: 1;
 }
+
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
   opacity: 0.25;
 }
+
 .slick-prev:before,
 .slick-next:before {
   font-family: "slick";
@@ -60,28 +65,34 @@
 .slick-prev {
   left: -25px;
 }
-[dir=rtl] .slick-prev {
+
+[dir="rtl"] .slick-prev {
   left: auto;
   right: -25px;
 }
+
 .slick-prev:before {
   content: "←";
 }
-[dir=rtl] .slick-prev:before {
+
+[dir="rtl"] .slick-prev:before {
   content: "→";
 }
 
 .slick-next {
   right: -25px;
 }
-[dir=rtl] .slick-next {
+
+[dir="rtl"] .slick-next {
   left: -25px;
   right: auto;
 }
+
 .slick-next:before {
   content: "→";
 }
-[dir=rtl] .slick-next:before {
+
+[dir="rtl"] .slick-next:before {
   content: "←";
 }
 
@@ -91,8 +102,8 @@
 }
 
 .slick-dots {
-  position: absolute;
-  bottom: 25px;
+  position: relative;
+  bottom: 50px;
   left: 0;
   list-style: none;
   display: block;
@@ -102,6 +113,7 @@
   border: none;
   line-height: 25px;
 }
+
 .slick-dots li {
   border: none;
   position: relative;
@@ -112,6 +124,7 @@
   padding: 0;
   cursor: pointer;
 }
+
 .slick-dots li button {
   border: none;
   background: transparent;
@@ -125,6 +138,7 @@
   padding: 5px;
   cursor: pointer;
 }
+
 .slick-dots li button:before {
   position: absolute;
   top: 0;
@@ -139,7 +153,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .slick-dots li.slick-active button:before {
   line-height: 50px;
   font-size: 50px;
-}/*# sourceMappingURL=slick-theme.css.map */
+}
+/*# sourceMappingURL=slick-theme.css.map */
