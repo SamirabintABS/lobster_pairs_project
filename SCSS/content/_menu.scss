@@ -51,7 +51,7 @@
     width: 70%;
     float: right;
     color: #fff;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -251,7 +251,7 @@
     .nav-menu {
         
         background-color: $red;
-        width: 95%;
+        width: 80%;
         position: absolute;
         color: #fff;
         text-align: center;
@@ -287,6 +287,7 @@
     @include media-ie{
         .nav-menu{
             padding: 0 20px;
+            width: 50%;
             margin: auto;
             position: static;
         }
