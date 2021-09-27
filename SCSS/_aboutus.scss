@@ -20,13 +20,20 @@ p {
 
     }
 
+    .about-title{
+        margin-top: 30px;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: $red;
+    }
+
     .about-content {
         display: flex;
         flex-direction: column;
     }
 
      .header_underline {
-         margin-bottom: 10px;
+         margin-bottom: 20px;
      }
 
 }
@@ -206,6 +213,10 @@ p {
     
             .about-content {
                 flex-direction: row;
+
+                .extra-text {
+                    display: block;
+                }
         
             }
     
