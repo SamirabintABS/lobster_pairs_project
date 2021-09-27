@@ -1069,9 +1069,11 @@ p {
   .nav-container {
     position: relative;
   }
+
   .hamburger {
     display: block;
   }
+
   .nav-menu {
     flex-direction: column;
     background-color: #AF473C;
@@ -1148,9 +1150,11 @@ p {
     position: relative;
     background-color: #AF473C;
   }
+
   .hamburger {
     display: none;
   }
+
   .nav-menu {
     background-color: #AF473C;
     margin: 0;
@@ -1181,7 +1185,6 @@ p {
     width: 100%;
   }
 }
-
 @media screen and (min-width: 1260px) and (-ms-high-contrast: none) {
   .nav-menu {
     padding: 0 20px;
@@ -1189,7 +1192,6 @@ p {
     position: static;
   }
 }
-
 @media screen and (min-width: 1400px) {
   .nav-container {
     position: relative;
@@ -1222,11 +1224,11 @@ p {
   .navbar {
     width: 70%;
   }
+
   .hamburger {
     display: none;
   }
 }
-
 @media screen and (min-width: 1400px) and (-ms-high-contrast: none) {
   .nav-menu {
     padding: 0 20px;
@@ -1249,6 +1251,13 @@ p {
 
 .about-hero {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.7), transparent), url(../IMG/Homepage_images/about-hero.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.testimonials-hero {
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.7), transparent), url(../IMG/Homepage_images/testimonials-hero.jpeg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
