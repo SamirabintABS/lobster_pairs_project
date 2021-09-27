@@ -12,6 +12,7 @@
 /* Background color and styling to the top navigation */
 .nav-container{
     width: 100%;
+    height: auto;
     background-color: $red;
 }
 .hamburger{
@@ -24,7 +25,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 55px;
+    height: 50px;
     width: 90%;
     max-width: 1720px;
     margin: 0 auto;
@@ -65,7 +66,7 @@
 /* Styled the links inside the navigation bar */
 .nav-links  {
     
-  
+    padding: 15px 0;
     
     color:$white-text;
     text-decoration: none;
@@ -131,7 +132,7 @@
 
     .nav-links{
         text-align: center;
-        line-height: 60px;
+        
         width: 100%;
         display: table;
     }
@@ -214,7 +215,6 @@
     .nav-links {
         float: right;
         text-align: center;
-        line-height: 50px;
         width: 100%;
     }
 
@@ -250,7 +250,7 @@
     .nav-menu {
         
         background-color: $red;
-        width: 95%;
+        width: 100%;
         position: absolute;
         color: #fff;
         text-align: center;
@@ -264,8 +264,8 @@
     .nav-links {
         float: right;
         text-align: center;
-        line-height: 50px;
         width: 100%;
+        padding: 10px 20px;
     }
 
     .nav-links:hover {
@@ -276,7 +276,7 @@
     }
 
     .navbar {
-        width: 70%;
+        width: 100%;
     }
     .hamburger{
         display: none;
