@@ -1696,7 +1696,7 @@ p {
 
 @media screen and (min-width: 750px) and (-ms-high-contrast: none) {
   .description-section .alt-row {
-    align-self: flex-start;
+    align-self: auto;
     flex-direction: row;
   }
 }
@@ -1725,11 +1725,6 @@ p {
 @media screen and (min-width: 975px) {
   .description-section {
     width: 950px;
-  }
-  .description-section .history {
-    align-items: flex-end;
-    margin-left: auto;
-    margin-right: auto;
   }
   .description-section .description {
     width: 100%;
@@ -1776,7 +1771,7 @@ p {
 
 @media screen and (min-width: 975px) and (-ms-high-contrast: none) {
   .description-section .alt-row {
-    align-self: flex-start;
+    align-self: auto;
     flex-direction: row;
   }
 }
@@ -1844,7 +1839,7 @@ p {
 
 @media screen and (min-width: 1260px) and (-ms-high-contrast: none) {
   .description-section .alt-row {
-    align-self: flex-start;
+    align-self: auto;
     flex-direction: row;
   }
 }

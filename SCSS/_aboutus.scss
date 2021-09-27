@@ -139,7 +139,7 @@ p {
             text-align: right;
 
             @include media-ie {
-                align-self: flex-start;
+                align-self: auto;
                 flex-direction: row;
             }
 
@@ -181,11 +181,7 @@ p {
             
             width: 950px;
 
-            .history{
-                align-items: flex-end;
-                margin-left: auto;
-                margin-right: auto;
-            }
+            
     
             .description {
                 width: 100%;
@@ -238,7 +234,7 @@ p {
                 text-align: right;
     
                 @include media-ie {
-                    align-self: flex-start;
+                    align-self: auto;
                     flex-direction: row;
                 }
     
@@ -290,9 +286,7 @@ p {
                     
                 
                 }
-                .history{
-
-                }
+               
 
         
                 .about-content {
@@ -325,7 +319,7 @@ p {
                     text-align: right;
         
                     @include media-ie {
-                        align-self: flex-start;
+                        align-self: auto;
                         flex-direction: row;
                     }
         
