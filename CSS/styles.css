@@ -995,7 +995,7 @@ p {
   width: 70%;
   float: right;
   color: #fff;
-  justify-content: space-evenly;
+  justify-content: space-between;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -1212,6 +1212,7 @@ p {
 @media screen and (min-width: 1400px) and (-ms-high-contrast: none) {
   .nav-menu {
     padding: 0 20px;
+    width: 50%;
     margin: auto;
     position: static;
   }

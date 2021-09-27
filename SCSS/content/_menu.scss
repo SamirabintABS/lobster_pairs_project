@@ -51,7 +51,7 @@
     width: 70%;
     float: right;
     color: #fff;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -287,6 +287,7 @@
     @include media-ie{
         .nav-menu{
             padding: 0 20px;
+            width: 50%;
             margin: auto;
             position: static;
         }
