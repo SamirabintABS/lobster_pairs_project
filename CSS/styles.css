@@ -1023,8 +1023,7 @@ p {
   display: none;
   color: whitesmoke;
   justify-self: start;
-  margin-left: 10px;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
 }
 
 #navbar-logo {
@@ -1093,7 +1092,6 @@ p {
   }
   #navbar-logo {
     display: inline-block;
-    margin-left: 10px;
   }
   #navbar-logo:hover {
     color: #3C3C3C;
