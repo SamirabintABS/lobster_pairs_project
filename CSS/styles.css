@@ -568,9 +568,11 @@ body {
   box-shadow: 0 0 3px grey;
   background-color: #a04137;
 }
+
 .contact-section .flex-contact .section_title {
   margin-top: 30px;
 }
+
 .contact-section .flex-contact .header_underline {
   margin-bottom: 20px;
 }
@@ -1005,6 +1007,7 @@ p {
 /* Background color and styling to the top navigation */
 .nav-container {
   width: 100%;
+  height: auto;
   background-color: #AF473C;
 }
 
@@ -1018,7 +1021,7 @@ p {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 55px;
+  height: 50px;
   width: 90%;
   max-width: 1720px;
   margin: 0 auto;
@@ -1029,7 +1032,7 @@ p {
   display: none;
   color: whitesmoke;
   justify-self: start;
-  font-family: "La Belle Aurore", cursive;
+  font-family: 'La Belle Aurore', cursive;
 }
 
 #navbar-logo {
@@ -1056,6 +1059,7 @@ p {
 
 /* Styled the links inside the navigation bar */
 .nav-links {
+  padding: 15px 0;
   color: whitesmoke;
   text-decoration: none;
   text-transform: uppercase;
@@ -1112,7 +1116,6 @@ p {
   }
   .nav-links {
     text-align: center;
-    line-height: 60px;
     width: 100%;
     display: table;
   }
@@ -1180,7 +1183,6 @@ p {
   .nav-links {
     float: right;
     text-align: center;
-    line-height: 50px;
     width: 100%;
   }
   .nav-links:hover {
@@ -1209,7 +1211,7 @@ p {
   }
   .nav-menu {
     background-color: #AF473C;
-    width: 95%;
+    width: 100%;
     position: absolute;
     color: #fff;
     text-align: center;
@@ -1222,8 +1224,8 @@ p {
   .nav-links {
     float: right;
     text-align: center;
-    line-height: 50px;
     width: 100%;
+    padding: 10px 20px;
   }
   .nav-links:hover {
     background-color: #FFF;
@@ -1231,7 +1233,7 @@ p {
     transition: all 0.4s ease-out;
   }
   .navbar {
-    width: 70%;
+    width: 100%;
   }
   .hamburger {
     display: none;
@@ -1597,12 +1599,14 @@ p {
   text-transform: uppercase;
   color: #AF473C;
 }
+
 .description-section .about-title {
   margin-top: 30px;
   font-size: 24px;
   text-transform: uppercase;
   color: #AF473C;
 }
+
 .description-section .about-content {
   display: flex;
   flex-direction: column;
@@ -1762,8 +1766,6 @@ p {
   .description-section .about-content .extra-text {
     display: block;
   }
-}
-@media screen and (min-width: 975px) {
   .description-section .profileSection {
     flex-direction: column;
   }
