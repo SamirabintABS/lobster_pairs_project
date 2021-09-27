@@ -881,6 +881,11 @@ p {
 .footer .footer-heading i {
   margin-right: 15px;
 }
+.footer .footer-3 {
+  display: flex;
+  flex: wrap;
+  flex-direction: column;
+}
 
 .footer-heading a:hover {
   color: #3B3B3B;
