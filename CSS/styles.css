@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   text-decoration: none;
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -23,12 +23,10 @@ body {
   font-size: 18px;
   color: #AF473C;
 }
-
 .section_title a {
   color: #AF473C;
   text-decoration: none;
 }
-
 .section_title a:hover {
   color: #7c332d;
   text-decoration: none;
@@ -58,18 +56,15 @@ body {
 .aboutus {
   margin-top: 75px;
 }
-
 .aboutus .aboutus_width {
   width: auto;
   height: auto;
   padding: 0 15px;
 }
-
 .aboutus .aboutus_width .aboutus_text {
   margin: 25px 0;
   font-size: 16px;
 }
-
 .aboutus .aboutus_width .aboutus_text:last-of-type {
   display: none;
   margin-bottom: 0;
@@ -78,12 +73,10 @@ body {
 .services-section {
   margin-top: 50px;
 }
-
 .services-section .services_width {
   width: 100%;
   padding: 0 15px;
 }
-
 .services-section .services_width .service_card_container {
   width: 100%;
   display: flex;
@@ -91,13 +84,11 @@ body {
   justify-content: center;
   margin-top: 25px;
 }
-
 .services-section .services_width .service_card_container .card {
   display: block;
   width: auto;
   margin-top: 25px;
 }
-
 .services-section .services_width .service_card_container .card .card_image {
   background-size: cover;
   background-repeat: no-repeat;
@@ -105,36 +96,31 @@ body {
   height: 250px;
   width: auto;
 }
-
 .services-section .services_width .service_card_container .card .card_corporate {
   background-image: url(../IMG/Homepage_images/corporate.jpg);
 }
-
 .services-section .services_width .service_card_container .card .card_weddings {
   background-image: url(../IMG/Homepage_images/Wedding.jpg);
 }
-
 .services-section .services_width .service_card_container .card .card_events {
   background-image: url(../IMG/Homepage_images/events.jpg);
 }
-
 .services-section .services_width .service_card_container .card .card_title {
+  margin-top: 15px;
+  margin-bottom: 15px;
   text-align: center;
   text-transform: uppercase;
   color: #AF473C;
   font-size: 24px;
 }
-
 .services-section .services_width .service_card_container .card .card_title_underline {
   content: "";
   display: block;
   height: 1px;
   width: 100px;
-  margin-top: 0;
   background-color: black;
-  margin: 0 auto 10px;
+  margin: 0 auto 15px;
 }
-
 .services-section .services_width .service_card_container .card .card_text {
   text-align: center;
 }
@@ -143,42 +129,34 @@ body {
   margin: 0;
   margin-top: 50px;
 }
-
 .testimonials .testimonials_slick {
   overflow: initial;
 }
-
 .testimonials .testimonials_slick div {
   display: inline-block;
   width: 100%;
 }
-
 .testimonials .testimonials_slick div .quote_container {
   display: flex;
   color: white;
   width: 100%;
   padding: 25px 25px 0;
 }
-
 .testimonials .testimonials_slick div .quote_container i {
   display: inline-block;
   font-size: 20px;
   width: auto;
   margin: 0;
 }
-
 .testimonials .testimonials_slick div .quote_container .quote_left {
   padding-top: 40px;
 }
-
 .testimonials .testimonials_slick div .quote_container .quote_right {
   padding-top: 125px;
 }
-
 .testimonials .testimonials_slick div .quote_container .quote_content {
   text-align: center;
 }
-
 .testimonials .testimonials_slick div .quote_container .quote_content .quote {
   display: inline-block;
   text-align: center;
@@ -188,7 +166,6 @@ body {
   margin: 0;
   font-size: 16px;
 }
-
 .testimonials .testimonials_slick div .quote_container .quote_content .quote_underline {
   content: "";
   display: inline-block;
@@ -197,7 +174,6 @@ body {
   margin-top: 30px;
   background-color: white;
 }
-
 .testimonials .testimonials_slick div .quote_container .quote_content .quote_author {
   margin-top: 20px;
   font-size: 14px;
@@ -230,21 +206,18 @@ body {
   padding: 0 25px;
   background-color: #3c3c3c;
 }
-
 .bookbox .book_now {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   text-align: center;
 }
-
 .bookbox .book_now .book_text {
   display: block;
   color: white;
   text-align: center;
   font-size: 20px;
 }
-
 .bookbox .book_now .book_button {
   display: block;
   width: 40%;
@@ -255,9 +228,8 @@ body {
   background-color: white;
   text-transform: uppercase;
   text-decoration: none;
-  transition: .2s ease all;
+  transition: 0.2s ease all;
 }
-
 .bookbox .book_now .book_button:hover {
   background-color: #AF473C;
   color: white;
@@ -268,12 +240,15 @@ body {
   .wrap {
     margin-top: 50px;
   }
+
   .section_title {
     font-size: 36px;
   }
+
   .header_underline {
     width: 185px;
   }
+
   .aboutus {
     margin-top: 50px;
   }
@@ -286,6 +261,7 @@ body {
   .aboutus .aboutus_width .aboutus_text:last-of-type {
     display: block;
   }
+
   .services-section .services_width {
     width: 750px;
     margin-left: auto;
@@ -312,6 +288,7 @@ body {
   .services-section .services_width .service_card_container .card:last-of-type {
     margin-top: 25px;
   }
+
   .testimonials {
     margin-top: 50px;
     margin-bottom: 50px;
@@ -328,6 +305,7 @@ body {
   .testimonials .testimonials_slick div .quote_container .quote_content .quote_author {
     font-size: 16px;
   }
+
   .bookbox {
     width: 100%;
     margin: 0 auto;
@@ -347,11 +325,11 @@ body {
     margin: auto 0;
   }
 }
-
 @media screen and (min-width: 975px) {
   .aboutus .aboutus_width {
     width: 950px;
   }
+
   .services-section .services_width {
     width: 950px;
   }
@@ -368,12 +346,14 @@ body {
   .services-section .services_width .service_card_container .card:last-of-type {
     margin-top: 0px;
   }
+
   .testimonials .testimonials_slick div .quote_container .quote_content .quote {
     font-size: 20px;
   }
   .testimonials .testimonials_slick div .quote_container .quote_content .quote_author {
     font-size: 18px;
   }
+
   .bookbox .book_now .book_text {
     width: 680px;
     padding-right: 50px;
@@ -383,11 +363,11 @@ body {
     width: 275px;
   }
 }
-
 @media screen and (min-width: 1260px) {
   .aboutus .aboutus_width {
     width: 1235px;
   }
+
   .services-section .services_width {
     width: 1235px;
   }
@@ -398,9 +378,11 @@ body {
     height: 225px;
     width: 390px;
   }
+
   .testimonials .testimonials_slick div .quote_container .quote_content .quote {
     font-size: 22px;
   }
+
   .bookbox .book_now .book_text {
     width: auto;
     font-size: 25px;
@@ -409,7 +391,6 @@ body {
     width: 250px;
   }
 }
-
 #mapid {
   height: 170px;
   width: 90%;
@@ -417,7 +398,7 @@ body {
 }
 
 #first_name.error {
-  border: 1px solid  red;
+  border: 1px solid red;
 }
 
 #firstLabel.error {
@@ -431,11 +412,11 @@ body {
 }
 
 #last_name.error {
-  border: 1px solid  red;
+  border: 1px solid red;
 }
 
 #message-contact.error {
-  border: 1px solid  red;
+  border: 1px solid red;
 }
 
 #gdpr {
@@ -443,7 +424,7 @@ body {
 }
 
 #email.error {
-  border: 1px solid  red;
+  border: 1px solid red;
 }
 
 #email-label.error {
@@ -452,12 +433,12 @@ body {
 }
 
 #email-message {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   color: red;
   margin-top: 5px;
   display: none;
-  transition: .3s ease all;
+  transition: 0.3s ease all;
 }
 
 #email-message.shown {
@@ -465,7 +446,7 @@ body {
 }
 
 #telephone.error {
-  border: 1px solid  red;
+  border: 1px solid red;
 }
 
 #phone-label.error {
@@ -474,12 +455,12 @@ body {
 }
 
 #phone-message {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   color: red;
   margin-top: 5px;
   display: none;
-  transition: .3s ease all;
+  transition: 0.3s ease all;
 }
 
 #phone-message.shown {
@@ -487,12 +468,12 @@ body {
 }
 
 #button-message {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1rem;
   color: red;
   margin-top: 5px;
   display: none;
-  transition: .3s ease all;
+  transition: 0.3s ease all;
 }
 
 #button-message.shown {
@@ -505,34 +486,27 @@ body {
   flex-direction: column;
   margin: 15px;
 }
-
 .contact-section .flex-contact .split1 span {
   width: 125px;
 }
-
 .contact-section .flex-contact .split2 span {
   width: 85px;
 }
-
 .contact-section .flex-contact .flex-outer {
   list-style: none;
   padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
-
 .contact-section .flex-contact .flex-outer > li {
   flex-basis: 100%;
 }
-
 .contact-section .flex-contact .flex-outer > li:not(:last-child) {
   margin-bottom: 20px;
 }
-
 .contact-section .flex-contact .flex-outer > li > label {
   flex: 1 0 120px;
 }
-
 .contact-section .flex-contact input[type=text],
 .contact-section .flex-contact input[type=email],
 .contact-section .flex-contact input[type=number] {
@@ -541,13 +515,11 @@ body {
   width: 90%;
   height: 28px;
 }
-
 .contact-section .flex-contact #message-contact {
   height: 200px;
   width: 95%;
   resize: none;
 }
-
 .contact-section .flex-contact input[type=button] {
   width: 100%;
   height: 42px;
@@ -560,19 +532,16 @@ body {
   letter-spacing: -0.02em;
   color: #fff;
   text-transform: uppercase;
-  transition: .15s ease background-color, .3s transform;
+  transition: 0.15s ease background-color, 0.3s transform;
 }
-
 .contact-section .flex-contact input[type=button]:hover {
   transform: scale(0.95);
   box-shadow: 0 0 3px grey;
   background-color: #a04137;
 }
-
 .contact-section .flex-contact .section_title {
   margin-top: 30px;
 }
-
 .contact-section .flex-contact .header_underline {
   margin-bottom: 20px;
 }
@@ -604,13 +573,11 @@ body {
     flex-basis: 50%;
   }
 }
-
 @media screen and (min-width: 975px) {
   .contact-section {
     width: 950px;
   }
 }
-
 @media screen and (min-width: 1260px) {
   .contact-section {
     width: 1235px;
@@ -634,13 +601,11 @@ body {
     flex-basis: 50%;
   }
 }
-
 @media screen and (min-width: 1400px) {
   .contact-section {
     width: 1375px;
   }
 }
-
 p {
   margin: 0px;
   margin-bottom: 15px;
@@ -649,7 +614,6 @@ p {
 .services .main-service-title, .services .main_service_underline {
   display: none;
 }
-
 .services .header_underline {
   margin-bottom: 20px;
 }
@@ -659,20 +623,16 @@ p {
   display: flex;
   flex-direction: column;
 }
-
 .description-section .section_title {
   font-size: 24px;
 }
-
 .description-section .service-content {
   display: flex;
   flex-direction: column;
 }
-
 .description-section .events h2 {
   text-align: end;
 }
-
 .description-section .events .header_underline {
   margin-left: auto;
   margin-right: 0px;
@@ -680,10 +640,10 @@ p {
 
 .service-content img {
   width: 400px;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
 }
-
 @media screen and (-ms-high-contrast: none) {
   .service-content img {
     width: 400px;
@@ -715,7 +675,6 @@ p {
   font-size: 14px;
   font-weight: 500;
 }
-
 .btn-book:hover {
   transform: scale(0.95);
   box-shadow: 0 0 3px grey;
@@ -727,11 +686,9 @@ p {
   padding: 0;
   overflow: initial;
 }
-
 .service-slides div {
   width: 100%;
 }
-
 .service-slides div .quote_container {
   display: flex;
   color: white;
@@ -739,12 +696,10 @@ p {
   padding: 25px 25px 0;
   justify-content: center;
 }
-
 .service-slides div .quote_container .quote_content {
   text-align: center;
   flex-direction: column;
 }
-
 .service-slides div .quote_container .quote_content .service_text {
   text-align: center;
   width: auto;
@@ -753,7 +708,6 @@ p {
   margin: 0;
   font-size: 16px;
 }
-
 .service-slides div .quote_container .quote_content .quote_underline {
   content: "";
   height: 1px;
@@ -761,7 +715,6 @@ p {
   margin-top: 30px;
   background-color: white;
 }
-
 .service-slides div .quote_container .quote_content .service_title {
   margin-top: 20px;
   font-size: 20px;
@@ -807,6 +760,7 @@ p {
     font-size: 18px;
     padding: 30px 50px;
   }
+
   .services {
     width: 700px;
   }
@@ -821,39 +775,40 @@ p {
     margin: 0 20px;
   }
 }
-
 @media screen and (min-width: 750px) and (-ms-high-contrast: none) {
   .services .description-section .description {
     width: 10%;
   }
 }
-
 @media screen and (min-width: 750px) {
   .services .description-section .service-content {
     flex-direction: row;
   }
+}
+@media screen and (min-width: 750px) {
   .services .description-section img {
     width: 400px;
     height: 400px;
     overflow: hidden;
   }
+}
+@media screen and (min-width: 750px) {
   .services .description-section .alt-row {
     flex-direction: row-reverse;
     align-self: flex-end;
   }
 }
-
 @media screen and (min-width: 750px) and (-ms-high-contrast: none) {
   .services .description-section .alt-row {
     align-self: flex-start;
     flex-direction: row;
   }
 }
-
 @media screen and (min-width: 975px) {
   .services, .service-slides {
     width: 950px;
   }
+
   .services .description-section {
     align-items: flex-start;
   }
@@ -862,45 +817,40 @@ p {
     margin: 0 20px;
   }
 }
-
 @media screen and (min-width: 975px) and (-ms-high-contrast: none) {
   .services .description-section .description {
     width: 20%;
   }
 }
-
 @media screen and (min-width: 975px) {
   .services .description-section img {
     width: 30%;
   }
 }
-
 @media screen and (min-width: 975px) and (-ms-high-contrast: none) {
   .services .description-section img {
     width: 400px;
   }
 }
-
 @media screen and (min-width: 975px) {
   .extra-text {
     display: block;
   }
 }
-
 @media screen and (min-width: 1260px) {
   .services, .service-slides {
     width: 1235px;
   }
+
   .description-section img {
     width: 25%;
   }
 }
-
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -918,18 +868,15 @@ p {
   display: flex;
   flex-wrap: wrap;
 }
-
 .footer .footer-heading {
   width: 100%;
 }
-
 .footer .footer-heading h3 {
   margin-top: 20px;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 25px;
 }
-
 .footer .footer-heading a {
   display: block;
   width: 100%;
@@ -939,11 +886,9 @@ p {
   text-decoration: none;
   color: white;
 }
-
 .footer .footer-heading i {
   margin-right: 15px;
 }
-
 .footer .footer-3 {
   display: flex;
   flex: wrap;
@@ -996,13 +941,12 @@ p {
     margin-bottom: 0;
   }
 }
-
 /* Targetting all elements in html */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat',sans-serif, 'La Belle Aurore', cursive;
+  font-family: "Montserrat", sans-serif, "La Belle Aurore", cursive;
   font-style: normal;
   font-weight: 300;
   font-display: swap;
@@ -1036,7 +980,7 @@ p {
   display: none;
   color: whitesmoke;
   justify-self: start;
-  font-family: 'La Belle Aurore', cursive;
+  font-family: "La Belle Aurore", cursive;
 }
 
 #navbar-logo {
@@ -1088,9 +1032,11 @@ p {
   .nav-container {
     position: relative;
   }
+
   .hamburger {
     display: block;
   }
+
   .nav-menu {
     flex-direction: column;
     background-color: #AF473C;
@@ -1103,13 +1049,16 @@ p {
     transition: all 0.5s ease;
     font-size: 10px;
   }
+
   #navbar-logo {
     display: inline-block;
     margin-left: -360px;
   }
+
   #navbar-logo:hover {
     color: #3C3C3C;
   }
+
   .nav-menu.active {
     background: #AF473C;
     left: 0;
@@ -1118,20 +1067,24 @@ p {
     width: 100%;
     margin-top: -30px;
   }
+
   .nav-links {
     text-align: center;
     width: 100%;
     display: table;
   }
+
   .nav-links:hover {
     width: 100%;
     background-color: #FFF;
     color: #AF473C;
     transition: all 0.4s ease-out;
   }
+
   .navbar {
     width: 100%;
   }
+
   #mobile-menu {
     margin-right: 40px;
     position: absolute;
@@ -1139,6 +1092,7 @@ p {
     right: 5%;
     transform: translate(5%, 20%);
   }
+
   .menu-toggle .bar {
     display: block;
     cursor: pointer;
@@ -1148,28 +1102,33 @@ p {
     transition: all 0.3s ease-in-out;
     background: #FFF;
   }
+
   .menu-toggle:hover {
     cursor: pointer;
   }
+
   #mobile-menu.is-active .bar:nth-child(2) {
     opacity: 0;
   }
+
   #mobile-menu.is-active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
   }
+
   #mobile-menu.is-active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
-
 @media screen and (min-width: 1260px) {
   .nav-container {
     position: relative;
     background-color: #AF473C;
   }
+
   .hamburger {
     display: none;
   }
+
   .nav-menu {
     background-color: #AF473C;
     margin: 0;
@@ -1185,21 +1144,23 @@ p {
     padding-left: 150px;
     font-size: 14px;
   }
+
   .nav-links {
     float: right;
     text-align: center;
     width: 100%;
   }
+
   .nav-links:hover {
     background-color: #FFF;
     color: #AF473C;
     transition: all 0.4s ease-out;
   }
+
   .navbar {
     width: 100%;
   }
 }
-
 @media screen and (min-width: 1260px) and (-ms-high-contrast: none) {
   .nav-menu {
     padding: 0 20px;
@@ -1207,13 +1168,13 @@ p {
     position: static;
   }
 }
-
 @media screen and (min-width: 1400px) {
   .nav-container {
     position: relative;
     background-color: #AF473C;
     text-align: center;
   }
+
   .nav-menu {
     background-color: #AF473C;
     width: 95%;
@@ -1226,25 +1187,28 @@ p {
     padding-left: 800px;
     font-size: 12px;
   }
+
   .nav-links {
     float: right;
     text-align: center;
     width: 100%;
     padding: 10px 20px;
   }
+
   .nav-links:hover {
     background-color: #FFF;
     color: #AF473C;
     transition: all 0.4s ease-out;
   }
+
   .navbar {
     width: 100%;
   }
+
   .hamburger {
     display: none;
   }
 }
-
 @media screen and (min-width: 1400px) and (-ms-high-contrast: none) {
   .nav-menu {
     padding: 0 20px;
@@ -1252,7 +1216,6 @@ p {
     position: static;
   }
 }
-
 * {
   margin: 0;
   padding: 0;
@@ -1301,7 +1264,6 @@ p {
   color: white;
   font-family: "montserrat";
 }
-
 .banner-container .main-container {
   width: 100%;
   display: flex;
@@ -1310,30 +1272,25 @@ p {
   align-content: center;
   text-align: center;
 }
-
 .banner-container .main-container p {
   margin: 0;
 }
-
 .banner-container .main-container .logo-text {
   margin-top: 40px;
   margin-bottom: 15px;
   display: block;
 }
-
 .banner-container .main-container .logo-text a {
   text-decoration: none;
 }
-
 .banner-container .main-container .logo-text .logo-terra {
   text-transform: capitalize;
-  font-family: 'la belle aurore';
+  font-family: "la belle aurore";
   color: #AF473C;
   font-size: 50px;
   height: 50px;
   line-height: 60px;
 }
-
 .banner-container .main-container .logo-text .logo-catering {
   color: white;
   text-transform: uppercase;
@@ -1343,26 +1300,22 @@ p {
   height: 30px;
   margin-top: -10px;
 }
-
 .banner-container .main-container .logo-text p {
   margin: 0;
 }
-
 .banner-container .main-container .hero-text .hero-contact a {
   margin-top: 10px;
   text-transform: uppercase;
-  font-family: 'montserrat';
+  font-family: "montserrat";
   font-weight: 600;
   text-decoration: none;
   color: white;
   letter-spacing: 2px;
 }
-
 .banner-container .main-container .hero-text .text-container {
   display: block;
   text-align: center;
 }
-
 .banner-container .main-container .hero-text .text-container h1 {
   margin-top: 10px;
   font-size: 30px;
@@ -1370,7 +1323,6 @@ p {
   text-transform: uppercase;
   padding-bottom: 10px;
 }
-
 .banner-container .main-container .hero-text .text-container .hero-title_underline {
   display: none;
   width: 150px;
@@ -1381,7 +1333,6 @@ p {
   margin-right: 0px;
   margin-left: auto;
 }
-
 .banner-container .main-container .hero-text .text-container .book-now {
   color: white;
   text-decoration: none;
@@ -1393,9 +1344,8 @@ p {
   font-weight: 600;
   padding: 15px;
   margin: 40px 0;
-  transition: .2s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
-
 .banner-container .main-container .hero-text .text-container .book-now:hover {
   background-color: #89382f;
 }
@@ -1437,7 +1387,6 @@ p {
     padding-top: 20px;
   }
 }
-
 @media screen and (min-width: 975px) {
   .banner-container {
     width: 950px;
@@ -1468,7 +1417,6 @@ p {
     padding-top: 20px;
   }
 }
-
 @media screen and (min-width: 1260px) {
   .banner-container {
     width: 1235px;
@@ -1500,19 +1448,16 @@ p {
     padding-top: 20px;
   }
 }
-
 .partners-img-container {
   margin-top: 50px;
   display: none;
 }
-
 .partners-img-container .partners-box {
   width: 725px;
   margin-right: auto;
   margin-left: auto;
   padding: 0 10px;
 }
-
 .partners-img-container .partners-box .partners-row {
   display: flex;
   flex-wrap: nowrap;
@@ -1521,25 +1466,20 @@ p {
   height: auto;
   margin: 50px auto;
 }
-
 .partners-img-container .partners-box .partners-row .partners-icon {
   display: block;
   width: 200px;
   height: 100px;
 }
-
 .partners-img-container .partners-box .partners-row .partners-icon .coloured {
   display: none;
 }
-
 .partners-img-container .partners-box .partners-row .partners-icon:hover .grey {
   display: none;
 }
-
 .partners-img-container .partners-box .partners-row .partners-icon:hover .coloured {
   display: block;
 }
-
 .partners-img-container .partners-box .partners-row .partners-icon img {
   max-height: 100%;
   max-width: 100%;
@@ -1548,7 +1488,6 @@ p {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
 }
-
 .partners-img-container .partners-box .partners-row .partners-icon img:hover {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
@@ -1561,7 +1500,6 @@ p {
     padding: 0 8px;
   }
 }
-
 @media screen and (min-width: 975px) {
   .partners-img-container .partners-box {
     width: 950px;
@@ -1574,7 +1512,6 @@ p {
     height: 150px;
   }
 }
-
 @media screen and (min-width: 1260px) {
   .partners-img-container .partners-box {
     width: 1235px;
@@ -1586,7 +1523,6 @@ p {
     width: 350px;
   }
 }
-
 p {
   margin: 0px;
   margin-bottom: 15px;
@@ -1599,25 +1535,21 @@ p {
   padding: 0 10px;
   margin: 0 auto;
 }
-
 .description-section .part-title {
   font-size: 24px;
   text-transform: uppercase;
   color: #AF473C;
 }
-
 .description-section .about-title {
   margin-top: 30px;
   font-size: 24px;
   text-transform: uppercase;
   color: #AF473C;
 }
-
 .description-section .about-content {
   display: flex;
   flex-direction: column;
 }
-
 .description-section .header_underline {
   margin-bottom: 20px;
 }
@@ -1625,13 +1557,12 @@ p {
 .about-content {
   margin: 0 auto;
 }
-
 .about-content img {
   width: 100%;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   overflow: hidden;
 }
-
 @media screen and (-ms-high-contrast: none) {
   .about-content img {
     width: 400px;
@@ -1640,13 +1571,11 @@ p {
     overflow: hidden;
   }
 }
-
 .about-content .description {
   width: auto;
   display: flex;
   flex-direction: column;
 }
-
 .about-content .extra-text {
   display: none;
 }
@@ -1655,21 +1584,17 @@ p {
   position: relative;
   margin: 15px;
 }
-
 .profile-container .profileCards {
   text-align: center;
   display: flex;
   flex-direction: column;
 }
-
 .profile-container .profCard img {
   width: 300px;
 }
-
 .profile-container .profCard h2 {
   color: #AF473C;
 }
-
 .profile-container .profCard h3 {
   margin-bottom: 10px;
 }
@@ -1683,49 +1608,57 @@ p {
     margin: 0 20px;
   }
 }
-
 @media screen and (min-width: 750px) and (-ms-high-contrast: none) {
   .description-section .description {
     width: 70%;
   }
 }
-
 @media screen and (min-width: 750px) {
   .description-section .about-content {
     flex-direction: row;
   }
+}
+@media screen and (min-width: 750px) {
   .description-section .profileSection {
     flex-direction: column;
   }
+}
+@media screen and (min-width: 750px) {
   .description-section img {
     width: 450px;
     height: 300px;
     overflow: hidden;
   }
+}
+@media screen and (min-width: 750px) {
   .description-section h2 {
     margin-left: 15px;
   }
+}
+@media screen and (min-width: 750px) {
   .description-section .header_underline {
     margin-left: 15px;
   }
+}
+@media screen and (min-width: 750px) {
   .description-section .alt-row {
     flex-direction: row-reverse;
     align-self: flex-end;
     text-align: right;
   }
 }
-
 @media screen and (min-width: 750px) and (-ms-high-contrast: none) {
   .description-section .alt-row {
     align-self: auto;
     flex-direction: row;
   }
 }
-
 @media screen and (min-width: 750px) {
   .description-section .alt-row img {
     margin-top: 8px;
   }
+}
+@media screen and (min-width: 750px) {
   .profile-container {
     position: relative;
   }
@@ -1742,7 +1675,6 @@ p {
     margin-bottom: 50px;
   }
 }
-
 @media screen and (min-width: 975px) {
   .description-section {
     width: 950px;
@@ -1752,13 +1684,11 @@ p {
     margin: 0 20px;
   }
 }
-
 @media screen and (min-width: 975px) and (-ms-high-contrast: none) {
   .description-section .description {
     width: 70%;
   }
 }
-
 @media screen and (min-width: 975px) {
   .description-section .team .about-content {
     flex-direction: row;
@@ -1766,44 +1696,56 @@ p {
   .description-section .team .about-content .description {
     width: 50%;
   }
+}
+@media screen and (min-width: 975px) {
   .description-section .about-content {
     flex-direction: row;
   }
   .description-section .about-content .extra-text {
     display: block;
   }
+}
+@media screen and (min-width: 975px) {
   .description-section .profileSection {
     flex-direction: column;
   }
+}
+@media screen and (min-width: 975px) {
   .description-section img {
     width: 400px;
     height: 300px;
     overflow: hidden;
   }
+}
+@media screen and (min-width: 975px) {
   .description-section h2 {
     margin-left: 15px;
   }
+}
+@media screen and (min-width: 975px) {
   .description-section .header_underline {
     margin-left: 15px;
   }
+}
+@media screen and (min-width: 975px) {
   .description-section .alt-row {
     flex-direction: row-reverse;
     align-self: flex-end;
     text-align: right;
   }
 }
-
 @media screen and (min-width: 975px) and (-ms-high-contrast: none) {
   .description-section .alt-row {
     align-self: auto;
     flex-direction: row;
   }
 }
-
 @media screen and (min-width: 975px) {
   .description-section .alt-row img {
     margin-top: 8px;
   }
+}
+@media screen and (min-width: 975px) {
   .profile-container {
     position: relative;
   }
@@ -1821,7 +1763,6 @@ p {
     margin-bottom: 50px;
   }
 }
-
 @media screen and (min-width: 1260px) {
   .description-section {
     width: 1235px;
@@ -1831,13 +1772,11 @@ p {
     margin: 0 20px;
   }
 }
-
 @media screen and (min-width: 1260px) and (-ms-high-contrast: none) {
   .description-section .description {
     width: 60%;
   }
 }
-
 @media screen and (min-width: 1260px) {
   .description-section .about-content {
     flex-direction: row;
@@ -1845,33 +1784,41 @@ p {
   .description-section .about-content .extra-text {
     display: block;
   }
+}
+@media screen and (min-width: 1260px) {
   .description-section .profileSection {
     flex-direction: column;
   }
+}
+@media screen and (min-width: 1260px) {
   .description-section h2 {
     margin-left: 15px;
   }
+}
+@media screen and (min-width: 1260px) {
   .description-section .header_underline {
     margin-left: 15px;
   }
+}
+@media screen and (min-width: 1260px) {
   .description-section .alt-row {
     flex-direction: row-reverse;
     align-self: flex-end;
     text-align: right;
   }
 }
-
 @media screen and (min-width: 1260px) and (-ms-high-contrast: none) {
   .description-section .alt-row {
     align-self: auto;
     flex-direction: row;
   }
 }
-
 @media screen and (min-width: 1260px) {
   .description-section .alt-row img {
     margin-top: 8px;
   }
+}
+@media screen and (min-width: 1260px) {
   .profile-container {
     position: relative;
   }
@@ -1888,24 +1835,20 @@ p {
     margin-bottom: 50px;
   }
 }
-
 .testimonial-container-width {
   width: 80%;
   margin-left: auto;
   margin-right: auto;
 }
-
 .testimonial-container-width .header_underline {
   margin-bottom: 30px;
   width: 300px;
 }
-
 .testimonial-container-width .testimonialCards {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .testimonial-container-width .testimonialCards .testCard {
   display: flex;
   flex-direction: column;
@@ -1914,25 +1857,23 @@ p {
   margin-left: 15px;
   margin-right: 15px;
   align-items: center;
+  margin-bottom: 15px;
 }
-
 .testimonial-container-width .testimonialCards .testCard img {
   width: 240px;
   height: 200px;
   object-fit: cover;
   -o-object-fit: cover;
 }
-
 .testimonial-container-width .testimonialCards .testCard h2 {
+  margin-top: 10px;
   color: #AF473C;
   margin-bottom: 10px;
 }
-
 .testimonial-container-width .testimonialCards .testCard p {
   font-size: 12px;
   width: 70%;
 }
-
 .testimonial-container-width .section_title {
   margin-top: 40px;
 }
@@ -1951,11 +1892,11 @@ p {
   .testimonial-container-width .testimonialCards .testCard {
     max-width: 300px;
   }
+
   .section_title {
     font-size: 24px;
   }
 }
-
 @media screen and (min-width: 975px) {
   .testimonial-container-width {
     width: 950px;
@@ -1969,7 +1910,6 @@ p {
     width: 250px;
   }
 }
-
 @media screen and (min-width: 1260px) {
   .testimonial-container-width {
     width: 1050px;
@@ -1982,5 +1922,4 @@ p {
   .testimonial-container-width .testimonialCards .testCard {
     max-width: 220px;
   }
-}
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

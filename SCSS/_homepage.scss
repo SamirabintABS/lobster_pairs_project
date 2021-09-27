@@ -130,6 +130,8 @@ body {
                 }
 
                 .card_title {
+                    margin-top: 15px;
+                    margin-bottom: 15px;
                     text-align: center;
                     text-transform: uppercase;
                     color: $red;
@@ -141,9 +143,8 @@ body {
                     display: block;
                     height: 1px;
                     width: 100px;
-                    margin-top: 0;
                     background-color: black;
-                    margin: 0 auto 10px;
+                    margin: 0 auto 15px;
                 }
 
                 .card_text {
