@@ -3,11 +3,12 @@ p {
     margin-bottom: 15px;
 }
 
+
 .description-section {
     position: relative;
     display: flex;
     flex-direction: column;
- 
+    padding: 0 10px;
     margin: 0 auto;
     
   
@@ -72,7 +73,7 @@ p {
     
 
     img{
-        width: 350px;
+        width: 300px;
        
     }
 
@@ -92,7 +93,7 @@ p {
 
 @include mq('sm'){
 .description-section {
-        align-items: center;
+        
         width: 750px;
 
         .description {
@@ -104,6 +105,8 @@ p {
             }
         
         }
+
+        
 
         .about-content {
             flex-direction: row;
@@ -175,7 +178,7 @@ p {
 
 @include mq('md'){
     .description-section {
-            align-items: center;
+            
             width: 950px;
 
             .history{
@@ -189,7 +192,7 @@ p {
                 margin: 0 20px;
     
                 @include media-ie {
-                    width: 10%;
+                    width: 70%;
                 }
 
             }
@@ -253,6 +256,7 @@ p {
             flex-direction: row;
             justify-content: space-between;
             flex-wrap: wrap;
+            width: 700px;
     
            }
     
@@ -273,7 +277,7 @@ p {
 
     @include mq('lg'){
         .description-section {
-                justify-content: center;
+                
                 width: 1235px;
         
                 .description {
@@ -281,10 +285,13 @@ p {
                     margin: 0 20px;
         
                     @include media-ie {
-                        width: 10%;
+                        width: 60%;
                     }
                     
                 
+                }
+                .history{
+
                 }
 
         
@@ -336,7 +343,7 @@ p {
                 flex-direction: row;
                 justify-content: space-between;
                 flex-wrap: wrap;
-        
+                
                }
         
                .profCard{

@@ -1576,6 +1576,7 @@ p {
   position: relative;
   display: flex;
   flex-direction: column;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -1635,7 +1636,7 @@ p {
 }
 
 .profile-container .profCard img {
-  width: 350px;
+  width: 300px;
 }
 
 .profile-container .profCard h2 {
@@ -1648,7 +1649,6 @@ p {
 
 @media screen and (min-width: 750px) {
   .description-section {
-    align-items: center;
     width: 750px;
   }
   .description-section .description {
@@ -1718,7 +1718,6 @@ p {
 
 @media screen and (min-width: 975px) {
   .description-section {
-    align-items: center;
     width: 950px;
   }
   .description-section .history {
@@ -1734,7 +1733,7 @@ p {
 
 @media screen and (min-width: 975px) and (-ms-high-contrast: none) {
   .description-section .description {
-    width: 10%;
+    width: 70%;
   }
 }
 
@@ -1787,6 +1786,7 @@ p {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: 700px;
   }
   .profile-container .profCard img {
     width: 200px;
@@ -1799,7 +1799,6 @@ p {
 
 @media screen and (min-width: 1260px) {
   .description-section {
-    justify-content: center;
     width: 1235px;
   }
   .description-section .description {
@@ -1810,7 +1809,7 @@ p {
 
 @media screen and (min-width: 1260px) and (-ms-high-contrast: none) {
   .description-section .description {
-    width: 10%;
+    width: 60%;
   }
 }
 
