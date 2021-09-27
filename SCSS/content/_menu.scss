@@ -45,13 +45,13 @@
 
 .nav-menu{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     list-style: none;
     text-align: center;
     width: 70%;
     float: right;
     color: #fff;
-    justify-content: space-between;
+    justify-content: space-evenly;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -250,7 +250,7 @@
     .nav-menu {
         
         background-color: $red;
-        width: 90%;
+        width: 95%;
         position: absolute;
         color: #fff;
         text-align: center;
