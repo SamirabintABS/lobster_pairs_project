@@ -20,6 +20,13 @@ p {
 
     }
 
+    .about-title{
+        margin-top: 30px;
+        font-size: 24px;
+        text-transform: uppercase;
+        color: $red;
+    }
+
     .about-content {
         display: flex;
         flex-direction: column;
