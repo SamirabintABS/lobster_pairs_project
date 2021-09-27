@@ -11,38 +11,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
 
+    <!-- Hamburger menu -->
+    <link href="/CSS/hamburgers.min.css" rel="stylesheet">
+    <link href="/CSS/hamburgers.css" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css" href="../JS/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../CSS/slick-theme.css">
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" href="../IMG/Favicon/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" type="image/png" sizes="32x32" href="../IMG/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../IMG/Favicon/favicon-16x16.png">
 
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="/CSS/styles.css" <!-- Font Awesome -->
+    <link rel="stylesheet" href="../CSS/styles.css" <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/8e1f5cb673.js" crossorigin="anonymous"></script>
-
-     <!-- FAVICON -->
-     <link rel="apple-touch-icon" href="../IMG/Favicon/apple-touch-icon.png" sizes="180x180">
-     <link rel="icon" type="image/png" sizes="32x32" href="../IMG/Favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="../IMG/Favicon/favicon-16x16.png">
-
-    <!-- leaflet -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-        crossorigin="" />
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-        crossorigin=""></script>
-
-
-
-
-    <!-- reCaptcha -->
-
-    <script src="https://www.google.com/recaptcha/api.js"></script>
 
     <title>Terracotta</title>
 </head>
 
 <body>
+
+    <!-- BANNER SB -->
     <header>
         <div class="image-hero">
             <div class="banner-container">
@@ -50,47 +44,52 @@
 
                     <div class="logo-text">
                         <a href="index.html">
-                            <p class="logo-terra">Terracotta</p>
-                            <p class="logo-catering">Catering</p>
-                        </a>
+                        <p class="logo-terra">Terracotta</p>
+                        <p class="logo-catering">Catering</p>
+                    </a>
                     </div>
                     <div class="hero-text">
                         <div class="hero-contact">
-
-                            <a href="mailto: info@terracotta.com"><i class="fas fa-envelope"></i>info@terracotta.com</a>
+                            
+                                <a href="mailto: info@terracotta.com"><i class="fas fa-envelope"></i>info@terracotta.com</a>
                             
                            
-                            <a href="tel:01235852894"><i class="fas fa-phone"></i>01235-852-894</a>
-
+                                <a href="tel:01235852894"><i class="fas fa-phone"></i>01235-852-894</a>
+                            
                         </div>
                         <div class="text-container">
-                            <h1>Quality Local <br>Catering</h1>
-                            <span class="hero-title_underline"></span>
-                            <p>Restaurant quality food made <br> with locally sourced <br>ingredients</p>
-                            <a class="btn book-now">Book now</a>
-
-                        </div>
+                        <h1>Quality Local <br>Catering</h1>
+                        <span class="hero-title_underline"></span>
+                        <p>Restaurant quality food made <br> with locally sourced <br>ingredients</p>
+                        <a href="contactform.html"  class="btn book-now">Book now</a>
+                    
+                    </div>   
+                        
+                            
+                        
                     </div>
 
                 </div>
             </div>
         </div>
+
+          <!-- MENU SB -->
         <div class="nav-container">
             <nav class="navbar">
                 <h1 id="navbar-logo">Terracotta</h1>
-                <div class="menu-toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
+                <button class="hamburger hamburger--spin" type="button">
+                    <span class="hamburger-box">
+                      <span class="hamburger-inner"></span>
+                    </span>
+                  </button>
                 <ul class="nav-menu">
-                    <li><a href="aboutus.html" class="nav-links">About Us</a></li>
-                    <li><a href="servicepage.html" class="nav-links">Services</a></li>
-                    <li><a href="testimonials.html" class="nav-links">Testimonials</a></li>
-                    <li><a href="contactform.html" class="nav-links">Contact Us</a></li>
+                   <li><a href="aboutus.html" class="nav-links">About Us</a></li>   
+                   <li><a href="servicepage.html" class="nav-links">Services</a></li>   
+                   <li><a href="testimonials.html" class="nav-links">Testimonials</a></li>   
+                   <li><a href="contactform.html" class="nav-links">Contact Us</a></li>   
                 </ul>
             </nav>
-        </div>
+        </div> 
 
     </header>
 

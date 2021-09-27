@@ -1,5 +1,6 @@
 var gulp = require('gulp');
-var sass = require('gulp-sass');    
+var sass = require('gulp-sass')(require('sass'));
+var sourcemaps = require('gulp-sourcemaps');    
 var uglify = require('gulp-uglify');
 var concat = require('gulp-concat');
 var babel = require("gulp-babel");
@@ -16,7 +17,7 @@ gulp.task('scripts', function(done){
 
 gulp.task('watch', function(done){
 
-    // added done above too
+    
 
     gulp.watch('./js/src/**/*.js', gulp.series('scripts'));
     done();

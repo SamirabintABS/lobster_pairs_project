@@ -632,7 +632,9 @@ p {
 }
 
 .service-content img {
-  width: 100%;
+  width: 400px;
+  object-fit: cover;
+  
   -o-object-fit: cover;
      object-fit: cover;
   overflow: hidden;
@@ -942,16 +944,21 @@ p {
   background-color: #AF473C;
 }
 
+.hamburger {
+  display: none;
+}
+
 .navbar {
   padding: 0;
   margin: 0;
-  display: grid;
-  grid-template-columns: 0.2fr auto 1fr;
+  display: flex;
+  justify-content: space-around;
   align-items: center;
   height: 55px;
   width: 90%;
   max-width: 1720px;
   margin: 0 auto;
+  z-index: 10;
 }
 
 #navbar-logo {
@@ -967,19 +974,21 @@ p {
 }
 
 .nav-menu {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   text-align: center;
   width: 70%;
   float: right;
   color: #fff;
+  justify-content: space-between;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
   margin-right: 200px;
   margin-left: 170px;
   font-size: 11px;
+  z-index: 10;
 }
 
 /* Styled the links inside the navigation bar */
@@ -990,7 +999,7 @@ p {
 }
 
 /* Changed the color of links on hover */
-.nav-links a:hover {
+.nav-links li:hover {
   background-color: #FFF;
   transition: all 0.2s ease-out;
   color: #3B3B3B;
@@ -998,7 +1007,7 @@ p {
 }
 
 /* Added a color to the active/current link */
-.navbar a.active {
+.navbar li.active {
   background-color: #FFF;
   color: #3B3B3B;
   width: 100%;
@@ -1008,10 +1017,11 @@ p {
   .nav-container {
     position: relative;
   }
-
+  .hamburger {
+    display: block;
+  }
   .nav-menu {
-    display: grid;
-    grid-template-columns: auto;
+    flex-direction: column;
     background-color: #AF473C;
     margin: 0;
     width: 100%;
@@ -1097,11 +1107,13 @@ p {
     position: relative;
     background-color: #AF473C;
   }
-
+  .hamburger {
+    display: none;
+  }
   .nav-menu {
     background-color: #AF473C;
     margin: 0;
-    width: 100%;
+    width: 80%;
     position: absolute;
     float: right;
     color: #fff;
@@ -1131,6 +1143,15 @@ p {
     width: 100%;
   }
 }
+
+@media screen and (min-width: 1260px) and (-ms-high-contrast: none) {
+  .nav-menu {
+    padding: 0 20px;
+    margin: auto;
+    position: static;
+  }
+}
+
 @media screen and (min-width: 1400px) {
   .nav-container {
     position: relative;
@@ -1139,10 +1160,8 @@ p {
   }
 
   .nav-menu {
-    display: grid;
-    grid-template-columns: repeat(10rem);
     background-color: #AF473C;
-    width: 100%;
+    width: 95%;
     position: absolute;
     color: #fff;
     text-align: center;
@@ -1168,6 +1187,17 @@ p {
 
   .navbar {
     width: 100%;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1400px) and (-ms-high-contrast: none) {
+  .nav-menu {
+    padding: 0 20px;
+    margin: auto;
+    position: static;
   }
 }
 * {
@@ -1785,7 +1815,6 @@ p {
 .testimonial-container-width .testimonialCards .testCard img {
   width: 240px;
   height: 200px;
-  border-radius: 50%;
 }
 .testimonial-container-width .testimonialCards .testCard h2 {
   color: #AF473C;
