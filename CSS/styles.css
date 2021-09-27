@@ -968,7 +968,7 @@ p {
   display: none;
   color: whitesmoke;
   justify-self: start;
-  margin-left: 20px;
+  margin-left: 10px;
   font-family: "La Belle Aurore", cursive;
 }
 
@@ -1040,7 +1040,7 @@ p {
 
   #navbar-logo {
     display: inline-block;
-    margin-left: 20px;
+    margin-left: 10px;
   }
 
   #navbar-logo:hover {
@@ -1266,6 +1266,7 @@ p {
 }
 .banner-container .main-container .logo-text {
   margin-top: 40px;
+  margin-bottom: 15px;
   display: block;
 }
 .banner-container .main-container .logo-text a {
@@ -1286,7 +1287,7 @@ p {
   font-size: 30px;
   letter-spacing: 2px;
   height: 30px;
-  margin-top: -5px;
+  margin-top: -10px;
 }
 .banner-container .main-container .logo-text p {
   margin: 0;
@@ -1877,10 +1878,6 @@ p {
 
   .section_title {
     font-size: 24px;
-  }
-
-  .header_underline {
-    width: 80%;
   }
 }
 @media screen and (min-width: 975px) {
