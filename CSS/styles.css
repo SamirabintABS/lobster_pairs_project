@@ -568,9 +568,11 @@ body {
   box-shadow: 0 0 3px grey;
   background-color: #a04137;
 }
+
 .contact-section .flex-contact .section_title {
   margin-top: 30px;
 }
+
 .contact-section .flex-contact .header_underline {
   margin-bottom: 20px;
 }
@@ -1030,7 +1032,7 @@ p {
   display: none;
   color: whitesmoke;
   justify-self: start;
-  font-family: "La Belle Aurore", cursive;
+  font-family: 'La Belle Aurore', cursive;
 }
 
 #navbar-logo {
@@ -1110,7 +1112,7 @@ p {
     opacity: 1;
     transition: all 0.5s ease;
     width: 100%;
-    margin-top: -25px;
+    margin-top: -30px;
   }
   .nav-links {
     text-align: center;
@@ -1599,12 +1601,14 @@ p {
   text-transform: uppercase;
   color: #AF473C;
 }
+
 .description-section .about-title {
   margin-top: 30px;
   font-size: 24px;
   text-transform: uppercase;
   color: #AF473C;
 }
+
 .description-section .about-content {
   display: flex;
   flex-direction: column;
@@ -1764,8 +1768,6 @@ p {
   .description-section .about-content .extra-text {
     display: block;
   }
-}
-@media screen and (min-width: 975px) {
   .description-section .profileSection {
     flex-direction: column;
   }
